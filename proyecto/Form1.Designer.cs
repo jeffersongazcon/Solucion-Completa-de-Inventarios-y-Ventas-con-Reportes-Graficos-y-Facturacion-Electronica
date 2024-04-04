@@ -38,7 +38,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.panel1.BackColor = System.Drawing.Color.LightGreen;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
