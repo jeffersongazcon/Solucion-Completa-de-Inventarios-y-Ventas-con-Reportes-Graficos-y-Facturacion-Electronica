@@ -8,5 +8,6 @@ namespace DAL_Datos_
 {
     public class Class1
     {
+        int a;
     }
 }
