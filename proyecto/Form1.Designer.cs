@@ -38,7 +38,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightGreen;
+            this.panel1.BackColor = System.Drawing.Color.MediumTurquoise;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -54,7 +54,7 @@
             this.textBox1.ForeColor = System.Drawing.Color.Gray;
             this.textBox1.Location = new System.Drawing.Point(380, 118);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(366, 21);
+            this.textBox1.Size = new System.Drawing.Size(366, 22);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "User:";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -67,7 +67,7 @@
             this.textBox2.ForeColor = System.Drawing.Color.Gray;
             this.textBox2.Location = new System.Drawing.Point(380, 198);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(366, 21);
+            this.textBox2.Size = new System.Drawing.Size(366, 22);
             this.textBox2.TabIndex = 2;
             this.textBox2.Text = "Password:";
             // 
@@ -78,7 +78,7 @@
             this.label1.ForeColor = System.Drawing.Color.SpringGreen;
             this.label1.Location = new System.Drawing.Point(519, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 32);
+            this.label1.Size = new System.Drawing.Size(95, 33);
             this.label1.TabIndex = 3;
             this.label1.Text = "LOGIN!";
             // 
@@ -90,7 +90,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.label2.Location = new System.Drawing.Point(377, 132);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(331, 16);
+            this.label2.Size = new System.Drawing.Size(440, 17);
             this.label2.TabIndex = 4;
             this.label2.Text = "                                                                                 " +
     "                           ";
@@ -103,7 +103,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.label3.Location = new System.Drawing.Point(377, 212);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(331, 16);
+            this.label3.Size = new System.Drawing.Size(440, 17);
             this.label3.TabIndex = 5;
             this.label3.Text = "                                                                                 " +
     "                           ";
