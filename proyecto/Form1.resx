@@ -1397,7 +1397,7 @@
   <data name="btnCerrar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAG6MSURBVHhe7d0H
+        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAG6MSURBVHhe7d0H
         eFTVugZg00MqIQQSAoRQQ0KH0BNQUcCOIqgoCqJYUZCioBQB6ViPBTvWg12xoSDYztFjO/Z27L33rut+
         /xiugD+QmbX2ZPae73ue97n3ehWSvcrM3nutf+3AeJIkaAE7w5GwCG6EDfAEvA4fwjdg4Ef4osZr8C+4
         HS6G6TACukMmMAzDxGqawk4g894SuBrug+fgTZA57muQee+rmv/7fyDznsyN98BFcAocBH0hHxgmZtMI
@@ -1927,6 +1927,22 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfrI77vgfI6GWiUeMld4AAAAASUVO
         RK5CYII=
+</value>
+  </data>
+  <data name="MensajeDeError.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAHUAAAB1AePCB2UAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAACHklEQVQ4T2MgAFihmHQgwsurFqGudSvbxPyjtpCQFlSYeGAnLbfneV7p/y9VDf9jdQ1uQIWJA2oC
+        woHLvIM+t4WG/++Pifu/Jzbpn5u8SjJUmiBgCVHROH0lI+//rN7e/29u3vr/qLjyf5ax2SugHOHw0BUR
+        azoVk/ynLDTs/+/fv///+fPnf3VE1P+7ecX/A9Q0ZkKV4QRCOQbGt3Ympv/fuWnT/yRz6//pfgH/927f
+        /n97cvr/Jnvnb0A1IhClWICFhPTKB5n5/2uTU/6DQLmRxf9avyAwuyI+4f+7itr/kVo6h6HKUYEoN7dB
+        n73rq2nh0f9v3bgB0WRq/b8uOAzMvnvnzv+Z0XH/F/oH/zGRkrKGakMAV3nFA49yiv93lVeANYBApZXD
+        //qwKCjv///2svL/r0qr/8frGdyDaoMAFQGhpI3+Yd8bQsL+f/z4Ear8//8iG8f/FaERUN7//58+ffrf
+        HBbx/1hSxj8PJZUiqHYGtih17fMXMnL/L5kxA6oUAo7u3vv/+MFDUB4ELJo+4//FnML/hWZW74B6ORj0
+        RcR6L8Sn/asARtXfv3+hyiAg0dbhf6qXD5QHASA15RGR/58Ulf8PUtdaypCgpXflbnre/4rA4P8d8Ylw
+        fHnK9P+VTm7/a9y9wGxkOZDaN2U1/6us7T+C0vzGLhun55OdPF5NcfJ4QywGxZi7gvIOSCgwMEgDsRKJ
+        GKiHgQEAtOlr75EzuvEAAAAASUVORK5CYII=
 </value>
   </data>
 </root>

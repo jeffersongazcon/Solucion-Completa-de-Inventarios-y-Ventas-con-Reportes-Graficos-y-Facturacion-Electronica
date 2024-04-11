@@ -44,7 +44,26 @@ namespace proyecto
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (txtUser.Text != "User")
+            {
+                if (txtpass.Text != "Password") 
+                {
+                    if (txtpass.Text == "123")
+                    {
+                        PantallaDeInicio inicio = new PantallaDeInicio();
+                        inicio.Show();
+                        this.Hide();
+                    }
+                }
+                else msgError("Rellene los campos necesario");
+            }
 
+        }
+
+        private void msgError(string msg)
+        {
+            MensajeDeError.Text = "   " + msg;
+            MensajeDeError.Visible = true;
         }
 
         private void txtUser_Enter(object sender, EventArgs e)
@@ -112,6 +131,11 @@ namespace proyecto
         {
             RealeaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void MensajeDeError_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

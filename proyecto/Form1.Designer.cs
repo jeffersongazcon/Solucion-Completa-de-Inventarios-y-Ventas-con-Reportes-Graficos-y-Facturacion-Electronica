@@ -39,6 +39,7 @@
             this.linkPass = new System.Windows.Forms.LinkLabel();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.MensajeDeError = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
@@ -174,12 +175,28 @@
             this.btnMinimizar.TabStop = false;
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
+            // MensajeDeError
+            // 
+            this.MensajeDeError.AutoSize = true;
+            this.MensajeDeError.Font = new System.Drawing.Font("Georgia", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MensajeDeError.ForeColor = System.Drawing.Color.LightGreen;
+            this.MensajeDeError.Image = ((System.Drawing.Image)(resources.GetObject("MensajeDeError.Image")));
+            this.MensajeDeError.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.MensajeDeError.Location = new System.Drawing.Point(466, 223);
+            this.MensajeDeError.Name = "MensajeDeError";
+            this.MensajeDeError.Size = new System.Drawing.Size(188, 16);
+            this.MensajeDeError.TabIndex = 10;
+            this.MensajeDeError.Text = "Rellene los campos necesario";
+            this.MensajeDeError.Visible = false;
+            this.MensajeDeError.Click += new System.EventHandler(this.MensajeDeError_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(828, 366);
+            this.Controls.Add(this.MensajeDeError);
             this.Controls.Add(this.btnMinimizar);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.linkPass);
@@ -217,6 +234,7 @@
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label MensajeDeError;
     }
 }
 

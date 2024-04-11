@@ -13,3 +13,7 @@ C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proye
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\Presentacion.csproj.CopyComplete
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.exe
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.pdb
+C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\bin\Debug\aa-ER\proyecto.resources.dll
+C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.PantallaDeInicio.resources
+C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.PantallaDeInicio.aa-ER.resources
+C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\aa-ER\proyecto.resources.dll
