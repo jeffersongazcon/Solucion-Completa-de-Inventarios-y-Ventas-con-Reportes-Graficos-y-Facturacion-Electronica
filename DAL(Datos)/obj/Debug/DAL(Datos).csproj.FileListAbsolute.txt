@@ -7,3 +7,12 @@ C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\DAL(D
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\DAL(Datos)\obj\Debug\DAL(Datos).csproj.CopyComplete
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\DAL(Datos)\obj\Debug\DAL(Datos).dll
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\DAL(Datos)\obj\Debug\DAL(Datos).pdb
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\DAL(Datos)\bin\Debug\DAL(Datos).dll
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\DAL(Datos)\bin\Debug\DAL(Datos).pdb
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\DAL(Datos)\bin\Debug\Entity(Entidad).dll
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\DAL(Datos)\bin\Debug\Entity(Entidad).pdb
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\DAL(Datos)\obj\Debug\DAL(Datos).csproj.AssemblyReference.cache
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\DAL(Datos)\obj\Debug\DAL(Datos).csproj.CoreCompileInputs.cache
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\DAL(Datos)\obj\Debug\DAL(Datos).csproj.CopyComplete
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\DAL(Datos)\obj\Debug\DAL(Datos).dll
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\DAL(Datos)\obj\Debug\DAL(Datos).pdb

@@ -4,3 +4,9 @@ C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\Entit
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\Entity(Entidad)\obj\Debug\Entity(Entidad).csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\Entity(Entidad)\obj\Debug\Entity(Entidad).dll
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\Entity(Entidad)\obj\Debug\Entity(Entidad).pdb
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\Entity(Entidad)\bin\Debug\Entity(Entidad).dll
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\Entity(Entidad)\bin\Debug\Entity(Entidad).pdb
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\Entity(Entidad)\obj\Debug\Entity(Entidad).csproj.AssemblyReference.cache
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\Entity(Entidad)\obj\Debug\Entity(Entidad).csproj.CoreCompileInputs.cache
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\Entity(Entidad)\obj\Debug\Entity(Entidad).dll
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\Entity(Entidad)\obj\Debug\Entity(Entidad).pdb
