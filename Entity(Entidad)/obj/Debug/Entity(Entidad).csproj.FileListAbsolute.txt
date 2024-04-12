@@ -10,3 +10,9 @@ C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inven
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\Entity(Entidad)\obj\Debug\Entity(Entidad).csproj.CoreCompileInputs.cache
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\Entity(Entidad)\obj\Debug\Entity(Entidad).dll
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\Entity(Entidad)\obj\Debug\Entity(Entidad).pdb
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\Entity(Entidad)\bin\Debug\Entity(Entidad).dll
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\Entity(Entidad)\bin\Debug\Entity(Entidad).pdb
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\Entity(Entidad)\obj\Debug\Entity(Entidad).csproj.AssemblyReference.cache
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\Entity(Entidad)\obj\Debug\Entity(Entidad).csproj.CoreCompileInputs.cache
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\Entity(Entidad)\obj\Debug\Entity(Entidad).dll
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\Entity(Entidad)\obj\Debug\Entity(Entidad).pdb

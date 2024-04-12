@@ -41,7 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="IcrudCargo.cs" />
+    <Compile Include="IcrudCategoria.cs" />
+    <Compile Include="IcrudCompra.cs" />
+    <Compile Include="IcrudDetalleCompra.cs" />
+    <Compile Include="IcrudDetalleVenta.cs" />
+    <Compile Include="IcrudPermisos.cs" />
+    <Compile Include="IcrudProveedor.cs" />
+    <Compile Include="IcrudVenta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
