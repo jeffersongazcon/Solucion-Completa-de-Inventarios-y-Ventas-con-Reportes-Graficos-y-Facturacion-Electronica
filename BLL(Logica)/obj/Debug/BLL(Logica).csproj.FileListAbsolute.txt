@@ -20,3 +20,14 @@ C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inven
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\BLL(Logica)\obj\Debug\BLL(Logica).csproj.CopyComplete
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\BLL(Logica)\obj\Debug\BLL(Logica).dll
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\BLL(Logica)\obj\Debug\BLL(Logica).pdb
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\BLL(Logica)\bin\Debug\BLL(Logica).dll
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\BLL(Logica)\bin\Debug\BLL(Logica).pdb
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\BLL(Logica)\bin\Debug\DAL(Datos).dll
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\BLL(Logica)\bin\Debug\Entity(Entidad).dll
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\BLL(Logica)\bin\Debug\DAL(Datos).pdb
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\BLL(Logica)\bin\Debug\Entity(Entidad).pdb
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\BLL(Logica)\obj\Debug\BLL(Logica).csproj.AssemblyReference.cache
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\BLL(Logica)\obj\Debug\BLL(Logica).csproj.CoreCompileInputs.cache
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\BLL(Logica)\obj\Debug\BLL(Logi.F4EB6071.Up2Date
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\BLL(Logica)\obj\Debug\BLL(Logica).dll
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\BLL(Logica)\obj\Debug\BLL(Logica).pdb

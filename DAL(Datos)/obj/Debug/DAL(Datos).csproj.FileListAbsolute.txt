@@ -16,3 +16,12 @@ C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inven
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\DAL(Datos)\obj\Debug\DAL(Datos).csproj.CopyComplete
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\DAL(Datos)\obj\Debug\DAL(Datos).dll
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\DAL(Datos)\obj\Debug\DAL(Datos).pdb
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\DAL(Datos)\bin\Debug\DAL(Datos).dll
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\DAL(Datos)\bin\Debug\DAL(Datos).pdb
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\DAL(Datos)\bin\Debug\Entity(Entidad).dll
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\DAL(Datos)\bin\Debug\Entity(Entidad).pdb
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\DAL(Datos)\obj\Debug\DAL(Datos).csproj.AssemblyReference.cache
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\DAL(Datos)\obj\Debug\DAL(Datos).csproj.CoreCompileInputs.cache
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\DAL(Datos)\obj\Debug\DAL(Datos).csproj.Up2Date
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\DAL(Datos)\obj\Debug\DAL(Datos).dll
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\DAL(Datos)\obj\Debug\DAL(Datos).pdb
