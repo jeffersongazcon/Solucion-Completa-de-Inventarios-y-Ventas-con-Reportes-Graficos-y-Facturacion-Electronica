@@ -11,9 +11,9 @@ using System.Runtime.InteropServices;
 
 namespace proyecto
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -46,17 +46,19 @@ namespace proyecto
         {
             if (txtUser.Text != "User")
             {
-                if (txtpass.Text != "Password") 
+                if (txtpass.Text != "Password")
                 {
                     if (txtpass.Text == "123")
                     {
                         PantallaDeInicio inicio = new PantallaDeInicio();
                         inicio.Show();
                         this.Hide();
+                        inicio.FormClosing += cerrarPantallaDeInicio;
                     }
                 }
                 else msgError("Rellene los campos necesario");
             }
+            else msgError("Rellene los campos necesarios");
 
         }
 
@@ -131,6 +133,12 @@ namespace proyecto
         {
             RealeaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        //Es para que cuando se cierre la pantalla de inicio se cierre este vuelva a el login
+        private void cerrarPantallaDeInicio(object sender, EventArgs e)
+        {
+            this.Show();
         }
 
         private void MensajeDeError_Click(object sender, EventArgs e)

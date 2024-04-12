@@ -6,7 +6,6 @@ C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proye
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\bin\Debug\BLL(Logica).pdb
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\bin\Debug\Entity(Entidad).pdb
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\Presentacion.csproj.AssemblyReference.cache
-C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.Form1.resources
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.Properties.Resources.resources
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\Presentacion.csproj.GenerateResource.cache
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
@@ -17,3 +16,4 @@ C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proye
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.PantallaDeInicio.resources
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.PantallaDeInicio.aa-ER.resources
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\aa-ER\proyecto.resources.dll
+C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.Login.resources
