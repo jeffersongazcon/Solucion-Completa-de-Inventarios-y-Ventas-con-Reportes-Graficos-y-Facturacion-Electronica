@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using BLL_Logica_;
+using Entity_Entidad_;
 
 namespace proyecto
 {
@@ -59,6 +61,8 @@ namespace proyecto
                 else msgError("Rellene los campos necesario");
             }
             else msgError("Rellene los campos necesarios");
+
+            Usuario usario = new BLL_Usuario().Lista().Where(u => u.Documento == txtUser.Text && u.Clave == txtpass.Text).FirstOrDefault();
 
         }
 
