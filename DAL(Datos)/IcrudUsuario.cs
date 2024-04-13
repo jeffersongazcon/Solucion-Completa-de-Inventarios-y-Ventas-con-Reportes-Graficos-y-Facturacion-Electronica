@@ -33,7 +33,7 @@ namespace DAL_Datos_
                             Lista.Add(new Usuario()
                             {
                                 AfinidadUsuario = Convert.ToInt32(leer["AfinidadUsuario"]),
-                                Documento = Convert.ToInt32(leer["Docmento"]),
+                                Documento = leer["Documento"].ToString(),
                                 Nombre = leer["Nombre"].ToString(),
                                 Clave = leer["Clave"].ToString(),
                                 Estado = Convert.ToBoolean(leer["Estado"])
@@ -45,7 +45,7 @@ namespace DAL_Datos_
                 catch (Exception ex)
                 {
                     Lista = new List<Usuario>();
-                    throw;
+                    
                 }
 
             }

@@ -62,7 +62,7 @@ namespace proyecto
             }
             else msgError("Rellene los campos necesarios");
 
-            Usuario usario = new BLL_Usuario().Lista().Where(u => u.Documento == txtUser.Text && u.Clave == txtpass.Text).FirstOrDefault();
+            //Usuario usario = new BLL_Usuario().Lista().Where(u => u.Documento == txtUser.Text && u.Clave == txtpass.Text).FirstOrDefault();
 
         }
 

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace proyecto
 {
@@ -16,6 +17,11 @@ namespace proyecto
         {
             InitializeComponent();
         }
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void RealeaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private static extern void SendMessage(System.IntPtr hwnd, int wmsg, int wparaw, int lparam);
 
         private void PantallaDeInicio_Load(object sender, EventArgs e)
         {
@@ -62,6 +68,12 @@ namespace proyecto
             this.WindowState= FormWindowState.Normal;
             btnRestaurar.Visible = false;
             btnMaximizar.Visible = true;
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            RealeaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }
