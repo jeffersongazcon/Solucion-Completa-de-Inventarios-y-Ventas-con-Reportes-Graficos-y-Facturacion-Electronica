@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conexion.cs" />
     <Compile Include="IcrudCargo.cs" />
     <Compile Include="IcrudCategoria.cs" />
     <Compile Include="IcrudCompra.cs" />
@@ -48,6 +50,7 @@
     <Compile Include="IcrudDetalleVenta.cs" />
     <Compile Include="IcrudPermisos.cs" />
     <Compile Include="IcrudProveedor.cs" />
+    <Compile Include="IcrudUsuario.cs" />
     <Compile Include="IcrudVenta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
