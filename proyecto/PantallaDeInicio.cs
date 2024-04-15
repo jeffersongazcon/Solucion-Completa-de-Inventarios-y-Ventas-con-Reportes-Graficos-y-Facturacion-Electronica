@@ -38,7 +38,7 @@ namespace proyecto
 
             if (BarraDeOpciones.Width == 232)
             {
-                BarraDeOpciones.Width = 70;
+                BarraDeOpciones.Width = 53;
             }
             else
                 BarraDeOpciones.Width = 232;
@@ -74,6 +74,26 @@ namespace proyecto
         {
             RealeaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SubReportes.Visible = false;
+        }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            SubReportes.Visible = true;
+        }
+
+        private void btnReportesCompras_Click(object sender, EventArgs e)
+        {
+            SubReportes.Visible = false;
+        }
+
+        private void BarraDeOpciones_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaDeInicio));
             this.BarraDeOpciones = new System.Windows.Forms.Panel();
+            this.btnProductos = new System.Windows.Forms.Button();
             this.ContenedorInfo = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
@@ -37,6 +38,14 @@
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnElementos = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.btnVenta = new System.Windows.Forms.Button();
+            this.btnCliente = new System.Windows.Forms.Button();
+            this.btnProveedor = new System.Windows.Forms.Button();
+            this.btnReportes = new System.Windows.Forms.Button();
+            this.btnReportesVentas = new System.Windows.Forms.Button();
+            this.btnReportesCompras = new System.Windows.Forms.Button();
+            this.SubReportes = new System.Windows.Forms.Panel();
+            this.BarraDeOpciones.SuspendLayout();
             this.ContenedorInfo.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
@@ -44,13 +53,29 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnElementos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            this.SubReportes.SuspendLayout();
             this.SuspendLayout();
             // 
             // BarraDeOpciones
             // 
             this.BarraDeOpciones.BackColor = System.Drawing.Color.YellowGreen;
+            this.BarraDeOpciones.Controls.Add(this.SubReportes);
+            this.BarraDeOpciones.Controls.Add(this.btnReportes);
+            this.BarraDeOpciones.Controls.Add(this.btnProveedor);
+            this.BarraDeOpciones.Controls.Add(this.btnCliente);
+            this.BarraDeOpciones.Controls.Add(this.btnVenta);
+            this.BarraDeOpciones.Controls.Add(this.btnProductos);
             resources.ApplyResources(this.BarraDeOpciones, "BarraDeOpciones");
             this.BarraDeOpciones.Name = "BarraDeOpciones";
+            this.BarraDeOpciones.Paint += new System.Windows.Forms.PaintEventHandler(this.BarraDeOpciones_Paint);
+            // 
+            // btnProductos
+            // 
+            this.btnProductos.FlatAppearance.BorderSize = 0;
+            this.btnProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.btnProductos, "btnProductos");
+            this.btnProductos.Name = "btnProductos";
+            this.btnProductos.UseVisualStyleBackColor = true;
             // 
             // ContenedorInfo
             // 
@@ -94,6 +119,7 @@
             // btnElementos
             // 
             this.btnElementos.BackColor = System.Drawing.Color.Black;
+            this.btnElementos.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.btnElementos, "btnElementos");
             this.btnElementos.Name = "btnElementos";
             this.btnElementos.TabStop = false;
@@ -106,6 +132,64 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // btnVenta
+            // 
+            this.btnVenta.FlatAppearance.BorderSize = 0;
+            this.btnVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.btnVenta, "btnVenta");
+            this.btnVenta.Name = "btnVenta";
+            this.btnVenta.UseVisualStyleBackColor = true;
+            // 
+            // btnCliente
+            // 
+            this.btnCliente.FlatAppearance.BorderSize = 0;
+            this.btnCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.btnCliente, "btnCliente");
+            this.btnCliente.Name = "btnCliente";
+            this.btnCliente.UseVisualStyleBackColor = true;
+            // 
+            // btnProveedor
+            // 
+            this.btnProveedor.FlatAppearance.BorderSize = 0;
+            this.btnProveedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.btnProveedor, "btnProveedor");
+            this.btnProveedor.Name = "btnProveedor";
+            this.btnProveedor.UseVisualStyleBackColor = true;
+            // 
+            // btnReportes
+            // 
+            this.btnReportes.FlatAppearance.BorderSize = 0;
+            this.btnReportes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.btnReportes, "btnReportes");
+            this.btnReportes.Name = "btnReportes";
+            this.btnReportes.UseVisualStyleBackColor = true;
+            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
+            // 
+            // btnReportesVentas
+            // 
+            this.btnReportesVentas.FlatAppearance.BorderSize = 0;
+            this.btnReportesVentas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.btnReportesVentas, "btnReportesVentas");
+            this.btnReportesVentas.Name = "btnReportesVentas";
+            this.btnReportesVentas.UseVisualStyleBackColor = true;
+            this.btnReportesVentas.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnReportesCompras
+            // 
+            this.btnReportesCompras.FlatAppearance.BorderSize = 0;
+            this.btnReportesCompras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.btnReportesCompras, "btnReportesCompras");
+            this.btnReportesCompras.Name = "btnReportesCompras";
+            this.btnReportesCompras.UseVisualStyleBackColor = true;
+            this.btnReportesCompras.Click += new System.EventHandler(this.btnReportesCompras_Click);
+            // 
+            // SubReportes
+            // 
+            this.SubReportes.Controls.Add(this.btnReportesVentas);
+            this.SubReportes.Controls.Add(this.btnReportesCompras);
+            resources.ApplyResources(this.SubReportes, "SubReportes");
+            this.SubReportes.Name = "SubReportes";
+            // 
             // PantallaDeInicio
             // 
             resources.ApplyResources(this, "$this");
@@ -116,6 +200,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PantallaDeInicio";
             this.Load += new System.EventHandler(this.PantallaDeInicio_Load);
+            this.BarraDeOpciones.ResumeLayout(false);
             this.ContenedorInfo.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
@@ -123,6 +208,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnElementos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            this.SubReportes.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -137,5 +223,13 @@
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnMaximizar;
         private System.Windows.Forms.PictureBox btnRestaurar;
+        private System.Windows.Forms.Button btnProductos;
+        private System.Windows.Forms.Button btnVenta;
+        private System.Windows.Forms.Button btnCliente;
+        private System.Windows.Forms.Button btnReportes;
+        private System.Windows.Forms.Button btnProveedor;
+        private System.Windows.Forms.Button btnReportesCompras;
+        private System.Windows.Forms.Button btnReportesVentas;
+        private System.Windows.Forms.Panel SubReportes;
     }
 }
