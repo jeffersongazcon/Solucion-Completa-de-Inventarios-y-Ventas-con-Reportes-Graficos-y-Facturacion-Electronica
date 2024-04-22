@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaDeInicio));
             this.BarraDeOpciones = new System.Windows.Forms.Panel();
             this.SubReportes = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btnReportesVentas = new System.Windows.Forms.Button();
             this.btnReportesCompras = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
@@ -45,8 +47,6 @@
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnElementos = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.BarraDeOpciones.SuspendLayout();
             this.SubReportes.SuspendLayout();
             this.ContenedorInfo.SuspendLayout();
@@ -79,6 +79,19 @@
             this.SubReportes.Controls.Add(this.btnReportesCompras);
             resources.ApplyResources(this.SubReportes, "SubReportes");
             this.SubReportes.Name = "SubReportes";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Name = "panel3";
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Green;
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
             // 
             // btnReportesVentas
             // 
@@ -167,7 +180,7 @@
             // btnRestaurar
             // 
             resources.ApplyResources(this.btnRestaurar, "btnRestaurar");
-            this.btnRestaurar.BackColor = System.Drawing.Color.White;
+            this.btnRestaurar.BackColor = System.Drawing.Color.Black;
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.TabStop = false;
             this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
@@ -194,19 +207,6 @@
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Green;
-            resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.Name = "panel3";
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // PantallaDeInicio
             // 
