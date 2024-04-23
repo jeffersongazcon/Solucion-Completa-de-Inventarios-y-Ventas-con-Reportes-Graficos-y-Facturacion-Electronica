@@ -40,6 +40,8 @@
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.MensajeDeError = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
@@ -92,7 +94,7 @@
             this.txtpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtpass.Font = new System.Drawing.Font("Georgia", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpass.ForeColor = System.Drawing.Color.Gray;
-            this.txtpass.Location = new System.Drawing.Point(390, 199);
+            this.txtpass.Location = new System.Drawing.Point(390, 184);
             this.txtpass.Name = "txtpass";
             this.txtpass.Size = new System.Drawing.Size(366, 21);
             this.txtpass.TabIndex = 2;
@@ -103,11 +105,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Gigi", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Playbill", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SpringGreen;
-            this.label1.Location = new System.Drawing.Point(519, 47);
+            this.label1.Location = new System.Drawing.Point(554, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 32);
+            this.label1.Size = new System.Drawing.Size(79, 38);
             this.label1.TabIndex = 3;
             this.label1.Text = "LOGIN!";
             // 
@@ -190,12 +192,30 @@
             this.MensajeDeError.Visible = false;
             this.MensajeDeError.Click += new System.EventHandler(this.MensajeDeError_Click);
             // 
-            // Form1
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.LightGreen;
+            this.panel2.Location = new System.Drawing.Point(390, 153);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(382, 5);
+            this.panel2.TabIndex = 11;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.LightGreen;
+            this.panel3.Location = new System.Drawing.Point(390, 211);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(382, 5);
+            this.panel3.TabIndex = 12;
+            // 
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(828, 366);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.MensajeDeError);
             this.Controls.Add(this.btnMinimizar);
             this.Controls.Add(this.btnCerrar);
@@ -207,7 +227,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "Login";
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOGIN";
@@ -235,6 +255,8 @@
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label MensajeDeError;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 

@@ -11,9 +11,10 @@ using System.ComponentModel.Design;
 
 namespace DAL_Datos_
 {
-    public class IcrudUsuario
+    public class IcrudUsuario:ConexionBaseDeUsuario
     {
-        public List<Usuario> Lista() 
+
+        public List<Usuario> Lista()
         {
             List<Usuario> Lista = new List<Usuario>();
             using (SqlConnection conexion = new SqlConnection(Conexion.Vinculo))
@@ -26,7 +27,7 @@ namespace DAL_Datos_
                     cmd.CommandType = CommandType.Text;
                     conexion.Open();
 
-                    using(SqlDataReader leer = cmd.ExecuteReader())
+                    using (SqlDataReader leer = cmd.ExecuteReader())
                     {
                         while (leer.Read())
                         {
@@ -45,11 +46,39 @@ namespace DAL_Datos_
                 catch (Exception ex)
                 {
                     Lista = new List<Usuario>();
-                    
+
                 }
 
             }
             return Lista;
         }
+
+        public bool Login(string user, string password)
+        {
+            using (var conneccion = GetSqlConnection())
+            {
+                conneccion.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = conneccion;
+                    command.CommandText = "select *from Users where LoginName=@User and Password=@pass ";
+                    command.Parameters.AddWithValue("@User",user);
+                    command.Parameters.AddWithValue("@pass", password);
+                    command.CommandType = CommandType.Text;
+                    SqlDataReader reader = command.ExecuteReader();
+                    if (reader.HasRows)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                    
+                    
+                }
+            }
+        }
+
     }
 }

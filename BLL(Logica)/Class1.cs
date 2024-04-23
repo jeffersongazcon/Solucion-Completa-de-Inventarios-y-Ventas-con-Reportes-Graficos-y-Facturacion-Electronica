@@ -8,5 +8,6 @@ namespace BLL_Logica_
 {
     public class Class1
     {
+
     }
 }

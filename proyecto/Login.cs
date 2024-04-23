@@ -50,17 +50,24 @@ namespace proyecto
             {
                 if (txtpass.Text != "Password")
                 {
-                    if (txtpass.Text == "123")
+                    BLL_Usuario bLL_Usuario = new BLL_Usuario();
+                    var validLogin = bLL_Usuario.Login(txtUser.Text,txtpass.Text);
+                    if (validLogin == true)
                     {
-                        PantallaDeInicio inicio = new PantallaDeInicio();
-                        inicio.Show();
+                        PantallaDeInicio mainMenu = new PantallaDeInicio();
+                        mainMenu.Show();
                         this.Hide();
-                        inicio.FormClosing += cerrarPantallaDeInicio;
+                    }
+                    else
+                    {
+                        msgError("User o password incorrrectos");
+                        txtpass.Clear();
+                        txtpass.Focus();
                     }
                 }
-                else msgError("Rellene los campos necesario");
+                else msgError("Rellene el campo de Password");
             }
-            else msgError("Rellene los campos necesarios");
+            else msgError("Rellene el campo User");
 
             //Usuario usario = new BLL_Usuario().Lista().Where(u => u.Documento == txtUser.Text && u.Clave == txtpass.Text).FirstOrDefault();
 
