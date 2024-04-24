@@ -62,7 +62,9 @@ namespace proyecto
                     {
                         msgError("User o password incorrrectos");
                         txtpass.Clear();
-                        txtpass.Focus();
+                        txtUser.Clear();
+                        txtUser.Focus();
+                        
                     }
                 }
                 else msgError("Rellene el campo de Password");

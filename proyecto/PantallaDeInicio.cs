@@ -47,8 +47,13 @@ namespace proyecto
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             Login inicio = new Login();
-            inicio.Show();
-            this.Hide();
+            var resultado = MessageBox.Show("Estas seguro de cerrar el programa?","DuendeMalo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resultado == DialogResult.Yes)
+            {
+                inicio.Show();
+                this.Hide();
+            }
+
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

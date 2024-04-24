@@ -42,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Conexion.cs" />
     <Compile Include="ConexionBaseDeUsuario.cs" />
     <Compile Include="IcrudCargo.cs" />
     <Compile Include="IcrudCategoria.cs" />

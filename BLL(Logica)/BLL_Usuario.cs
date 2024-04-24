@@ -15,10 +15,6 @@ namespace BLL_Logica_
         {
             return DatosUsuario.Login(username, password);
         }
-        public List<Usuario> Lista()
-        {
-            return DatosUsuario.Lista();
-        }
     }
 
 
