@@ -35,7 +35,7 @@ namespace proyecto
 
         private void btnElementos_Click(object sender, EventArgs e)
         {
-
+            
             if (BarraDeOpciones.Width == 232)
             {
                 BarraDeOpciones.Width = 53;
@@ -46,14 +46,9 @@ namespace proyecto
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            Login inicio = new Login();
-            var resultado = MessageBox.Show("Estas seguro de cerrar el programa?","DuendeMalo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (resultado == DialogResult.Yes)
-            {
-                inicio.Show();
-                this.Hide();
-            }
-
+            Confirmacion confirmacion = new Confirmacion();
+            confirmacion.Show();
+            this.Hide();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
