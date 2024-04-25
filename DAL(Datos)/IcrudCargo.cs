@@ -9,9 +9,9 @@ namespace DAL_Datos_
 {
     public interface IcrudCargo
     {
-        string Add(Cargo cargo);
-        string Update(Cargo cargo);
-        string Delete(Cargo cargo);
-        List<Cargo> GetAll();
+        string Add(cargo cargo);
+        string Update(cargo cargo);
+        string Delete(cargo cargo);
+        List<cargo> GetAll();
     }
 }

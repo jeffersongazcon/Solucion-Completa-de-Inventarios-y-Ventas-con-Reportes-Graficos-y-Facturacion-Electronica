@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entity_Entidad_
 {
-    public class Cargo
+    public class cargo
     {
         public int AfinidadDeCargo { get; set; }
         public string NombreDelCargo { get; set; }

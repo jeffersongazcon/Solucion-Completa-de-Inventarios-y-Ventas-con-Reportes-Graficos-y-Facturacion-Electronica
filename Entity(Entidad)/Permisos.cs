@@ -11,6 +11,6 @@ namespace Entity_Entidad_
         public int AfinidadPermiso { get; set; }
         public string TipoDeMenu { get; set; }
         public string FechaRegistro { get; set; }
-        public Cargo TipoDeCargo { get; set; }
+        public cargo TipoDeCargo { get; set; }
     }
 }

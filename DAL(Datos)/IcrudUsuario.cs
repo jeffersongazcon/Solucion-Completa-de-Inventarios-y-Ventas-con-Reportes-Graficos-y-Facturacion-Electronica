@@ -24,10 +24,19 @@ namespace DAL_Datos_
                     command.CommandText = "select *from Users where LoginName=@User and Password=@pass ";
                     command.Parameters.AddWithValue("@User",user);
                     command.Parameters.AddWithValue("@pass", password);
+                    command.Parameters.AddWithValue("@id", Usuario.IdUser);
                     command.CommandType = CommandType.Text;
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.HasRows)
                     {
+                        while (reader.Read())
+                        {
+                            Usuario.IdUser = reader.GetInt32(0);
+                            Usuario.FirsName = reader.GetString(3);
+                            Usuario.LastName = reader.GetString(4);
+                            Usuario.Cargo = reader.GetString(5);
+                            Usuario.Email = reader.GetString(6);
+                        }
                         return true;
                     }
                     else

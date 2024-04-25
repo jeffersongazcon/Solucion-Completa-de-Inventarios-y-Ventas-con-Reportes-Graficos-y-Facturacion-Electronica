@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace Entity_Entidad_
 {
-    public class Usuario
+    public static class Usuario
     {
 
         public static int IdUser { get; set; }
-        public static int FirsName { get; set; }
-
+        public static string FirsName { get; set; }
+        public static string LastName { get; set; }
+        public static string Cargo { get; set; }
+        public static string Email { get; set; }
     }
 }
