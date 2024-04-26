@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EDB3CDD9-1D5E-4346-BEAC-238D8BBB7000}|Entity(Entidad)\\Entity(Entidad).csproj|c:\\users\\daniel\\onedrive\\documentos\\proyecto p3\\sistema-de-inventario-y-ventas\\entity(entidad)\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDB3CDD9-1D5E-4346-BEAC-238D8BBB7000}|Entity(Entidad)\\Entity(Entidad).csproj|c:\\users\\daniel\\onedrive\\documentos\\proyecto p3\\sistema-de-inventario-y-ventas\\entity(entidad)\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDB3CDD9-1D5E-4346-BEAC-238D8BBB7000}|Entity(Entidad)\\Entity(Entidad).csproj|solutionrelative:entity(entidad)\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C567C05-0112-4889-B710-B2B30DA51AB6}|DAL(Datos)\\DAL(Datos).csproj|C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\dal(datos)\\icrudcargo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C567C05-0112-4889-B710-B2B30DA51AB6}|DAL(Datos)\\DAL(Datos).csproj|solutionrelative:dal(datos)\\icrudcargo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDB3CDD9-1D5E-4346-BEAC-238D8BBB7000}|Entity(Entidad)\\Entity(Entidad).csproj|C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\entity(entidad)\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDB3CDD9-1D5E-4346-BEAC-238D8BBB7000}|Entity(Entidad)\\Entity(Entidad).csproj|solutionrelative:entity(entidad)\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7220802E-819A-4A65-A965-F64CC8229E6B}|proyecto\\Presentacion.csproj|C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\proyecto\\confirmacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7220802E-819A-4A65-A965-F64CC8229E6B}|proyecto\\Presentacion.csproj|solutionrelative:proyecto\\confirmacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7220802E-819A-4A65-A965-F64CC8229E6B}|proyecto\\Presentacion.csproj|C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\proyecto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7220802E-819A-4A65-A965-F64CC8229E6B}|proyecto\\Presentacion.csproj|solutionrelative:proyecto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9C567C05-0112-4889-B710-B2B30DA51AB6}|DAL(Datos)\\DAL(Datos).csproj|C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\dal(datos)\\icrudventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -18,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,20 +50,67 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IcrudCargo.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\IcrudCargo.cs",
+              "RelativeDocumentMoniker": "DAL(Datos)\\IcrudCargo.cs",
+              "ToolTip": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\IcrudCargo.cs",
+              "RelativeToolTip": "DAL(Datos)\\IcrudCargo.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAgwAsAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T00:00:20.421Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\Entity(Entidad)\\Usuario.cs",
+              "RelativeDocumentMoniker": "Entity(Entidad)\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\Entity(Entidad)\\Usuario.cs",
+              "RelativeToolTip": "Entity(Entidad)\\Usuario.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAAAgAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T23:58:41.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Confirmacion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\proyecto\\Confirmacion.cs",
+              "RelativeDocumentMoniker": "proyecto\\Confirmacion.cs",
+              "ToolTip": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\proyecto\\Confirmacion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "proyecto\\Confirmacion.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T23:57:43.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\proyecto\\Program.cs",
+              "RelativeDocumentMoniker": "proyecto\\Program.cs",
+              "ToolTip": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\proyecto\\Program.cs",
+              "RelativeToolTip": "proyecto\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T23:57:34.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Venta.cs",
               "DocumentMoniker": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\Entity(Entidad)\\Venta.cs",
               "RelativeDocumentMoniker": "Entity(Entidad)\\Venta.cs",
               "ToolTip": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\Entity(Entidad)\\Venta.cs",
               "RelativeToolTip": "Entity(Entidad)\\Venta.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwAsAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T18:57:08.194Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T18:57:08.194Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "IcrudVenta.cs",
               "DocumentMoniker": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\IcrudVenta.cs",
               "RelativeDocumentMoniker": "DAL(Datos)\\IcrudVenta.cs",
