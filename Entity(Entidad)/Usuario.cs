@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entity_Entidad_
 {
-    public static class Usuario
+    public class Usuario
     {
 
         public static int IdUser { get; set; }

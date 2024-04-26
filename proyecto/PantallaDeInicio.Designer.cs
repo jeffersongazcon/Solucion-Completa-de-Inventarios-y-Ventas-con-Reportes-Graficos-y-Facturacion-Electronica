@@ -30,6 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaDeInicio));
             this.BarraDeOpciones = new System.Windows.Forms.Panel();
+            this.PanelInformacion = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblCargo = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
             this.SubReportes = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -48,6 +53,8 @@
             this.btnElementos = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.BarraDeOpciones.SuspendLayout();
+            this.PanelInformacion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SubReportes.SuspendLayout();
             this.ContenedorInfo.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -61,6 +68,7 @@
             // BarraDeOpciones
             // 
             this.BarraDeOpciones.BackColor = System.Drawing.Color.YellowGreen;
+            this.BarraDeOpciones.Controls.Add(this.PanelInformacion);
             this.BarraDeOpciones.Controls.Add(this.SubReportes);
             this.BarraDeOpciones.Controls.Add(this.btnReportes);
             this.BarraDeOpciones.Controls.Add(this.btnProveedor);
@@ -70,6 +78,37 @@
             resources.ApplyResources(this.BarraDeOpciones, "BarraDeOpciones");
             this.BarraDeOpciones.Name = "BarraDeOpciones";
             this.BarraDeOpciones.Paint += new System.Windows.Forms.PaintEventHandler(this.BarraDeOpciones_Paint);
+            // 
+            // PanelInformacion
+            // 
+            this.PanelInformacion.BackColor = System.Drawing.Color.GreenYellow;
+            this.PanelInformacion.Controls.Add(this.pictureBox1);
+            this.PanelInformacion.Controls.Add(this.lblEmail);
+            this.PanelInformacion.Controls.Add(this.lblCargo);
+            this.PanelInformacion.Controls.Add(this.lblNombre);
+            resources.ApplyResources(this.PanelInformacion, "PanelInformacion");
+            this.PanelInformacion.Name = "PanelInformacion";
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblEmail
+            // 
+            resources.ApplyResources(this.lblEmail, "lblEmail");
+            this.lblEmail.Name = "lblEmail";
+            // 
+            // lblCargo
+            // 
+            resources.ApplyResources(this.lblCargo, "lblCargo");
+            this.lblCargo.Name = "lblCargo";
+            // 
+            // lblNombre
+            // 
+            resources.ApplyResources(this.lblNombre, "lblNombre");
+            this.lblNombre.Name = "lblNombre";
             // 
             // SubReportes
             // 
@@ -219,6 +258,9 @@
             this.Name = "PantallaDeInicio";
             this.Load += new System.EventHandler(this.PantallaDeInicio_Load);
             this.BarraDeOpciones.ResumeLayout(false);
+            this.PanelInformacion.ResumeLayout(false);
+            this.PanelInformacion.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.SubReportes.ResumeLayout(false);
             this.ContenedorInfo.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -251,5 +293,10 @@
         private System.Windows.Forms.Panel SubReportes;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lblCargo;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel PanelInformacion;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblNombre;
     }
 }

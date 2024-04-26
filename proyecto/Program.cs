@@ -17,7 +17,7 @@ namespace proyecto
             Console.Write("el gato negro");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PantallaDeInicio());
+            Application.Run(new Login());
         }
     }
 }

@@ -35,14 +35,14 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.panelButton = new System.Windows.Forms.Panel();
             this.panelMessage = new System.Windows.Forms.Panel();
+            this.pictureMessage = new System.Windows.Forms.PictureBox();
             this.panelCaption = new System.Windows.Forms.Panel();
             this.pictureCaption = new System.Windows.Forms.PictureBox();
-            this.pictureMessage = new System.Windows.Forms.PictureBox();
             this.panelButton.SuspendLayout();
             this.panelMessage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureMessage)).BeginInit();
             this.panelCaption.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureCaption)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureMessage)).BeginInit();
             this.SuspendLayout();
             // 
             // labelMessage
@@ -115,6 +115,16 @@
             this.panelMessage.TabIndex = 6;
             this.panelMessage.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMessage_Paint);
             // 
+            // pictureMessage
+            // 
+            this.pictureMessage.Image = ((System.Drawing.Image)(resources.GetObject("pictureMessage.Image")));
+            this.pictureMessage.Location = new System.Drawing.Point(8, 53);
+            this.pictureMessage.Name = "pictureMessage";
+            this.pictureMessage.Size = new System.Drawing.Size(51, 44);
+            this.pictureMessage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureMessage.TabIndex = 1;
+            this.pictureMessage.TabStop = false;
+            // 
             // panelCaption
             // 
             this.panelCaption.BackColor = System.Drawing.Color.YellowGreen;
@@ -136,16 +146,6 @@
             this.pictureCaption.TabIndex = 1;
             this.pictureCaption.TabStop = false;
             // 
-            // pictureMessage
-            // 
-            this.pictureMessage.Image = ((System.Drawing.Image)(resources.GetObject("pictureMessage.Image")));
-            this.pictureMessage.Location = new System.Drawing.Point(8, 53);
-            this.pictureMessage.Name = "pictureMessage";
-            this.pictureMessage.Size = new System.Drawing.Size(51, 44);
-            this.pictureMessage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureMessage.TabIndex = 1;
-            this.pictureMessage.TabStop = false;
-            // 
             // Confirmacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -155,16 +155,17 @@
             this.Controls.Add(this.panelButton);
             this.Controls.Add(this.panelMessage);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Confirmacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Confirmacion";
             this.panelButton.ResumeLayout(false);
             this.panelMessage.ResumeLayout(false);
             this.panelMessage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureMessage)).EndInit();
             this.panelCaption.ResumeLayout(false);
             this.panelCaption.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureCaption)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureMessage)).EndInit();
             this.ResumeLayout(false);
 
         }

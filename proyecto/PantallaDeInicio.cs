@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Entity_Entidad_;
 
 namespace proyecto
 {
@@ -25,7 +26,7 @@ namespace proyecto
 
         private void PantallaDeInicio_Load(object sender, EventArgs e)
         {
-
+            CargarInfomacionDeUsuario();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -90,6 +91,14 @@ namespace proyecto
         {
             SubReportes.Visible = false;
         }
+
+        private void CargarInfomacionDeUsuario()
+        {
+            lblNombre.Text = Usuario.FirsName+", "+Usuario.LastName;
+            lblCargo.Text = Usuario.Cargo;
+            lblEmail.Text = Usuario.Email;
+        }
+
 
         private void BarraDeOpciones_Paint(object sender, PaintEventArgs e)
         {
