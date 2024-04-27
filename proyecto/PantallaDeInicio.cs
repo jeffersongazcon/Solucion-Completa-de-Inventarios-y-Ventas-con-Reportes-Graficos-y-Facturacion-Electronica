@@ -94,7 +94,7 @@ namespace proyecto
 
         private void CargarInfomacionDeUsuario()
         {
-            lblNombre.Text = Usuario.FirsName+", "+Usuario.LastName;
+            lblNombre.Text = Usuario.FirsName+"  "+Usuario.LastName;
             lblCargo.Text = Usuario.Cargo;
             lblEmail.Text = Usuario.Email;
         }

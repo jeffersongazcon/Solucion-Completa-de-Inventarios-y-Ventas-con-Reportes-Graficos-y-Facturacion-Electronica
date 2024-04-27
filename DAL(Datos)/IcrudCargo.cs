@@ -7,11 +7,9 @@ using System.Threading.Tasks;
 
 namespace DAL_Datos_
 {
-    public interface IcrudCargo
+    public struct IcrudCargo
     {
-        string Add(cargo cargo);
-        string Update(cargo cargo);
-        string Delete(cargo cargo);
-        List<cargo> GetAll();
+        public const string Administrador = "Administrator";
+        public const string Recepcionista = "Recepcionista";
     }
 }
