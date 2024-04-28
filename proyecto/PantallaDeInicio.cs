@@ -17,6 +17,7 @@ namespace proyecto
         public PantallaDeInicio()
         {
             InitializeComponent();
+            bienvenidaUsuario.BringToFront();
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -114,5 +115,16 @@ namespace proyecto
         {
 
         }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            accionProducto();
+        }
+
+        private void accionProducto()
+        {
+            controlProductos.BringToFront();
+        }
+
     }
 }
