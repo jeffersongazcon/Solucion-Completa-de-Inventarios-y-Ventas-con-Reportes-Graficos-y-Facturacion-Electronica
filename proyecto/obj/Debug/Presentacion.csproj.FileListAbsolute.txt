@@ -43,3 +43,5 @@ C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inven
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\obj\Debug\Presentacion.csproj.CopyComplete
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.Confirmacion.resources
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.PantallaDelBotonClientes.resources
+C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.bienvenidaDeUsuario.resources
+C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.controlDeProductos.resources
