@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bienvenidaDeUsuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="bienvenidaDeUsuario.Designer.cs">
+      <DependentUpon>bienvenidaDeUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Confirmacion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Confirmacion.Designer.cs">
       <DependentUpon>Confirmacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="controlDeProductos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controlDeProductos.Designer.cs">
+      <DependentUpon>controlDeProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -72,8 +84,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="bienvenidaDeUsuario.resx">
+      <DependentUpon>bienvenidaDeUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Confirmacion.resx">
       <DependentUpon>Confirmacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controlDeProductos.resx">
+      <DependentUpon>controlDeProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
