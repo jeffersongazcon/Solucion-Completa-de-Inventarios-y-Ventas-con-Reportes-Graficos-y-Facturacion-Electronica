@@ -64,6 +64,12 @@
     <Compile Include="PantallaDeInicio.Designer.cs">
       <DependentUpon>PantallaDeInicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="PantallaDelBotonClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaDelBotonClientes.Designer.cs">
+      <DependentUpon>PantallaDelBotonClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Confirmacion.resx">
@@ -77,6 +83,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PantallaDeInicio.resx">
       <DependentUpon>PantallaDeInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaDelBotonClientes.resx">
+      <DependentUpon>PantallaDelBotonClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

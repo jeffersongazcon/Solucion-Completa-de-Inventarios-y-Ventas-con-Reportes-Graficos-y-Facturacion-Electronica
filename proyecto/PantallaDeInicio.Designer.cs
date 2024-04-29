@@ -52,6 +52,7 @@
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnElementos = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.panelInfo = new System.Windows.Forms.Panel();
             this.BarraDeOpciones.SuspendLayout();
             this.PanelInformacion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -175,6 +176,7 @@
             resources.ApplyResources(this.btnCliente, "btnCliente");
             this.btnCliente.Name = "btnCliente";
             this.btnCliente.UseVisualStyleBackColor = true;
+            this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
             // 
             // btnVenta
             // 
@@ -186,14 +188,17 @@
             // 
             // btnProductos
             // 
+            this.btnProductos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProductos.FlatAppearance.BorderSize = 0;
             this.btnProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.btnProductos, "btnProductos");
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.UseVisualStyleBackColor = true;
+            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 
             // ContenedorInfo
             // 
+            this.ContenedorInfo.Controls.Add(this.panelInfo);
             this.ContenedorInfo.Controls.Add(this.panel1);
             resources.ApplyResources(this.ContenedorInfo, "ContenedorInfo");
             this.ContenedorInfo.Name = "ContenedorInfo";
@@ -247,6 +252,12 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // panelInfo
+            // 
+            resources.ApplyResources(this.panelInfo, "panelInfo");
+            this.panelInfo.Name = "panelInfo";
+            this.panelInfo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelInfo_Paint);
+            // 
             // PantallaDeInicio
             // 
             resources.ApplyResources(this, "$this");
@@ -298,5 +309,6 @@
         private System.Windows.Forms.Panel PanelInformacion;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Panel panelInfo;
     }
 }

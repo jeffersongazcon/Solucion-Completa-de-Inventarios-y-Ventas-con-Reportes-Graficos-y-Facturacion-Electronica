@@ -99,6 +99,21 @@ namespace proyecto
             lblEmail.Text = Usuario.Email;
         }
 
+        private void AbrirFormHija(object formhija)
+        {
+            if(this.panelInfo.Controls.Count > 0)
+            {
+                this.panelInfo.Controls.RemoveAt(0);
+            }
+            
+            Form fh = formhija as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.panelInfo.Controls.Add(fh);
+            this.panelInfo.Tag = fh;
+            fh.Show();
+            
+        }
 
         private void BarraDeOpciones_Paint(object sender, PaintEventArgs e)
         {
@@ -111,6 +126,21 @@ namespace proyecto
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new Producto());
+        }
+
+        private void btnCliente_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new PantallaDelBotonClientes());
+        }
+
+        private void panelInfo_Paint(object sender, PaintEventArgs e)
         {
 
         }

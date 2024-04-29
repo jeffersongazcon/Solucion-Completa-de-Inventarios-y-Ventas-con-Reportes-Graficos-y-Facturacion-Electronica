@@ -7,6 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using Entity_Entidad_;
 using System.ComponentModel.Design;
+using System.Security.Cryptography.X509Certificates;
 
 
 namespace DAL_Datos_
@@ -44,9 +45,12 @@ namespace DAL_Datos_
                         return false;
                     }
                     
-                    
+
                 }
+                
             }
+            
+
         }
 
     }
