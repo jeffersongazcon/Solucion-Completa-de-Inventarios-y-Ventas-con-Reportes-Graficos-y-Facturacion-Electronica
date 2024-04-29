@@ -42,17 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CategoriaRepositorio.cs" />
+    <Compile Include="CompraRepositorio.cs" />
     <Compile Include="ConexionBaseDeUsuario.cs" />
+    <Compile Include="DetalleCompraRepositorio.cs" />
+    <Compile Include="DetalleVentaRepositorio.cs" />
+    <Compile Include="IcrudBase.cs" />
     <Compile Include="IcrudCargo.cs" />
-    <Compile Include="IcrudCategoria.cs" />
-    <Compile Include="IcrudCompra.cs" />
-    <Compile Include="IcrudDetalleCompra.cs" />
-    <Compile Include="IcrudDetalleVenta.cs" />
-    <Compile Include="IcrudPermisos.cs" />
-    <Compile Include="IcrudProveedor.cs" />
     <Compile Include="IcrudUsuario.cs" />
-    <Compile Include="IcrudVenta.cs" />
+    <Compile Include="PermisosRepositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProveedorRepositorio.cs" />
+    <Compile Include="VentaRepositorio.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entity%28Entidad%29\Entity%28Entidad%29.csproj">

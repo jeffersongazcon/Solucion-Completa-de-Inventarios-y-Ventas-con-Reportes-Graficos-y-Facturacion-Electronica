@@ -45,3 +45,28 @@ C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proye
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.PantallaDelBotonClientes.resources
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.bienvenidaDeUsuario.resources
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.controlDeProductos.resources
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\bin\Debug\proyecto.exe.config
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\bin\Debug\proyecto.exe
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\bin\Debug\proyecto.pdb
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\bin\Debug\aa-ER\proyecto.resources.dll
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\bin\Debug\BLL(Logica).dll
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\bin\Debug\Entity(Entidad).dll
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\bin\Debug\DAL(Datos).dll
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\bin\Debug\BLL(Logica).pdb
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\bin\Debug\Entity(Entidad).pdb
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\bin\Debug\DAL(Datos).pdb
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.bienvenidaDeUsuario.resources
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.Confirmacion.resources
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.controlDeProductos.resources
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.Login.resources
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.PantallaDeInicio.resources
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.PantallaDelBotonClientes.resources
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.Properties.Resources.resources
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.PantallaDeInicio.aa-ER.resources
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\aa-ER\proyecto.resources.dll
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\Presenta.BC77CD05.Up2Date
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.exe
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.pdb

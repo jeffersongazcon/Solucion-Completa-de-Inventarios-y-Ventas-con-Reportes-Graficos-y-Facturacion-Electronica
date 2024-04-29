@@ -44,14 +44,8 @@ namespace DAL_Datos_
                     {
                         return false;
                     }
-                    
-
                 }
-                
             }
-            
-
         }
-
     }
 }
