@@ -54,7 +54,7 @@ namespace proyecto
                     var validLogin = bLL_Usuario.Login(txtUser.Text,txtpass.Text);
                     if (validLogin == true)
                     {
-                        PantallaDeInicio mainMenu = new PantallaDeInicio();
+                        FormMenuPrincipal mainMenu = new FormMenuPrincipal();
                         mainMenu.Show();
                         this.Hide();
                     }

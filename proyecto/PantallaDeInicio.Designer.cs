@@ -46,13 +46,13 @@
             this.btnVenta = new System.Windows.Forms.Button();
             this.btnProductos = new System.Windows.Forms.Button();
             this.ContenedorInfo = new System.Windows.Forms.Panel();
+            this.panelInfo = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnElementos = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.panelInfo = new System.Windows.Forms.Panel();
             this.BarraDeOpciones.SuspendLayout();
             this.PanelInformacion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -203,6 +203,12 @@
             resources.ApplyResources(this.ContenedorInfo, "ContenedorInfo");
             this.ContenedorInfo.Name = "ContenedorInfo";
             // 
+            // panelInfo
+            // 
+            resources.ApplyResources(this.panelInfo, "panelInfo");
+            this.panelInfo.Name = "panelInfo";
+            this.panelInfo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelInfo_Paint);
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnMaximizar);
@@ -251,12 +257,6 @@
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            // 
-            // panelInfo
-            // 
-            resources.ApplyResources(this.panelInfo, "panelInfo");
-            this.panelInfo.Name = "panelInfo";
-            this.panelInfo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelInfo_Paint);
             // 
             // PantallaDeInicio
             // 

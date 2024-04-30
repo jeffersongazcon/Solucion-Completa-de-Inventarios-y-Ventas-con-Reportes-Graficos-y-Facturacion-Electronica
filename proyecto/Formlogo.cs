@@ -7,14 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
+using Entity_Entidad_;
 
 namespace proyecto
 {
-    public partial class bienvenidaDeUsuario : UserControl
+    public partial class FormLogo : Form
     {
-        public bienvenidaDeUsuario()
+        public FormLogo()
         {
             InitializeComponent();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL_Usuario.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="BLL_Listar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
