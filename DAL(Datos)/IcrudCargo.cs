@@ -11,5 +11,6 @@ namespace DAL_Datos_
     {
         public const string Administrador = "Administrator";
         public const string Recepcionista = "Recepcionista";
+        public const string Cliente = "Cliente";
     }
 }
