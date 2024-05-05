@@ -16,16 +16,26 @@ namespace proyecto
 {
     public partial class FormListaClientes : Form
     {
+        private readonly BLL_Cache _usuarioBLL;
         DataSet dsTabla;
         BLL_Listar dq = new BLL_Listar();
         int PagInicio = 1, indice = 0, NumFilas = 10, PagFinal;
         public FormListaClientes()
         {
             InitializeComponent();
+            _usuarioBLL = new BLL_Cache();
+            LoadUsuarios();
             PagFinal = NumFilas;
             CargarDG();
         }
-       
+
+        private void LoadUsuarios()
+        {
+            var dataTable = _usuarioBLL.GetAllUsuarios();
+            dataGridView1.DataSource = dataTable;
+        }
+
+
         private void CargarDG()
         {
             Usuario.inicio = PagInicio;
@@ -54,7 +64,7 @@ namespace proyecto
 
         private void FormListaClientes_Load(object sender, EventArgs e)
         {
-            //InsertarFilas();
+            
         }
         
 
@@ -72,41 +82,58 @@ namespace proyecto
             CargarDG();
         }
 
-        private void btnEditar_Click(object sender, EventArgs e)
+        private void btnEliminar_Click(object sender, EventArgs e)
         {
-            FormMantCliente frm = new FormMantCliente();
             if (dataGridView1.SelectedRows.Count > 0)
-            {               
-                frm.txtid.Text= dataGridView1.CurrentRow.Cells[0].Value.ToString();
-                frm.txtLoginName.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-                frm.txtPassword.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-                frm.txtFirsName.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-                frm.txtLastName.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            {
+                var selectedRow = dataGridView1.SelectedRows[0];
+                var idUser = Convert.ToInt32(selectedRow.Cells["UserID"].Value);
 
-                frm.ShowDialog();
-             
+                var confirmResult = MessageBox.Show("¿Estás seguro de que quieres eliminar este usuario?", "Confirmar eliminación", MessageBoxButtons.YesNo);
+
+                if (confirmResult == DialogResult.Yes)
+                {
+                    _usuarioBLL.DeleteUsuario(idUser);
+                    LoadUsuarios(); // Recargar cuando se elimina un usuario
+                }
             }
             else
-                MessageBox.Show("seleccione una fila por favor");
+            {
+                MessageBox.Show("Por favor, seleccione un usuario para eliminar.");
+            }
         }
 
-        private void btnNuevo_Click(object sender, EventArgs e)
+        private void btnEditar_Click(object sender, EventArgs e) // sender es el parámetro estándar para métodos de evento
         {
-            FormMantCliente frm = new FormMantCliente();
-            frm.ShowDialog();
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                var selectedRow = dataGridView1.SelectedRows[0];
+                var UserID = Convert.ToInt32(selectedRow.Cells["UserID"].Value);
+                var form = new FormMantCliente(UserID);
+
+                
+                form.OnSaved += (src, args) => LoadUsuarios(); 
+                form.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Por favor, seleccione un usuario para editar.");
+            }
         }
 
 
-        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void btnNuevo_Click(object sender, EventArgs e) 
         {
-            FormMembresia frm = Owner as FormMembresia;
-            //FormMembresia frm = new FormMembresia();
+            var form = new FormMantCliente();
 
-            frm.txtid.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            frm.txtnombre.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            frm.txtapellido.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            this.Close();
+            
+            form.OnSaved += (src, args) => LoadUsuarios(); 
+            form.ShowDialog();
         }
+
+
+
+
 
 
         

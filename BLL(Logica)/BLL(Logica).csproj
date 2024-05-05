@@ -52,6 +52,7 @@
     <Compile Include="BLL_Usuario.cs" />
     <Compile Include="BLL_Listar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BLL_Cache.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL%28Datos%29\DAL%28Datos%29.csproj">
