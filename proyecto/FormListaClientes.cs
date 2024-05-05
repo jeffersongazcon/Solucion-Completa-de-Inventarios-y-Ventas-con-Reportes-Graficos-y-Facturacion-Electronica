@@ -78,10 +78,10 @@ namespace proyecto
             if (dataGridView1.SelectedRows.Count > 0)
             {               
                 frm.txtid.Text= dataGridView1.CurrentRow.Cells[0].Value.ToString();
-                frm.txtnombre.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-                frm.txtapellido.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-                frm.txtdireccion.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-                frm.txttelefono.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+                frm.txtLoginName.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                frm.txtPassword.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                frm.txtFirsName.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                frm.txtLastName.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
 
                 frm.ShowDialog();
              
@@ -107,6 +107,7 @@ namespace proyecto
             frm.txtapellido.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             this.Close();
         }
+
 
         
     }

@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,6 +47,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Confirmacion.cs">
@@ -63,6 +69,12 @@
     </Compile>
     <Compile Include="Form1.designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeBienvenida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeBienvenida.Designer.cs">
+      <DependentUpon>FormDeBienvenida.cs</DependentUpon>
     </Compile>
     <Compile Include="FormListaClientes.cs">
       <SubType>Form</SubType>
@@ -100,18 +112,6 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="PantallaDeInicio.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PantallaDeInicio.Designer.cs">
-      <DependentUpon>PantallaDeInicio.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PantallaDelBotonClientes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PantallaDelBotonClientes.Designer.cs">
-      <DependentUpon>PantallaDelBotonClientes.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Confirmacion.resx">
@@ -122,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeBienvenida.resx">
+      <DependentUpon>FormDeBienvenida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormListaClientes.resx">
       <DependentUpon>FormListaClientes.cs</DependentUpon>
@@ -141,15 +144,6 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PantallaDeInicio.aa-ER.resx">
-      <DependentUpon>PantallaDeInicio.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PantallaDeInicio.resx">
-      <DependentUpon>PantallaDeInicio.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PantallaDelBotonClientes.resx">
-      <DependentUpon>PantallaDelBotonClientes.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -160,6 +154,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

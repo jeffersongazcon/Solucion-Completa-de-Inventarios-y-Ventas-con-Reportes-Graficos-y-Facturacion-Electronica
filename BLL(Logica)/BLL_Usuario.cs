@@ -10,7 +10,11 @@ namespace BLL_Logica_
 {
     public class BLL_Usuario
     {
+
+
         private IcrudUsuario DatosUsuario = new IcrudUsuario();
+
+
         public bool Login(string username, string password)
         {
             return DatosUsuario.Login(username, password);

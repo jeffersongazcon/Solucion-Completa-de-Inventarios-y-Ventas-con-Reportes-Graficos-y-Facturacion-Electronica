@@ -14,6 +14,7 @@ namespace DAL_Datos_
 {
     public class IcrudUsuario:ConexionBaseDeUsuario
     {
+
         public bool Login(string user, string password)
         {
             using (var conneccion = GetSqlConnection())
@@ -33,6 +34,8 @@ namespace DAL_Datos_
                         while (reader.Read())
                         {
                             Usuario.IdUser = reader.GetInt32(0);
+                            Usuario.LoginName = reader.GetString(1);
+                            Usuario.Password = reader.GetString(2);
                             Usuario.FirsName = reader.GetString(3);
                             Usuario.LastName = reader.GetString(4);
                             Usuario.Cargo = reader.GetString(5);

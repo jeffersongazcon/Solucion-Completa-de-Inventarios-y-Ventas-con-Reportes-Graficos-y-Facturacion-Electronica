@@ -12,7 +12,7 @@ using Entity_Entidad_;
 
 namespace proyecto
 {
-    public partial class FormMantCliente : Form
+    public partial class FormMantCliente : Form 
     {
         public FormMantCliente()
         {

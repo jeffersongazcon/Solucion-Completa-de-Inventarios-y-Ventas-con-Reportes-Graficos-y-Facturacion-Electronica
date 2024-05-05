@@ -54,6 +54,9 @@ namespace proyecto
                     var validLogin = bLL_Usuario.Login(txtUser.Text,txtpass.Text);
                     if (validLogin == true)
                     {
+                        this.Hide();
+                        FormDeBienvenida bienveni = new FormDeBienvenida();
+                        bienveni.ShowDialog();
                         FormMenuPrincipal mainMenu = new FormMenuPrincipal();
                         mainMenu.Show();
                         this.Hide();

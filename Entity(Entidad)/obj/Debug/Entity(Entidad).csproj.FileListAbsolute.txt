@@ -16,3 +16,7 @@ C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\E
 C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\Entity(Entidad)\obj\Debug\Entity(Entidad).csproj.CoreCompileInputs.cache
 C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\Entity(Entidad)\obj\Debug\Entity(Entidad).dll
 C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\Entity(Entidad)\obj\Debug\Entity(Entidad).pdb
+C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\Entity(Entidad)\bin\Debug\CircularProgressBar.dll
+C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\Entity(Entidad)\bin\Debug\WinFormAnimation.dll
+C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\Entity(Entidad)\bin\Debug\CircularProgressBar.xml
+C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\Entity(Entidad)\obj\Debug\Entity(Entidad).csproj.CopyComplete

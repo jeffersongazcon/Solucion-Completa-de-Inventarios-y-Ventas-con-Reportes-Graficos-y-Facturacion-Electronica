@@ -27,7 +27,7 @@ namespace proyecto
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            PantallaDeInicio inicio = new PantallaDeInicio();
+            FormMenuPrincipal inicio = new FormMenuPrincipal();
             inicio.Show();
             this.Hide();
 
