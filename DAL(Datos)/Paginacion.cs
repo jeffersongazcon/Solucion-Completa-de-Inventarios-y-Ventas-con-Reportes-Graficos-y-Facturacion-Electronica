@@ -1,15 +1,15 @@
 ﻿using Entity_Entidad_;
 using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BLL_Logica_
+namespace DAL_Datos_
 {
-    public class BLL_Listar
+    public class Paginacion:ConexionBaseDeUsuario
     {
         SqlConnection conexion = new SqlConnection("server=LAPTOP-A96HL7MU\\SQLEXPRESS;database= SistemaDeUsuario; integrated security = true");
         public DataSet ListasUsusarios()
@@ -35,7 +35,6 @@ namespace BLL_Logica_
             adapter.Fill(datoProducto);
             return datoProducto;
         }
-
 
     }
 }

@@ -59,10 +59,9 @@
     <Compile Include="IcrudBase.cs" />
     <Compile Include="IcrudCargo.cs" />
     <Compile Include="IcrudUsuario.cs" />
+    <Compile Include="Paginacion.cs" />
     <Compile Include="PermisosRepositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ProveedorRepositorio.cs" />
-    <Compile Include="CacheDeDatos.cs" />
     <Compile Include="VentaRepositorio.cs" />
   </ItemGroup>
   <ItemGroup>

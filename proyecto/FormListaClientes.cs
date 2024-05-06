@@ -11,19 +11,20 @@ using System.Runtime.InteropServices;
 using Entity_Entidad_;
 using System.Data.SqlClient;
 using BLL_Logica_;
+using DAL_Datos_;
 
 namespace proyecto
 {
     public partial class FormListaClientes : Form
     {
-        private readonly BLL_Cache _usuarioBLL;
+        private readonly IcrudUsuario _usuarioBLL;
         DataSet dsTabla;
-        BLL_Listar dq = new BLL_Listar();
+        Paginacion dq = new Paginacion();
         int PagInicio = 1, indice = 0, NumFilas = 10, PagFinal;
         public FormListaClientes()
         {
             InitializeComponent();
-            _usuarioBLL = new BLL_Cache();
+            _usuarioBLL = new IcrudUsuario();
             LoadUsuarios();
             PagFinal = NumFilas;
             CargarDG();

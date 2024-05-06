@@ -38,7 +38,6 @@ C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inven
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\obj\Debug\aa-ER\proyecto.resources.dll
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\obj\Debug\Presentacion.csproj.CopyComplete
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.Confirmacion.resources
-C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.controlDeProductos.resources
 C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\bin\Debug\proyecto.exe.config
 C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\bin\Debug\proyecto.exe
 C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\bin\Debug\proyecto.pdb
@@ -74,3 +73,4 @@ C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proye
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\bin\Debug\CircularProgressBar.dll
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\bin\Debug\WinFormAnimation.dll
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\bin\Debug\CircularProgressBar.xml
+C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.FormListaProductos.resources

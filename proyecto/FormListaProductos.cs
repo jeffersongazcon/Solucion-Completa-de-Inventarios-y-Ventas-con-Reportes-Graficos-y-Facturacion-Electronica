@@ -1,4 +1,5 @@
 ﻿using BLL_Logica_;
+using DAL_Datos_;
 using Entity_Entidad_;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,7 @@ namespace proyecto
     public partial class FormListaProductos : Form
     {
         DataSet dsTabla;
-        BLL_Listar dq = new BLL_Listar();
+        Paginacion dq = new Paginacion();
         int PagInicio = 1, indice = 0, NumFilas = 10, PagFinal;
 
         public FormListaProductos()
@@ -38,7 +39,7 @@ namespace proyecto
             Producto.finalProducto = PagFinal;
             dsTabla = dq.ListasProductos();
             dataGridView1.DataSource = dsTabla.Tables[1];
-            int catidad = Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) / NumFilas;
+            int catidad = Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString())/NumFilas;
 
             if (Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) % NumFilas > 0) catidad++;
 
@@ -73,15 +74,6 @@ namespace proyecto
             frm.ShowDialog();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            FormMembresia frm = Owner as FormMembresia;
-
-            frm.txtid.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            frm.txtnombre.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            frm.txtapellido.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            this.Close();
-        }
 
     }
 }

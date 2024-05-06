@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BLL_Logica_;
 using Entity_Entidad_;
+using DAL_Datos_;
+
 
 namespace proyecto
 {
@@ -17,12 +19,12 @@ namespace proyecto
     {
         public event EventHandler OnSaved; // Para notificar cuando se guarde
 
-        private readonly BLL_Cache _usuarioBLL;
+        private readonly  IcrudUsuario _usuarioBLL;
         private int? _UserID;
         public FormMantCliente(int? UserID = null) // Si se pasa un ID, es para editar
         {
             InitializeComponent();
-            _usuarioBLL = new BLL_Cache();
+            _usuarioBLL = new IcrudUsuario();
             _UserID = UserID;
 
             if (_UserID.HasValue) 
