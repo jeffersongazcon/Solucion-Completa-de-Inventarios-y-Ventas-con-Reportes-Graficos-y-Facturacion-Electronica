@@ -24,5 +24,18 @@ namespace BLL_Logica_
             return dt;
         }
 
+        public DataSet ListasProductos()
+        {
+            SqlCommand comando = new SqlCommand("ListaProductos", conexion);
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@inicio", Producto.inicioProducto);
+            comando.Parameters.AddWithValue("@final", Producto.finalProducto);
+            SqlDataAdapter adapter = new SqlDataAdapter(comando);
+            DataSet datoProducto = new DataSet();
+            adapter.Fill(datoProducto);
+            return datoProducto;
+        }
+
+
     }
 }

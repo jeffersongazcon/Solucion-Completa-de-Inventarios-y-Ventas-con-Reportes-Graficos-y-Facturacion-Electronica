@@ -18,5 +18,7 @@ namespace Entity_Entidad_
         public decimal PrecioVenta { get; set; }
         public bool Estado {  get; set; }
         public string FechaRegistro {  get; set; }
+        public static int inicioProducto { get; set; }
+        public static int finalProducto { get; set; }
     }
 }

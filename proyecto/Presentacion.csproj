@@ -58,12 +58,6 @@
     <Compile Include="Confirmacion.Designer.cs">
       <DependentUpon>Confirmacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="controlDeProductos.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="controlDeProductos.Designer.cs">
-      <DependentUpon>controlDeProductos.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +75,12 @@
     </Compile>
     <Compile Include="FormListaClientes.designer.cs">
       <DependentUpon>FormListaClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListaProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListaProductos.Designer.cs">
+      <DependentUpon>FormListaProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="Formlogo.cs">
       <SubType>Form</SubType>
@@ -117,9 +117,6 @@
     <EmbeddedResource Include="Confirmacion.resx">
       <DependentUpon>Confirmacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="controlDeProductos.resx">
-      <DependentUpon>controlDeProductos.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormListaClientes.resx">
       <DependentUpon>FormListaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListaProductos.resx">
+      <DependentUpon>FormListaProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlogo.resx">
       <DependentUpon>Formlogo.cs</DependentUpon>

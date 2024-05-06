@@ -224,6 +224,13 @@ namespace proyecto
             Application.Exit();
         }
 
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            FormListaProductos fm = new FormListaProductos();
+            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            AbrirFormEnPanel(fm);
+        }
+
         //METODO PARA HORA Y FECHA ACTUAL ----------------------------------------------------------
         private void tmFechaHora_Tick(object sender, EventArgs e)
         {
