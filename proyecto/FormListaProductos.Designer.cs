@@ -68,7 +68,7 @@
             this.cbxPagina.Name = "cbxPagina";
             this.cbxPagina.Size = new System.Drawing.Size(56, 24);
             this.cbxPagina.TabIndex = 28;
-            this.cbxPagina.SelectedIndexChanged += new System.EventHandler(this.cbxPagina_SelectedIndexChanged);
+
             // 
             // label2
             // 
@@ -143,9 +143,7 @@
             this.btnEditarProducto.TabIndex = 24;
             this.btnEditarProducto.Text = "Editar";
             this.btnEditarProducto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEditarProducto.UseVisualStyleBackColor = false;
-            this.btnEditarProducto.Click += new System.EventHandler(this.btnEditarProducto_Click);
-            // 
+            this.btnEditarProducto.UseVisualStyleBackColor = false;            // 
             // BtnCerrarProductos
             // 
             this.BtnCerrarProductos.Cursor = System.Windows.Forms.Cursors.Hand;
