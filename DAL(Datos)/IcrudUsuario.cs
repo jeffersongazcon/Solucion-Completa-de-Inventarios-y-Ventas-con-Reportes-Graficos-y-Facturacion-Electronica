@@ -51,6 +51,29 @@ namespace DAL_Datos_
             }
         }
 
+        public void ReseedIdentity()
+        {
+            using (var conn = GetSqlConnection())
+            {
+                conn.Open();
+               
+                var queryMaxID = "SELECT ISNULL(MAX(UserID), 0) AS MaxID FROM Users";
+                int maxID = 0;
+
+                using (var command = new SqlCommand(queryMaxID, conn))
+                {
+                    maxID = (int)command.ExecuteScalar();
+                }
+
+                // Reiniciar el IDENTITY con el valor máximo
+                var reseedQuery = $"DBCC CHECKIDENT ('Users', RESEED, {maxID})";
+
+                using (var command = new SqlCommand(reseedQuery, conn))
+                {
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
 
         public DataTable GetAllUsuarios()
         {
@@ -73,6 +96,7 @@ namespace DAL_Datos_
             using (var conn = GetSqlConnection())
             {
                 conn.Open();
+                ReseedIdentity();
                 var query = "INSERT INTO Users (LoginName, Password, FirsName, LastName, Cargo, Email) VALUES (@LoginName, @Password, @FirsName, @LastName, @Cargo, @Email)";
                 
                 using (var command = new SqlCommand(query, conn))
