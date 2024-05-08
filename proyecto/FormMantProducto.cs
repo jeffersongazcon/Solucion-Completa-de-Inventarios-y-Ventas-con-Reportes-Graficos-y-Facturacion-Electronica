@@ -18,7 +18,7 @@ namespace proyecto
         public event EventHandler OnSaved;
         private readonly ProductoDAL dt;
         private ProductoDAL productoDAL = new ProductoDAL();
-        private int? productoID; // ID del producto a editar (nulo si es nuevo)
+        private int? productoID; 
         public FormMantProducto(int? productoID = null)
         {
             InitializeComponent();
@@ -26,11 +26,11 @@ namespace proyecto
             dt = new ProductoDAL();
             if (productoID.HasValue)
             {
-                CargarProducto(productoID.Value); // Cargar datos si es edición
+                CargarProducto(productoID.Value); 
             }
             else
             {
-                txtFechaRegistro.Text = DateTime.Now.ToString(); // Fecha actual para nuevo producto
+                txtFechaRegistro.Text = DateTime.Now.ToString(); 
             }
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -59,8 +59,8 @@ namespace proyecto
                 txtCantidad.Text = producto["Cantidad"].ToString();
                 txtPrecioCompra.Text = producto["PrecioCompra"].ToString();
                 txtPrecioVenta.Text = producto["PrecioVenta"].ToString();
-                txtEstado.Text = producto["Estado"].ToString(); // Estado como cadena
-                txtFechaRegistro.Text = producto["FechaRegistro"].ToString(); // Fecha como cadena
+                txtEstado.Text = producto["Estado"].ToString(); 
+                txtFechaRegistro.Text = producto["FechaRegistro"].ToString(); 
             }
         }
 
@@ -81,22 +81,24 @@ namespace proyecto
                 Cantidad = Convert.ToInt32(txtCantidad.Text),
                 PrecioCompra = Convert.ToDecimal(txtPrecioCompra.Text),
                 PrecioVenta = Convert.ToDecimal(txtPrecioVenta.Text),
-                Estado = txtEstado.Text, // Estado como cadena
-                FechaRegistro = txtFechaRegistro.Text // Fecha como cadena
+                Estado = txtEstado.Text, 
+                FechaRegistro = txtFechaRegistro.Text 
             };
 
             if (productoID.HasValue)
             {
+                
                 producto.ProductoID = productoID.Value;
-                productoDAL.UpdateProducto(producto); // Actualizar producto existente
+                productoDAL.UpdateProducto(producto); 
             }
             else
             {
-                productoDAL.AddProducto(producto); // Agregar nuevo producto
+                
+                productoDAL.AddProducto(producto); 
             }
 
-            OnSaved?.Invoke(this, EventArgs.Empty); // Evento para recargar lista
-            this.Close(); // Cerrar formulario
+            OnSaved?.Invoke(this, EventArgs.Empty); 
+            this.Close(); 
 
         }
     }

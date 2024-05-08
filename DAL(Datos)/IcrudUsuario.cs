@@ -74,6 +74,7 @@ namespace DAL_Datos_
             {
                 conn.Open();
                 var query = "INSERT INTO Users (LoginName, Password, FirsName, LastName, Cargo, Email) VALUES (@LoginName, @Password, @FirsName, @LastName, @Cargo, @Email)";
+                
                 using (var command = new SqlCommand(query, conn))
                 {
                     command.Parameters.AddWithValue("@LoginName", loginName);

@@ -4,11 +4,11 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using DAL_Datos_;
-using Entity_Entidad_; // Referencia a la clase Producto
+using Entity_Entidad_; 
 
 public class ProductoDAL : ConexionBaseDeUsuario
 {
-    // Leer todos los productos
+    
     public DataTable GetAllProductos()
     {
         using (var conn = GetSqlConnection())
@@ -25,12 +25,36 @@ public class ProductoDAL : ConexionBaseDeUsuario
         }
     }
 
-    // Agregar un nuevo producto
+    public void ReseedIdentity()
+    {
+        using (var conn = GetSqlConnection())
+        {
+            conn.Open();
+            
+            var queryMaxID = "SELECT ISNULL(MAX(ProductoID), 0) AS MaxID FROM Products";
+            int maxID = 0;
+
+            using (var command = new SqlCommand(queryMaxID, conn))
+            {
+                maxID = (int)command.ExecuteScalar();
+            }
+
+            
+            var reseedQuery = $"DBCC CHECKIDENT ('Products', RESEED, {maxID})";
+
+            using (var command = new SqlCommand(reseedQuery, conn))
+            {
+                command.ExecuteNonQuery();
+            }
+        }
+    }
+
     public void AddProducto(Producto producto)
     {
         using (var conn = GetSqlConnection())
         {
             conn.Open();
+            ReseedIdentity();
             var query = "INSERT INTO Products (CodigoDeBarras, Nombre, DescripcionProducto, Categoria, Cantidad, PrecioCompra, PrecioVenta, Estado, FechaRegistro) VALUES (@CodigoDeBarras, @Nombre, @DescripcionProducto, @Categoria, @Cantidad, @PrecioCompra, @PrecioVenta, @Estado, @FechaRegistro)";
             using (var command = new SqlCommand(query, conn))
             {
@@ -49,7 +73,7 @@ public class ProductoDAL : ConexionBaseDeUsuario
         }
     }
 
-    // Actualizar un producto existente
+   
     public void UpdateProducto(Producto producto)
     {
         using (var conn = GetSqlConnection())
@@ -73,7 +97,6 @@ public class ProductoDAL : ConexionBaseDeUsuario
         }
     }
 
-    // Eliminar un producto
     public void DeleteProducto(int productoID)
     {
         using (var conn = GetSqlConnection())
