@@ -51,8 +51,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccesoDatoUsers.cs" />
-    <Compile Include="CategoriaRepositorio.cs" />
-    <Compile Include="CompraRepositorio.cs" />
     <Compile Include="ConexionBaseDeUsuario.cs" />
     <Compile Include="DetalleCompraRepositorio.cs" />
     <Compile Include="DetalleVentaRepositorio.cs" />
@@ -60,7 +58,7 @@
     <Compile Include="IcrudCargo.cs" />
     <Compile Include="IcrudUsuario.cs" />
     <Compile Include="Paginacion.cs" />
-    <Compile Include="PermisosRepositorio.cs" />
+    <Compile Include="ProductoDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VentaRepositorio.cs" />
   </ItemGroup>

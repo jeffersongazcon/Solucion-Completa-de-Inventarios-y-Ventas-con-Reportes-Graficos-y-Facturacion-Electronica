@@ -16,6 +16,7 @@ namespace proyecto
     public partial class FormListaProductos : Form
     {
         DataSet dsTabla;
+        private ProductoDAL productoDAL = new ProductoDAL();
         Paginacion dq = new Paginacion();
         int PagInicio = 1, indice = 0, NumFilas = 10, PagFinal;
 
@@ -24,10 +25,19 @@ namespace proyecto
             InitializeComponent();
             PagFinal = NumFilas;
             CargarListaProductos();
+            loadproductos();
+
         }
+        
+        private void loadproductos()
+        {
+            dataGridView1.DataSource = productoDAL.GetAllProductos();
+        } 
+
 
         private void CargarListaProductos()
         {
+            
             Producto.inicioProducto = PagInicio;
             Producto.finalProducto = PagFinal;
             dsTabla = dq.ListasProductos();
@@ -51,13 +61,52 @@ namespace proyecto
             this.Close();
         }
 
+        private void btnEliminarProducto_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                var selectedRow = dataGridView1.SelectedRows[0];
+                var productoID = Convert.ToInt32(selectedRow.Cells["ProductoID"].Value);
+
+                var confirmResult = MessageBox.Show("¿Estás seguro de que quieres eliminar este producto?", "Confirmar eliminación", MessageBoxButtons.YesNo);
+
+                if (confirmResult == DialogResult.Yes)
+                {
+                    productoDAL.DeleteProducto(productoID); // Eliminar producto
+                    loadproductos(); // Refrescar lista
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor, seleccione un producto para eliminar.");
+            }
+        }
+
+        private void btnEditarProducto_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                var selectedRow = dataGridView1.SelectedRows[0];
+                var productoID = Convert.ToInt32(selectedRow.Cells["ProductoID"].Value);
+
+                var form = new FormMantProducto(productoID); // Formulario para editar producto
+
+                form.OnSaved += (src, args) => loadproductos(); // Recargar lista
+                form.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Por favor, seleccione un producto para editar.");
+            }
+        }
+
         private void cbxPagina_SelectionChangeCommitted(object sender, EventArgs e)
         {
             int Pagina = Convert.ToInt32(cbxPagina.Text);
             indice = Pagina - 1;
             PagInicio = (Pagina - 1) * NumFilas + 1;
             PagFinal = Pagina * NumFilas;
-            CargarListaProductos();
+            loadproductos();
         }
 
 
@@ -66,21 +115,14 @@ namespace proyecto
 
         private void btnNuevoProducto_Click(object sender, EventArgs e)
         {
-            FormMantCliente frm = new FormMantCliente();
-            frm.ShowDialog();
+            var form = new FormMantProducto(); // Formulario para nuevo producto
+
+            form.OnSaved += (src, args) => loadproductos(); // Recargar lista cuando se guarde un producto
+            form.ShowDialog();
         }
 
 
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            FormMembresia frm = Owner as FormMembresia;
-
-            frm.txtid.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            frm.txtnombre.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            frm.txtapellido.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            this.Close();
-        }
 
     }
 }

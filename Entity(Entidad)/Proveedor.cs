@@ -14,6 +14,6 @@ namespace Entity_Entidad_
         public string Correo { get; set;}
         public bool Estado { get; set;}
         public string FechaRegistro { get; set;}
-        public cargo Cargo { get; set;}
+        public string Cargo { get; set;}
     }
 }
