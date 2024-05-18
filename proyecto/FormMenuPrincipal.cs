@@ -207,12 +207,6 @@ namespace proyecto
             AbrirFormEnPanel(fm);
         }
 
-        private void btnMembresia_Click(object sender, EventArgs e)
-        {
-            FormMembresia frm = new FormMembresia();
-            frm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
-            AbrirFormEnPanel(frm);
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {

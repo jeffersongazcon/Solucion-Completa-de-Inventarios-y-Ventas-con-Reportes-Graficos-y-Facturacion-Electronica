@@ -13,8 +13,6 @@ namespace Entity_Entidad_
         public string Factura { get; set; }
         public string DocumentoCliente { get; set; }
         public string NombreCliente{ get; set; }
-        public decimal MontoPago{get; set; }
-        public decimal MontoCambio {  get; set; }
         public decimal MontoTotal { get; set; }
         public string FechaRegistro { get; set; }
         public List<DetalleVenta> DetalleVentas { get; set; }

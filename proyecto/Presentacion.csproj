@@ -100,12 +100,6 @@
     <Compile Include="FormMantProducto.Designer.cs">
       <DependentUpon>FormMantProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMembresia.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormMembresia.designer.cs">
-      <DependentUpon>FormMembresia.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,9 +137,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMantProducto.resx">
       <DependentUpon>FormMantProducto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormMembresia.resx">
-      <DependentUpon>FormMembresia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuPrincipal.resx">
       <DependentUpon>FormMenuPrincipal.cs</DependentUpon>

@@ -117,36 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="pictureBox5.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
-        0AAADdABEGw9BwAAAvpJREFUWEe9V01rE1EUHUVU/FZcCG67kKJNJjPvJQ1C6FJB8AcIggt3grhx0ZWI
-        v8Ki3YsVXXQTBN11UShoZqZJlPpBW5eu1Go13vPeSZOahGQ+4oFHp+eee+579828mThxkY/8shvph4VI
-        NQqh/mGGXINDjLLs4a16p6XIQiHSLTNC/Uf+38TAdZuHBlqmZYNcvXS2EKomC7xzA33jwpuLJxl2cA0O
-        MTs51UQOw+kwWZvcLy1epvETb907xFAPEIPGdkMtI5eh5HBDdcca6leVVmUf6YGABlrkIJd0QrScvWLy
-        2Y3UtuzrObJDAS1ykAsP0vFRiIqeWUmkXpIaGcixnSt6pOJD9vO6MVnV90mNDOSYXPEgFR+yiltJ97J9
-        78CDVHy0OyBmD0iNDOSk70Copq2JfkFqZCCHk58mFR+VtcpBMfjuhvrrKI9gG9AiB7nwIJ0MspJFrCQf
-        +JdIDQW07NwiqeRwA/8aW/mM1FBAa3Ikl1RycBu+iOFvP/TPkx4IaKBFTur2tyHP9G3T0khX5WTbQ7oX
-        EoPGaCWHbHrYF5KuwVhWNvBMQMwUF20mL6Ju+IHvSoFvOOP7PdvgEIMGWtLZwgv0VVndlhTZzr/VOdIO
-        rsEhBg3p8UAK3TVbEahZUvKkqFnDSYxUdpC9PIKW5kO/IkVm8MllinWd8TvvDBubgRY5yKUkPrx68bKY
-        VcX0J8y7h3AfS59Kpyh1cA2ujw65VXhROhzlqHxUkp52mWzIDfZc/s7L8fpYVntP1dQZyncADjGr0fPM
-        2Wj7wBPelPfH1ObUYTFZsgmq6Ub+lVRfNPiiEg942cWoJdRgtBcy60ec7Wvd0MdIpwa84Gm8pQbp3ZDZ
-        +eb7PlTrpVpnf7MCPOGNGqhFugMJztnVF2+SyhzwZhfmSHUggQ8ys1/ee+84qcwBb9RALVIWE42JA6b9
-        crOQGhvMDSm1UJOU/PRayZ2w7dcrpMYG1EAt1CS1awJbsj9rYx2o8e8E+HOqzkn8j1G335iO8xc8Slpl
-        SKjoCAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <metadata name="pictureBox6.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="btnA.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAABIBJREFUWEfNV2uIHEUQ3sQnPhBUNFH0clM9XnKgP6LiAyXqHwOiEMlKzp3HZSNH
+        vwAADr8BOAVTJAAABIBJREFUWEfNV2uIHEUQ3sQnPhBUNFH0clM9XnKgP6LiAyXqHwOiEMlKzp3HZSNH
         UFSIEkXEQzHER/5JFFSM/jCXmZ7ZXI7TEEGMKD5A0CSIpwZBUXOCJpoENbkz51c1tXe76z1mDol+UGzP
         V9XV1dXd1b2l/xxB6iwLUvNQYN0uz9K1QeRe2NtbmqvqXKikC+f7Kd3rW9oEsb41zwWW7gg3tZ2qJlMj
         SOi3IDFjjQIHf+C3z68tPEfNJkXPJ5efhIHWw8efrT5Y/IS+DyJnmZpPjjClpX5inkWHGNF/jMGHA2uO
@@ -168,19 +143,13 @@
         n2fNhlXb2s9XehwIcjnr+eab7Gr+n6BU+hvnDzMC++PkfAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="pictureBox3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="pictureBox4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="pictureBox2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="btnListaClientes.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
-        0wAADdMBvdUcagAAAvpJREFUWEe9V01rE1EUHUVU/FZcCG67kKJNJjPvJQ1C6FJB8AcIggt3grhx0ZWI
+        0gAADdIBb5L+jgAAAvpJREFUWEe9V01rE1EUHUVU/FZcCG67kKJNJjPvJQ1C6FJB8AcIggt3grhx0ZWI
         v8Ki3YsVXXQTBN11UShoZqZJlPpBW5eu1Go13vPeSZOahGQ+4oFHp+eee+579828mThxkY/8shvph4VI
         NQqh/mGGXINDjLLs4a16p6XIQiHSLTNC/Uf+38TAdZuHBlqmZYNcvXS2EKomC7xzA33jwpuLJxl2cA0O
         MTs51UQOw+kwWZvcLy1epvETb907xFAPEIPGdkMtI5eh5HBDdcca6leVVmUf6YGABlrkIJd0QrScvWLy

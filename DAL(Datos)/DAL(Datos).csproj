@@ -52,7 +52,6 @@
   <ItemGroup>
     <Compile Include="AccesoDatoUsers.cs" />
     <Compile Include="ConexionBaseDeUsuario.cs" />
-    <Compile Include="DetalleCompraRepositorio.cs" />
     <Compile Include="DetalleVentaRepositorio.cs" />
     <Compile Include="IcrudBase.cs" />
     <Compile Include="IcrudCargo.cs" />
