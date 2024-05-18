@@ -225,6 +225,13 @@ namespace proyecto
             AbrirFormEnPanel(fm);
         }
 
+        private void btnVenta_Click(object sender, EventArgs e)
+        {
+            FormVenta fm = new FormVenta();
+            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            AbrirFormEnPanel(fm);
+        }
+
         //METODO PARA HORA Y FECHA ACTUAL ----------------------------------------------------------
         private void tmFechaHora_Tick(object sender, EventArgs e)
         {

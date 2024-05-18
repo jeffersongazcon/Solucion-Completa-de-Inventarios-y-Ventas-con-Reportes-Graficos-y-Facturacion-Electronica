@@ -43,7 +43,7 @@
             this.btnSalir = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.btnA = new System.Windows.Forms.Button();
+            this.btnVenta = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnProductos = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -193,7 +193,7 @@
             this.panelMenu.Controls.Add(this.btnSalir);
             this.panelMenu.Controls.Add(this.btnMenu);
             this.panelMenu.Controls.Add(this.pictureBox6);
-            this.panelMenu.Controls.Add(this.btnA);
+            this.panelMenu.Controls.Add(this.btnVenta);
             this.panelMenu.Controls.Add(this.pictureBox3);
             this.panelMenu.Controls.Add(this.btnProductos);
             this.panelMenu.Controls.Add(this.pictureBox2);
@@ -245,25 +245,26 @@
             this.pictureBox6.TabIndex = 9;
             this.pictureBox6.TabStop = false;
             // 
-            // btnA
+            // btnVenta
             // 
-            this.btnA.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnA.FlatAppearance.BorderSize = 0;
-            this.btnA.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
-            this.btnA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
-            this.btnA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnA.ForeColor = System.Drawing.Color.Silver;
-            this.btnA.Image = ((System.Drawing.Image)(resources.GetObject("btnA.Image")));
-            this.btnA.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnA.Location = new System.Drawing.Point(0, 269);
-            this.btnA.Margin = new System.Windows.Forms.Padding(4);
-            this.btnA.Name = "btnA";
-            this.btnA.Size = new System.Drawing.Size(307, 49);
-            this.btnA.TabIndex = 8;
-            this.btnA.Text = "    Venta";
-            this.btnA.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnA.UseVisualStyleBackColor = true;
+            this.btnVenta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVenta.FlatAppearance.BorderSize = 0;
+            this.btnVenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btnVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
+            this.btnVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVenta.ForeColor = System.Drawing.Color.Silver;
+            this.btnVenta.Image = ((System.Drawing.Image)(resources.GetObject("btnVenta.Image")));
+            this.btnVenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVenta.Location = new System.Drawing.Point(0, 269);
+            this.btnVenta.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVenta.Name = "btnVenta";
+            this.btnVenta.Size = new System.Drawing.Size(307, 49);
+            this.btnVenta.TabIndex = 8;
+            this.btnVenta.Text = "    Venta";
+            this.btnVenta.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnVenta.UseVisualStyleBackColor = true;
+            this.btnVenta.Click += new System.EventHandler(this.btnVenta_Click);
             // 
             // pictureBox3
             // 
@@ -530,7 +531,7 @@
         private System.Windows.Forms.PictureBox btnSalir;
         private System.Windows.Forms.PictureBox btnMenu;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Button btnA;
+        private System.Windows.Forms.Button btnVenta;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btnProductos;
         private System.Windows.Forms.PictureBox pictureBox2;
