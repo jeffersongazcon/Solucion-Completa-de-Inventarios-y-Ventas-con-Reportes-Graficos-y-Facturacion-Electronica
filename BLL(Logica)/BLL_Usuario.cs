@@ -20,14 +20,6 @@ namespace BLL_Logica_
             return DatosUsuario.Login(username, password);
         }
 
-        public bool editarPassword(int username, string password)
-        {
-            if (username == Usuario.IdUser)
-            {
-
-            }
-            return true;
-        }
 
 
     }
