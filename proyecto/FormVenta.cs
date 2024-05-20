@@ -33,7 +33,7 @@ namespace proyecto
             loadproductos();
             CargarProductos();
         }
-
+        int canti;
         private void loadproductos()
         {
             dgvVenta.DataSource = productoDAL.GetAllProductos();
@@ -54,6 +54,7 @@ namespace proyecto
 
                 productosVendidos.Add(producto);
                 int cantidadAVender = Convert.ToInt32(txtCantidad.Text);
+                canti = cantidadAVender;
                 // Disminuir la cantidad en la base de datos
                 int productoID = Convert.ToInt32(row.Cells["ProductoID"].Value);
                 productoDAL.Venta(productoID, cantidadAVender);
@@ -70,7 +71,7 @@ namespace proyecto
 
             // Enviar la factura por correo electrónico al usuario
             EnviarFacturaPorCorreo(email, factura);
-
+            
             MessageBox.Show("Venta realizada y factura enviada por correo electrónico.");
         }
 
@@ -84,9 +85,10 @@ namespace proyecto
                 facturaBuilder.AppendLine($"Producto: {producto.Nombre}");
                 facturaBuilder.AppendLine($"Descripción: {producto.DescripcionProducto}");
                 facturaBuilder.AppendLine($"Precio: {producto.PrecioVenta:C}");
+                facturaBuilder.AppendLine($"Cantidad: {canti}");
                 facturaBuilder.AppendLine("-------------------------------");
             }
-            decimal total = productos.Sum(p => p.PrecioVenta);
+            decimal total = productos.Sum(p => p.PrecioVenta*canti);
             facturaBuilder.AppendLine($"Total: {total:C}");
             return facturaBuilder.ToString();
         }
