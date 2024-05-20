@@ -1,14 +1,15 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using DAL_Datos_;
-using Entity_Entidad_; 
+using Entity_Entidad_;
 
 public class ProductoDAL : ConexionBaseDeUsuario
 {
-    
+
     public DataTable GetAllProductos()
     {
         using (var conn = GetSqlConnection())
@@ -30,7 +31,7 @@ public class ProductoDAL : ConexionBaseDeUsuario
         using (var conn = GetSqlConnection())
         {
             conn.Open();
-            
+
             var queryMaxID = "SELECT ISNULL(MAX(ProductoID), 0) AS MaxID FROM Products";
             int maxID = 0;
 
@@ -39,7 +40,7 @@ public class ProductoDAL : ConexionBaseDeUsuario
                 maxID = (int)command.ExecuteScalar();
             }
 
-            
+
             var reseedQuery = $"DBCC CHECKIDENT ('Products', RESEED, {maxID})";
 
             using (var command = new SqlCommand(reseedQuery, conn))
@@ -73,7 +74,7 @@ public class ProductoDAL : ConexionBaseDeUsuario
         }
     }
 
-   
+
     public void UpdateProducto(Producto producto)
     {
         using (var conn = GetSqlConnection())
@@ -96,8 +97,22 @@ public class ProductoDAL : ConexionBaseDeUsuario
             }
         }
     }
+    public void Venta(int productoID, int cantidadAVender)
+    {
+        using(var conn = GetSqlConnection())
+        {
+            conn.Open();
+            var query = "UPDATE Products SET Cantidad = CASE WHEN Cantidad >= @Cantidad THEN Cantidad - @Cantidad ELSE 0 END WHERE ProductoID = @ProductoID";
+            using (var command = new SqlCommand(query, conn))
+            {
+                command.Parameters.AddWithValue("@Cantidad", cantidadAVender);
+                command.Parameters.AddWithValue("@ProductoID", productoID);
+                command.ExecuteNonQuery();
+            }
+        }
+    }
 
-    public void DeleteProducto(int productoID)
+public void DeleteProducto(int productoID)
     {
         using (var conn = GetSqlConnection())
         {
@@ -110,7 +125,5 @@ public class ProductoDAL : ConexionBaseDeUsuario
             }
         }
     }
-
-
 }
 

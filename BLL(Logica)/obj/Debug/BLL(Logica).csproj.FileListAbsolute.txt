@@ -34,3 +34,6 @@ C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\B
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\BLL(Logica)\bin\Debug\CircularProgressBar.dll
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\BLL(Logica)\bin\Debug\WinFormAnimation.dll
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\BLL(Logica)\bin\Debug\CircularProgressBar.xml
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\BLL(Logica)\bin\Debug\CircularProgressBar.dll
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\BLL(Logica)\bin\Debug\WinFormAnimation.dll
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\BLL(Logica)\bin\Debug\CircularProgressBar.xml

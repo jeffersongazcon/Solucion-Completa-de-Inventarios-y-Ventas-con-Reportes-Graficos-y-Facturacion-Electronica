@@ -18,9 +18,7 @@ C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proye
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\obj\Debug\Presentacion.csproj.AssemblyReference.cache
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\obj\Debug\proyecto.Confirmacion.resources
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\obj\Debug\proyecto.Login.resources
-C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\obj\Debug\proyecto.PantallaDeInicio.resources
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\obj\Debug\proyecto.Properties.Resources.resources
-C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\obj\Debug\proyecto.PantallaDeInicio.aa-ER.resources
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\obj\Debug\Presentacion.csproj.GenerateResource.cache
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\obj\Debug\proyecto.exe
@@ -28,14 +26,12 @@ C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inven
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\bin\Debug\proyecto.exe.config
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\bin\Debug\proyecto.exe
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\bin\Debug\proyecto.pdb
-C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\bin\Debug\aa-ER\proyecto.resources.dll
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\bin\Debug\BLL(Logica).dll
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\bin\Debug\Entity(Entidad).dll
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\bin\Debug\DAL(Datos).dll
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\bin\Debug\BLL(Logica).pdb
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\bin\Debug\Entity(Entidad).pdb
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\bin\Debug\DAL(Datos).pdb
-C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\obj\Debug\aa-ER\proyecto.resources.dll
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\obj\Debug\Presentacion.csproj.CopyComplete
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.Confirmacion.resources
 C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\bin\Debug\proyecto.exe.config
@@ -75,3 +71,15 @@ C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proye
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.FormListaProductos.resources
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.FormMantProducto.resources
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.FormVenta.resources
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\bin\Debug\CircularProgressBar.dll
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\bin\Debug\WinFormAnimation.dll
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\bin\Debug\CircularProgressBar.xml
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\obj\Debug\proyecto.Form1.resources
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\obj\Debug\proyecto.FormDeBienvenida.resources
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\obj\Debug\proyecto.FormListaClientes.resources
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\obj\Debug\proyecto.FormListaProductos.resources
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\obj\Debug\proyecto.FormLogo.resources
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\obj\Debug\proyecto.FormMantCliente.resources
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\obj\Debug\proyecto.FormMantProducto.resources
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\obj\Debug\proyecto.FormMenuPrincipal.resources
+C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\obj\Debug\proyecto.FormVenta.resources

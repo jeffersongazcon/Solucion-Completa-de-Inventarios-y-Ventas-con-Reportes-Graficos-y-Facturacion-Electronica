@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelVenta = new System.Windows.Forms.Panel();
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.lblCantidad = new System.Windows.Forms.Label();
@@ -42,23 +42,22 @@
             this.BtnCerrarVenta = new System.Windows.Forms.Button();
             this.lblPaginaVenta = new System.Windows.Forms.Label();
             this.btnVender = new System.Windows.Forms.Button();
+            this.PanelCantidad = new System.Windows.Forms.Panel();
+            this.panelVentaPagina = new System.Windows.Forms.Panel();
             this.panelVenta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVenta)).BeginInit();
+            this.PanelCantidad.SuspendLayout();
+            this.panelVentaPagina.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelVenta
             // 
             this.panelVenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
-            this.panelVenta.Controls.Add(this.txtCantidad);
-            this.panelVenta.Controls.Add(this.lblCantidad);
-            this.panelVenta.Controls.Add(this.textCantidadPagina);
+            this.panelVenta.Controls.Add(this.panelVentaPagina);
             this.panelVenta.Controls.Add(this.dgvVenta);
-            this.panelVenta.Controls.Add(this.lblDe);
             this.panelVenta.Controls.Add(this.labelProductos);
-            this.panelVenta.Controls.Add(this.cbxPagina);
             this.panelVenta.Controls.Add(this.BtnCerrarVenta);
-            this.panelVenta.Controls.Add(this.lblPaginaVenta);
-            this.panelVenta.Controls.Add(this.btnVender);
+            this.panelVenta.Controls.Add(this.PanelCantidad);
             this.panelVenta.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelVenta.Location = new System.Drawing.Point(0, 0);
             this.panelVenta.Name = "panelVenta";
@@ -67,7 +66,7 @@
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(999, 148);
+            this.txtCantidad.Location = new System.Drawing.Point(8, 145);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(133, 22);
             this.txtCantidad.TabIndex = 42;
@@ -78,7 +77,7 @@
             // 
             this.lblCantidad.AutoSize = true;
             this.lblCantidad.ForeColor = System.Drawing.Color.White;
-            this.lblCantidad.Location = new System.Drawing.Point(996, 129);
+            this.lblCantidad.Location = new System.Drawing.Point(5, 126);
             this.lblCantidad.Name = "lblCantidad";
             this.lblCantidad.Size = new System.Drawing.Size(61, 16);
             this.lblCantidad.TabIndex = 41;
@@ -86,7 +85,7 @@
             // 
             // textCantidadPagina
             // 
-            this.textCantidadPagina.Location = new System.Drawing.Point(202, 536);
+            this.textCantidadPagina.Location = new System.Drawing.Point(201, 5);
             this.textCantidadPagina.Name = "textCantidadPagina";
             this.textCantidadPagina.Size = new System.Drawing.Size(39, 22);
             this.textCantidadPagina.TabIndex = 40;
@@ -101,37 +100,37 @@
             this.dgvVenta.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvVenta.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvVenta.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvVenta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvVenta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
             this.dgvVenta.ColumnHeadersHeight = 30;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvVenta.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvVenta.DefaultCellStyle = dataGridViewCellStyle23;
             this.dgvVenta.EnableHeadersVisualStyles = false;
             this.dgvVenta.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
             this.dgvVenta.Location = new System.Drawing.Point(32, 69);
             this.dgvVenta.Margin = new System.Windows.Forms.Padding(4);
             this.dgvVenta.Name = "dgvVenta";
             this.dgvVenta.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.PaleVioletRed;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvVenta.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.PaleVioletRed;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvVenta.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
             this.dgvVenta.RowHeadersWidth = 51;
             this.dgvVenta.Size = new System.Drawing.Size(948, 464);
             this.dgvVenta.TabIndex = 32;
@@ -140,7 +139,7 @@
             // 
             this.lblDe.AutoSize = true;
             this.lblDe.ForeColor = System.Drawing.Color.Silver;
-            this.lblDe.Location = new System.Drawing.Point(162, 542);
+            this.lblDe.Location = new System.Drawing.Point(161, 11);
             this.lblDe.Name = "lblDe";
             this.lblDe.Size = new System.Drawing.Size(25, 16);
             this.lblDe.TabIndex = 39;
@@ -161,7 +160,7 @@
             // cbxPagina
             // 
             this.cbxPagina.FormattingEnabled = true;
-            this.cbxPagina.Location = new System.Drawing.Point(85, 534);
+            this.cbxPagina.Location = new System.Drawing.Point(84, 3);
             this.cbxPagina.Name = "cbxPagina";
             this.cbxPagina.Size = new System.Drawing.Size(56, 24);
             this.cbxPagina.TabIndex = 38;
@@ -184,7 +183,7 @@
             this.lblPaginaVenta.AutoSize = true;
             this.lblPaginaVenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
             this.lblPaginaVenta.ForeColor = System.Drawing.Color.Silver;
-            this.lblPaginaVenta.Location = new System.Drawing.Point(29, 537);
+            this.lblPaginaVenta.Location = new System.Drawing.Point(28, 6);
             this.lblPaginaVenta.Name = "lblPaginaVenta";
             this.lblPaginaVenta.Size = new System.Drawing.Size(50, 16);
             this.lblPaginaVenta.TabIndex = 37;
@@ -202,7 +201,7 @@
             this.btnVender.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVender.ForeColor = System.Drawing.Color.Silver;
             this.btnVender.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVender.Location = new System.Drawing.Point(999, 69);
+            this.btnVender.Location = new System.Drawing.Point(8, 59);
             this.btnVender.Margin = new System.Windows.Forms.Padding(4);
             this.btnVender.Name = "btnVender";
             this.btnVender.Size = new System.Drawing.Size(133, 37);
@@ -211,6 +210,29 @@
             this.btnVender.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnVender.UseVisualStyleBackColor = false;
             this.btnVender.Click += new System.EventHandler(this.btnVender_Click);
+            // 
+            // PanelCantidad
+            // 
+            this.PanelCantidad.Controls.Add(this.txtCantidad);
+            this.PanelCantidad.Controls.Add(this.btnVender);
+            this.PanelCantidad.Controls.Add(this.lblCantidad);
+            this.PanelCantidad.Dock = System.Windows.Forms.DockStyle.Right;
+            this.PanelCantidad.Location = new System.Drawing.Point(987, 0);
+            this.PanelCantidad.Name = "PanelCantidad";
+            this.PanelCantidad.Size = new System.Drawing.Size(173, 562);
+            this.PanelCantidad.TabIndex = 43;
+            // 
+            // panelVentaPagina
+            // 
+            this.panelVentaPagina.Controls.Add(this.textCantidadPagina);
+            this.panelVentaPagina.Controls.Add(this.cbxPagina);
+            this.panelVentaPagina.Controls.Add(this.lblDe);
+            this.panelVentaPagina.Controls.Add(this.lblPaginaVenta);
+            this.panelVentaPagina.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelVentaPagina.Location = new System.Drawing.Point(0, 527);
+            this.panelVentaPagina.Name = "panelVentaPagina";
+            this.panelVentaPagina.Size = new System.Drawing.Size(987, 35);
+            this.panelVentaPagina.TabIndex = 44;
             // 
             // FormVenta
             // 
@@ -223,6 +245,10 @@
             this.panelVenta.ResumeLayout(false);
             this.panelVenta.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVenta)).EndInit();
+            this.PanelCantidad.ResumeLayout(false);
+            this.PanelCantidad.PerformLayout();
+            this.panelVentaPagina.ResumeLayout(false);
+            this.panelVentaPagina.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -240,5 +266,7 @@
         private System.Windows.Forms.Label labelProductos;
         private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.Label lblCantidad;
+        private System.Windows.Forms.Panel PanelCantidad;
+        private System.Windows.Forms.Panel panelVentaPagina;
     }
 }

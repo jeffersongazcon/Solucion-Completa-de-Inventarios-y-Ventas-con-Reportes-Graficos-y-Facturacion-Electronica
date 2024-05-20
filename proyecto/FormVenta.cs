@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Net.Mail;
 using System.Net;
+using System.Data.SqlClient;
 
 namespace proyecto
 {
@@ -50,9 +51,17 @@ namespace proyecto
                     PrecioVenta = Convert.ToDecimal(row.Cells["PrecioVenta"].Value),
                     DescripcionProducto = row.Cells["DescripcionProducto"].Value.ToString()
                 };
-                productosVendidos.Add(producto);
-            }
 
+                productosVendidos.Add(producto);
+                int cantidadAVender = Convert.ToInt32(txtCantidad.Text);
+                // Disminuir la cantidad en la base de datos
+                int productoID = Convert.ToInt32(row.Cells["ProductoID"].Value);
+                productoDAL.Venta(productoID, cantidadAVender);
+
+                // Actualizar la cantidad en el DataGridView
+                int nuevaCantidad = Convert.ToInt32(row.Cells["Cantidad"].Value) - cantidadAVender;
+                row.Cells["Cantidad"].Value = nuevaCantidad > 0 ? nuevaCantidad : 0;
+            }
             // Generar la factura con los detalles de los productos vendidos
             string factura = GenerarFactura(productosVendidos);
 
@@ -106,9 +115,6 @@ namespace proyecto
                 MessageBox.Show($"Error al enviar la factura: {ex.Message}");
             }
         }
-
-
-
         private void CargarListaProductos()
         {
 
@@ -132,22 +138,15 @@ namespace proyecto
 
         private void txtCantidad_TextChanged(object sender, EventArgs e)
         {
-            if (txtCantidad.Text.Length > 0)
-            {
+           Validacion();
+        }
 
-                if (int.TryParse(txtCantidad.Text, out int value))
-                {
-                    if (value <= 0)
-                    {
-                        MessageBox.Show("Por favor, ingrese un número mayor que 0.");
-                        txtCantidad.Clear();
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Entrada inválida. Por favor, ingrese solo números.");
-                    txtCantidad.Clear();
-                }
+        private void Validacion()
+        {
+            if (!int.TryParse(txtCantidad.Text, out int cantidadAVender) || cantidadAVender <= 0)
+            {
+                MessageBox.Show("Por favor, ingrese una cantidad válida mayor que 0.");
+                return;
             }
         }
 

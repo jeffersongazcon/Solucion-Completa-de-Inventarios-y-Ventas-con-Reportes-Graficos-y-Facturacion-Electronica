@@ -8,13 +8,12 @@ namespace Entity_Entidad_
 {
     public class Venta
     {
-        public string AfiliacionVenta{ get; set; }
+        public string VentaID{ get; set; }
         public Usuario Usuario { get; set; }
         public string Factura { get; set; }
         public string DocumentoCliente { get; set; }
         public string NombreCliente{ get; set; }
         public decimal MontoTotal { get; set; }
         public string FechaRegistro { get; set; }
-        public List<DetalleVenta> DetalleVentas { get; set; }
     }
 }

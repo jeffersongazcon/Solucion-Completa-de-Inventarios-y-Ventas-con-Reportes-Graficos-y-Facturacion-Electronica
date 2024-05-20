@@ -13,7 +13,7 @@ namespace DAL_Datos_
         public ConexionBaseDeUsuario()
         {
             
-            connectionString = "server=LAPTOP-A96HL7MU\\SQLEXPRESS;database= SistemaDeUsuario; integrated security = true";
+            connectionString = "server=.\\SQLEXPRESS;database= SistemaDeUsuario; integrated security = true";
         }
         protected SqlConnection GetSqlConnection()
         {
