@@ -148,12 +148,13 @@
             this.linkPass.AutoSize = true;
             this.linkPass.Font = new System.Drawing.Font("Georgia", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkPass.LinkColor = System.Drawing.Color.Gray;
-            this.linkPass.Location = new System.Drawing.Point(483, 328);
+            this.linkPass.Location = new System.Drawing.Point(528, 328);
             this.linkPass.Name = "linkPass";
-            this.linkPass.Size = new System.Drawing.Size(171, 16);
+            this.linkPass.Size = new System.Drawing.Size(83, 16);
             this.linkPass.TabIndex = 0;
             this.linkPass.TabStop = true;
-            this.linkPass.Text = "¿Olvidastes tu contraseña?";
+            this.linkPass.Text = "¿Registrase?";
+            this.linkPass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkPass_LinkClicked);
             // 
             // btnCerrar
             // 

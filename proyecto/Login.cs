@@ -10,14 +10,19 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using BLL_Logica_;
 using Entity_Entidad_;
+using DAL_Datos_;
 
 namespace proyecto
 {
     public partial class Login : Form
     {
+        private readonly IcrudUsuario _usuarioBLL;
         public Login()
         {
             InitializeComponent();
+            _usuarioBLL = new IcrudUsuario();
+            LoadUsuarios();
+
         }
         //es para que se pueda mover la pestaña del login
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -160,6 +165,21 @@ namespace proyecto
         private void MensajeDeError_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void LoadUsuarios()
+        {
+            var dataTable = _usuarioBLL.GetAllUsuarios();
+            
+        }
+
+        private void linkPass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var form = new FormMantCliente();
+
+
+            form.OnSaved += (src, args) => LoadUsuarios();
+            form.ShowDialog();
         }
     }
 }
