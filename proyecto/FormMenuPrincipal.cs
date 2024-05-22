@@ -25,11 +25,8 @@ namespace proyecto
             this.SetStyle(ControlStyles.ResizeRedraw, true);
             this.DoubleBuffered = true;
 
-            if (Usuario.Cargo == IcrudCargo.Cliente)
-            {
-                btnListaClientes.Enabled = false;
-                btnReporte.Enabled = false;
-            }
+            permisos();
+
         }
 
         private int tolerance = 15;
@@ -253,7 +250,14 @@ namespace proyecto
             AbrirFormEnPanel(new Form1());
         }
 
-        
+        public void permisos()
+        {
+            if (Usuario.Cargo == IcrudCargo.Cliente)
+            {
+                btnListaClientes.Enabled = false;
+                btnReporte.Enabled = false;
+            }
+        }
 
     }
 }
