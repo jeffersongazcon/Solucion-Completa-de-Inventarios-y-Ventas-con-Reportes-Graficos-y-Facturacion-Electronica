@@ -20,7 +20,17 @@ namespace BLL_Logica_
             return DatosUsuario.Login(username, password);
         }
 
+        public void Permisos()
+        {
+            if (Usuario.Cargo == IcrudCargo.Administrador)
+            {
 
+            }
+            if (Usuario.Cargo == IcrudCargo.Recepcionista || Usuario.Cargo == IcrudCargo.Cliente)
+            {
+
+            }
+        }
 
     }
 

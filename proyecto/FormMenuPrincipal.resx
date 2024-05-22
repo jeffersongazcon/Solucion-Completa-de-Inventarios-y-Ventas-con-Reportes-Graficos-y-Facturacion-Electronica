@@ -121,7 +121,7 @@
   <data name="btnVenta.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAABIBJREFUWEfNV2uIHEUQ3sQnPhBUNFH0clM9XnKgP6LiAyXqHwOiEMlKzp3HZSNH
+        vQAADr0BR/uQrQAABIBJREFUWEfNV2uIHEUQ3sQnPhBUNFH0clM9XnKgP6LiAyXqHwOiEMlKzp3HZSNH
         UFSIEkXEQzHER/5JFFSM/jCXmZ7ZXI7TEEGMKD5A0CSIpwZBUXOCJpoENbkz51c1tXe76z1mDol+UGzP
         V9XV1dXd1b2l/xxB6iwLUvNQYN0uz9K1QeRe2NtbmqvqXKikC+f7Kd3rW9oEsb41zwWW7gg3tZ2qJlMj
         SOi3IDFjjQIHf+C3z68tPEfNJkXPJ5efhIHWw8efrT5Y/IS+DyJnmZpPjjClpX5inkWHGNF/jMGHA2uO
@@ -149,7 +149,7 @@
   <data name="btnListaClientes.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
-        0QAADdEBwivf4wAAAvpJREFUWEe9V01rE1EUHUVU/FZcCG67kKJNJjPvJQ1C6FJB8AcIggt3grhx0ZWI
+        0AAADdABEGw9BwAAAvpJREFUWEe9V01rE1EUHUVU/FZcCG67kKJNJjPvJQ1C6FJB8AcIggt3grhx0ZWI
         v8Ki3YsVXXQTBN11UShoZqZJlPpBW5eu1Go13vPeSZOahGQ+4oFHp+eee+579828mThxkY/8shvph4VI
         NQqh/mGGXINDjLLs4a16p6XIQiHSLTNC/Uf+38TAdZuHBlqmZYNcvXS2EKomC7xzA33jwpuLJxl2cA0O
         MTs51UQOw+kwWZvcLy1epvETb907xFAPEIPGdkMtI5eh5HBDdcca6leVVmUf6YGABlrkIJd0QrScvWLy
@@ -168,7 +168,7 @@
   <metadata name="pictureBox1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnReporte.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAA+BJREFUWEfNV1tIFVEUnbR39PjoI7My7zlew6ifKAgCvwor6AFZmfOwCH/qozJ6

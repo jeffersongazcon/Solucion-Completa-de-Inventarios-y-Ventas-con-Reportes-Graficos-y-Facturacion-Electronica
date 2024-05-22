@@ -10,20 +10,28 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL_Logica_;
+using DAL_Datos_;
 
 namespace proyecto
 {
     public partial class FormMenuPrincipal : Form
     {
-        //Constructor
+
         public FormMenuPrincipal()
         {
             InitializeComponent();
-            //Estas lineas eliminan los parpadeos del formulario o controles en la interfaz grafica (Pero no en un 100%)
+
             this.SetStyle(ControlStyles.ResizeRedraw, true);
             this.DoubleBuffered = true;
+
+            if (Usuario.Cargo == IcrudCargo.Cliente)
+            {
+                btnListaClientes.Enabled = false;
+                btnReporte.Enabled = false;
+            }
         }
-        //METODO PARA REDIMENCIONAR/CAMBIAR TAMAÑO A FORMULARIO  TIEMPO DE EJECUCION ----------------------------------------------------------
+
         private int tolerance = 15;
         private const int WM_NCHITTEST = 132;
         private const int HTBOTTOMRIGHT = 17;
