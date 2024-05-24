@@ -20,6 +20,7 @@ namespace proyecto
     {
         DataSet dsTabla;
         private ProductoDAL productoDAL = new ProductoDAL();
+        private FacturaDAL factura = new FacturaDAL();
         private List<Producto> productosVendidos = new List<Producto>();
         Paginacion dq = new Paginacion();
         int PagInicio = 1, indice = 0, NumFilas = 10, PagFinal;
@@ -66,6 +67,9 @@ namespace proyecto
                 cantidadVendida = cantidadAVender;
                 int nuevaCantidad = Convert.ToInt32(row.Cells["Cantidad"].Value) - cantidadAVender;
                 row.Cells["Cantidad"].Value = nuevaCantidad > 0 ? nuevaCantidad : 0;
+                Factura facturaDetalle = CrearFacturaDetalle(producto, cantidadAVender);
+                factura.AddFactura(facturaDetalle);
+
                 EnvioFacturaCorreo();
             }
         }
@@ -196,6 +200,21 @@ namespace proyecto
         {
             dgvVenta.DataSource = productoDAL.GetAllProductos();
         }
+
+        private Factura CrearFacturaDetalle(Producto producto, int cantidadVendida)
+        {
+            Factura facturaDetalle = new Factura
+            {
+                Producto = producto.Nombre,
+                Descripcion = producto.DescripcionProducto,
+                Precio = Convert.ToInt32(producto.PrecioVenta), // Convertir de decimal a int
+                Cantidad = cantidadVendida,
+                Total = Convert.ToInt32(cantidadVendida * producto.PrecioVenta) // Convertir de decimal a int
+            };
+
+            return facturaDetalle;
+        }
+
 
     }
 }

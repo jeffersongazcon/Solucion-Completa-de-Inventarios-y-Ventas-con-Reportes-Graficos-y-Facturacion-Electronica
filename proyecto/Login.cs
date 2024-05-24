@@ -29,25 +29,7 @@ namespace proyecto
         private extern static void RealeaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private static extern void SendMessage(System.IntPtr hwnd, int wmsg, int wparaw, int lparam);
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {

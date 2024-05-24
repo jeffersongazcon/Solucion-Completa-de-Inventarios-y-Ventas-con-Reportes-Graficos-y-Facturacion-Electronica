@@ -57,7 +57,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(350, 366);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
             // pictureBox3
@@ -84,7 +83,6 @@
             this.txtUser.Size = new System.Drawing.Size(366, 22);
             this.txtUser.TabIndex = 1;
             this.txtUser.Text = "User";
-            this.txtUser.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.txtUser.Enter += new System.EventHandler(this.txtUser_Enter);
             this.txtUser.Leave += new System.EventHandler(this.txtUser_Leave);
             // 
@@ -123,7 +121,6 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 16);
             this.label2.TabIndex = 4;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // btLogin
             // 
@@ -158,6 +155,7 @@
             // 
             // btnCerrar
             // 
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
             this.btnCerrar.Location = new System.Drawing.Point(801, 12);
             this.btnCerrar.Name = "btnCerrar";
@@ -169,6 +167,7 @@
             // 
             // btnMinimizar
             // 
+            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
             this.btnMinimizar.Location = new System.Drawing.Point(754, 0);
             this.btnMinimizar.Name = "btnMinimizar";
@@ -232,7 +231,6 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOGIN";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

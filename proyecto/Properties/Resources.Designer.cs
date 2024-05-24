@@ -111,12 +111,68 @@ namespace proyecto.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a @import url(&apos;https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&apos;);
+        ///body{
+        ///	font-family: &apos;Poppins&apos;, sans-serif;
+        ///	font-weight: 300;
+        ///	line-height: 1.7;
+        ///	color: #ffeba7;
+        ///	background-color: #1f2029;
+        ///  overflow: hidden;
+        ///  height: 100vh;
+        ///  background: radial-gradient(ellipse at bottom, #1B2735 0%, #12141d 100%);
+        ///}
+        ///a:hover {
+        ///	text-decoration: none;
+        ///}
+        ///.link {
+        ///  color: #ffeba7;
+        ///}
+        ///.link:hover {
+        ///  color: #c4c3ca;
+        ///}
+        ///p {
+        ///  font-weight: 500;
+        ///  font-size: 14px;
+        ///}
+        ///h4 {
+        ///  font-wei [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string estilo {
+            get {
+                return ResourceManager.GetString("estilo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap icono_cliente {
             get {
                 object obj = ResourceManager.GetObject("icono_cliente", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a &lt;!doctype html&gt;
+        ///&lt;html lang=&quot;en&quot;&gt;
+        ///&lt;head&gt;
+        ///  &lt;title&gt;Webleb&lt;/title&gt;
+        ///  &lt;meta charset=&quot;utf-8&quot;&gt;
+        ///  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;
+        ///  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unicons.iconscout.com/release/v2.1.9/css/unicons.css&quot;&gt;
+        ///  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css&quot;&gt;
+        ///&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/styles.css&quot;&gt;
+        ///&lt;/head&gt;
+        ///&lt;body&gt;
+        ///&lt;div id=&quot;stars&quot;&gt;&lt;/div&gt;
+        ///&lt;div id=&quot;stars2&quot;&gt;&lt;/div&gt;
+        /// [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string login {
+            get {
+                return ResourceManager.GetString("login", resourceCulture);
             }
         }
         
