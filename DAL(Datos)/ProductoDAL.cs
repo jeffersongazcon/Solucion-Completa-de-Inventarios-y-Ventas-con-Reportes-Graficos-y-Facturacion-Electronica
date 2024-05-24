@@ -99,7 +99,7 @@ public class ProductoDAL : ConexionBaseDeUsuario
     }
     public void Venta(int productoID, int cantidadAVender)
     {
-        using(var conn = GetSqlConnection())
+        using (var conn = GetSqlConnection())
         {
             conn.Open();
             var query = "UPDATE Products SET Cantidad = CASE WHEN Cantidad >= @Cantidad THEN Cantidad - @Cantidad ELSE 0 END WHERE ProductoID = @ProductoID";
@@ -112,7 +112,53 @@ public class ProductoDAL : ConexionBaseDeUsuario
         }
     }
 
-public void DeleteProducto(int productoID)
+    public int GetCantidadActual(int productoID)
+    {
+        using (var conn = GetSqlConnection())
+        {
+            conn.Open();
+            var query = "SELECT Cantidad FROM Products WHERE ProductoID = @ProductoID";
+            using (var command = new SqlCommand(query, conn))
+            {
+                command.Parameters.AddWithValue("@ProductoID", productoID);
+                return (int)command.ExecuteScalar();
+            }
+        }
+    }
+
+    public DataTable GetAllCategorias()
+    {
+        using (var conn = GetSqlConnection())
+        {
+            conn.Open();
+            var query = "SELECT DISTINCT Categoria FROM Products";
+            using (var command = new SqlCommand(query, conn))
+            {
+                var adapter = new SqlDataAdapter(command);
+                var dt = new DataTable();
+                adapter.Fill(dt);
+                return dt;
+            }
+        }
+    }
+
+    public DataTable GetAllNombres()
+    {
+        using (var conn = GetSqlConnection())
+        {
+            conn.Open();
+            var query = "SELECT DISTINCT Nombre FROM Products";
+            using (var command = new SqlCommand(query, conn))
+            {
+                var adapter = new SqlDataAdapter(command);
+                var dt = new DataTable();
+                adapter.Fill(dt);
+                return dt;
+            }
+        }
+    }
+
+    public void DeleteProducto(int productoID)
     {
         using (var conn = GetSqlConnection())
         {
@@ -126,4 +172,5 @@ public void DeleteProducto(int productoID)
         }
     }
 }
+
 

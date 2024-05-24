@@ -26,25 +26,21 @@ namespace proyecto
         public FormVenta()
         {
             InitializeComponent();
-
             txtCantidad.KeyPress += new KeyPressEventHandler(txtCantidad_KeyPress);
             txtCantidad.TextChanged += new EventHandler(txtCantidad_TextChanged);
             PagFinal = NumFilas;
-            CargarListaProductos();
-            loadproductos();
-            CargarProductos();
+            AñadirProductos();
+            CargarCategorias();
+            CargarNombres();
         }
-        int canti;
-        private void loadproductos()
-        {
-            dgvVenta.DataSource = productoDAL.GetAllProductos();
-        }
-
-
 
         private void btnVender_Click(object sender, EventArgs e)
         {
-            // Capturar los productos seleccionados para la venta
+            DisminuirProductoVendido();
+        }
+
+        public void DisminuirProductoVendido()
+        {
             foreach (DataGridViewRow row in dgvVenta.SelectedRows)
             {
                 Producto producto = new Producto
@@ -54,30 +50,34 @@ namespace proyecto
                     PrecioVenta = Convert.ToDecimal(row.Cells["PrecioVenta"].Value),
                     DescripcionProducto = row.Cells["DescripcionProducto"].Value.ToString()
                 };
-
-                productosVendidos.Add(producto);
                 int cantidadAVender = Convert.ToInt32(txtCantidad.Text);
-                canti = cantidadAVender;
-                // Disminuir la cantidad en la base de datos
                 int productoID = Convert.ToInt32(row.Cells["ProductoID"].Value);
+                int Actual = productoDAL.GetCantidadActual(productoID);
+                if (cantidadAVender > Actual)
+                {
+                    DialogResult resultado = MessageBox.Show($"La cantidad a vender: {cantidadAVender} supera  a la cantidad actual {Actual}","Advertencia",MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    if (resultado == DialogResult.OK)
+                    {
+                        break;
+                    }
+                }
+                productosVendidos.Add(producto);
                 productoDAL.Venta(productoID, cantidadAVender);
-
-                // Actualizar la cantidad en el DataGridView
+                cantidadVendida = cantidadAVender;
                 int nuevaCantidad = Convert.ToInt32(row.Cells["Cantidad"].Value) - cantidadAVender;
                 row.Cells["Cantidad"].Value = nuevaCantidad > 0 ? nuevaCantidad : 0;
+                EnvioFacturaCorreo();
             }
-            // Generar la factura con los detalles de los productos vendidos
+        }
+        int cantidadVendida;
+        public void EnvioFacturaCorreo()
+        {
             string factura = GenerarFactura(productosVendidos);
-
             // Obtener la dirección de correo electrónico del usuario logueado
             string email = Usuario.Email;
-
-            // Enviar la factura por correo electrónico al usuario
             EnviarFacturaPorCorreo(email, factura);
-            
             MessageBox.Show("Venta realizada y factura enviada por correo electrónico.");
         }
-
         private string GenerarFactura(List<Producto> productos)
         {
             StringBuilder facturaBuilder = new StringBuilder();
@@ -96,11 +96,11 @@ namespace proyecto
                 facturaBuilder.AppendLine($"<td style='padding: 10px; border: 1px solid #ddd;'>{producto.Nombre}</td>");
                 facturaBuilder.AppendLine($"<td style='padding: 10px; border: 1px solid #ddd;'>{producto.DescripcionProducto}</td>");
                 facturaBuilder.AppendLine($"<td style='padding: 10px; border: 1px solid #ddd;'>{producto.PrecioVenta:C}</td>");
-                facturaBuilder.AppendLine($"<td style='padding: 10px; border: 1px solid #ddd;'>{canti}</td>");
+                facturaBuilder.AppendLine($"<td style='padding: 10px; border: 1px solid #ddd;'>{cantidadVendida}</td>");
                 facturaBuilder.AppendLine("</tr>");
             }
 
-            decimal total = productos.Sum(p => p.PrecioVenta * canti);
+            decimal total = productos.Sum(p => p.PrecioVenta * cantidadVendida);
             facturaBuilder.AppendLine("<tr style='background-color: #f9f9f9;'>");
             facturaBuilder.AppendLine($"<td colspan='3' style='text-align: right; padding: 10px; border: 1px solid #ddd;'><strong>Total:</strong></td>");
             facturaBuilder.AppendLine($"<td style='padding: 10px; border: 1px solid #ddd;'><strong>{total:C}</strong></td>");
@@ -139,27 +139,7 @@ namespace proyecto
                 MessageBox.Show($"Error al enviar la factura: {ex.Message}");
             }
         }
-        private void CargarListaProductos()
-        {
-
-            Producto.inicioProducto = PagInicio;
-            Producto.finalProducto = PagFinal;
-            dsTabla = dq.ListasProductos();
-            dgvVenta.DataSource = dsTabla.Tables[1];
-            int catidad = Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) / NumFilas;
-
-            if (Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) % NumFilas > 0) catidad++;
-
-            textCantidadPagina.Text = catidad.ToString();
-            cbxPagina.Items.Clear();
-
-            for (int x = 1; x <= catidad; x++)
-            {
-                cbxPagina.Items.Add(x.ToString());
-            }
-            cbxPagina.SelectedIndex = indice;
-        }
-
+       
         private void txtCantidad_TextChanged(object sender, EventArgs e)
         {
            Validacion();
@@ -174,6 +154,36 @@ namespace proyecto
             }
         }
 
+        private void CargarCategorias()
+        {
+            try
+            {
+                DataTable categorias = productoDAL.GetAllCategorias();
+                cbCategoria.DataSource = categorias;
+                cbCategoria.DisplayMember = "Categoria";
+                cbCategoria.ValueMember = "Categoria";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar las categorías: " + ex.Message);
+            }
+        }
+
+        public void CargarNombres()
+        {
+            try
+            {
+                DataTable nombres = productoDAL.GetAllNombres();
+                cbNombre.DataSource = nombres;
+                cbNombre.DisplayMember = "Nombre";
+                cbNombre.ValueMember = "Nombre";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar las categorías: " + ex.Message);
+            }
+        }
+
         private void txtCantidad_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
@@ -182,11 +192,10 @@ namespace proyecto
             }
         }
 
-        private void CargarProductos()
+        private void AñadirProductos()
         {
-            dsTabla = new DataSet(); // Suponiendo que dq.ListasProductos() retorna un DataSet
-            dsTabla = dq.ListasProductos();
-            dgvVenta.DataSource = dsTabla.Tables[1];
+            dgvVenta.DataSource = productoDAL.GetAllProductos();
         }
+
     }
 }
