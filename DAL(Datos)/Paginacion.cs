@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DAL_Datos_
 {
-    public class Paginacion:ConexionBaseDeUsuario
+    public class Paginacion : ConexionBaseDeUsuario
     {
         public DataSet ListasUsusarios()
         {
@@ -44,6 +44,7 @@ namespace DAL_Datos_
             }
 
         }
+
 
     }
 }

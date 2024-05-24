@@ -133,7 +133,7 @@
             this.btLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btLogin.Font = new System.Drawing.Font("Georgia", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLogin.ForeColor = System.Drawing.Color.DarkGray;
+            this.btLogin.ForeColor = System.Drawing.Color.ForestGreen;
             this.btLogin.Location = new System.Drawing.Point(418, 257);
             this.btLogin.Name = "btLogin";
             this.btLogin.Size = new System.Drawing.Size(318, 40);
@@ -230,7 +230,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
-            this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOGIN";
             this.Load += new System.EventHandler(this.Form1_Load);

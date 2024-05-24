@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexionBaseDeUsuario.cs" />
+    <Compile Include="FacturaDAL.cs" />
     <Compile Include="IcrudCargo.cs" />
     <Compile Include="IcrudUsuario.cs" />
     <Compile Include="Paginacion.cs" />

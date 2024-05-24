@@ -215,7 +215,9 @@ namespace proyecto
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            FormFactura fm = new FormFactura();
+            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            AbrirFormEnPanel(fm);
         }
 
         private void btnSalir_Click_1(object sender, EventArgs e)
@@ -245,10 +247,6 @@ namespace proyecto
         }
         
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            AbrirFormEnPanel(new Form1());
-        }
 
         public void permisos()
         {
