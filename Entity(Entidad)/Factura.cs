@@ -14,5 +14,7 @@ namespace Entity_Entidad_
         public int Cantidad { get; set; }
         public int Total { get; set; }
         public int PrecioCompra { get; set; }
+
+        public DateTime FechaVenta { get; set; }
     }
 }

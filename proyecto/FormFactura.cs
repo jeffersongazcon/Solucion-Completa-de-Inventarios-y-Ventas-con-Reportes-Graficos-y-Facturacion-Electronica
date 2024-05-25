@@ -15,11 +15,13 @@ namespace proyecto
     public partial class FormFactura : Form
     {
         private FacturaDAL FacturaDAL = new FacturaDAL();
-
+        private FacturaDAL facturaDAL;
         public FormFactura()
         {
             InitializeComponent();
+            facturaDAL = new FacturaDAL();
             loadproductos();
+
         }
         private void loadproductos()
         {
@@ -72,6 +74,16 @@ namespace proyecto
         private void BtnCerrarVenta_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnGenerateReport_Click(object sender, EventArgs e)
+        {
+            DateTime fechaInicio = dtpFechaInicio.Value;
+            DateTime fechaFinal = dtpFechaFinal.Value;
+
+            DataTable ventasTable = facturaDAL.GetVentasPorFecha(fechaInicio, fechaFinal);
+            dgvReporte.DataSource = ventasTable;
+            CalcularGanancias(ventasTable);
         }
     }
 }
