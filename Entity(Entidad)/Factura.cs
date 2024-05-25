@@ -13,5 +13,6 @@ namespace Entity_Entidad_
         public int Precio { get; set; }
         public int Cantidad { get; set; }
         public int Total { get; set; }
+        public int PrecioCompra { get; set; }
     }
 }

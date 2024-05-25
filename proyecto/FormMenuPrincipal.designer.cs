@@ -358,7 +358,7 @@
             this.btnReporte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReporte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReporte.UseVisualStyleBackColor = true;
-            this.btnReporte.Click += new System.EventHandler(this.button1_Click);
+            this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click_1);
             // 
             // PanelBarraTitulo
             // 

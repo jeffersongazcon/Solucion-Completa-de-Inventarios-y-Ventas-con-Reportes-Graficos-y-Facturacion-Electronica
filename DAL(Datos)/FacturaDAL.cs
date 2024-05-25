@@ -32,8 +32,8 @@ namespace DAL_Datos_
             using (var conn = GetSqlConnection())
             {
                 conn.Open();
-                
-                var query = "INSERT INTO Factura (Producto, Descripcion, Precio, Cantidad, Total) VALUES (@Producto, @Descripcion, @Precio, @Cantidad, @Total)";
+
+                var query = "INSERT INTO Factura (Producto, Descripcion, Precio, Cantidad, Total, PrecioCompra) VALUES (@Producto, @Descripcion, @Precio, @Cantidad, @Total, @PrecioCompra)";
                 using (var command = new SqlCommand(query, conn))
                 {
                     command.Parameters.AddWithValue("@Producto", factura.Producto);
@@ -41,10 +41,12 @@ namespace DAL_Datos_
                     command.Parameters.AddWithValue("@Precio", factura.Precio);
                     command.Parameters.AddWithValue("@Cantidad", factura.Cantidad);
                     command.Parameters.AddWithValue("@Total", factura.Total);
+                    command.Parameters.AddWithValue("@PrecioCompra", factura.PrecioCompra); // Asegúrate de que este valor se asigne correctamente
 
                     command.ExecuteNonQuery();
                 }
             }
         }
+
     }
 }

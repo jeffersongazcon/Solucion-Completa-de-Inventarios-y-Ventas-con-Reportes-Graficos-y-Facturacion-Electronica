@@ -6,7 +6,6 @@ C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\BLL(L
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\BLL(Logica)\bin\Debug\Entity(Entidad).pdb
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\BLL(Logica)\obj\Debug\BLL(Logica).csproj.AssemblyReference.cache
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\BLL(Logica)\obj\Debug\BLL(Logica).csproj.CoreCompileInputs.cache
-C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\BLL(Logica)\obj\Debug\BLL(Logica).csproj.CopyComplete
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\BLL(Logica)\obj\Debug\BLL(Logica).dll
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\BLL(Logica)\obj\Debug\BLL(Logica).pdb
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\BLL(Logica)\bin\Debug\BLL(Logica).dll
@@ -37,3 +36,4 @@ C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\BLL(L
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\BLL(Logica)\bin\Debug\CircularProgressBar.dll
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\BLL(Logica)\bin\Debug\WinFormAnimation.dll
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\BLL(Logica)\bin\Debug\CircularProgressBar.xml
+C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\BLL(Logica)\obj\Debug\BLL(Logi.F4EB6071.Up2Date

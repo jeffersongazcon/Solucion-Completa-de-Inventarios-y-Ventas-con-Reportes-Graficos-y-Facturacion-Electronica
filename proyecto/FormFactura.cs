@@ -21,13 +21,57 @@ namespace proyecto
             InitializeComponent();
             loadproductos();
         }
-
         private void loadproductos()
         {
-            dgvReporte.DataSource = FacturaDAL.GetAllFactura();
+            DataTable dt = FacturaDAL.GetAllFactura();
+            dgvReporte.DataSource = dt;
+
+            // Asegúrate de que el DataGridView muestre las columnas PrecioCompra y Precio
+            if (!dgvReporte.Columns.Contains("PrecioCompra"))
+            {
+                dgvReporte.Columns.Add("PrecioCompra", "Precio de Compra");
+            }
+            dgvReporte.Columns["PrecioCompra"].DataPropertyName = "PrecioCompra";
+
+            if (!dgvReporte.Columns.Contains("Precio"))
+            {
+                dgvReporte.Columns.Add("Precio", "Precio de Venta");
+            }
+            dgvReporte.Columns["Precio"].DataPropertyName = "Precio";
+
+            if (!dgvReporte.Columns.Contains("Total"))
+            {
+                dgvReporte.Columns.Add("Total", "Total de Venta");
+            }
+            dgvReporte.Columns["Total"].DataPropertyName = "Total";
+
+            CalcularGanancias(dt);
         }
 
+        private void CalcularGanancias(DataTable dt)
+        {
+            decimal cantidadInvertida = 0;
+            decimal totalVentas = 0;
+            decimal gananciaTotal = 0;
 
+            foreach (DataRow row in dt.Rows)
+            {
+                decimal precioCompra = Convert.ToDecimal(row["PrecioCompra"]);
+                decimal precioVenta = Convert.ToDecimal(row["Precio"]);
+                int cantidad = Convert.ToInt32(row["Cantidad"]);
 
+                cantidadInvertida += precioCompra * cantidad;
+                totalVentas += precioVenta * cantidad;
+                gananciaTotal += (precioVenta - precioCompra) * cantidad;
+            }
+
+            lblCantidadInvertida.Text = $"${cantidadInvertida}";
+            lblGananciaTotal.Text = $"${gananciaTotal}";
+        }
+
+        private void BtnCerrarVenta_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

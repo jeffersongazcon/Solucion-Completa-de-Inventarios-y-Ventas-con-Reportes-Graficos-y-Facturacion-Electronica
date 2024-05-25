@@ -19,8 +19,8 @@ C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\E
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\Entity(Entidad)\bin\Debug\CircularProgressBar.dll
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\Entity(Entidad)\bin\Debug\WinFormAnimation.dll
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\Entity(Entidad)\bin\Debug\CircularProgressBar.xml
-C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\Entity(Entidad)\obj\Debug\Entity(Entidad).csproj.CopyComplete
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\Entity(Entidad)\bin\Debug\CircularProgressBar.dll
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\Entity(Entidad)\bin\Debug\WinFormAnimation.dll
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\Entity(Entidad)\bin\Debug\CircularProgressBar.xml
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\Entity(Entidad)\obj\Debug\Entity(Entidad).csproj.CopyComplete
+C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\Entity(Entidad)\obj\Debug\Entity(E.57EE6723.Up2Date

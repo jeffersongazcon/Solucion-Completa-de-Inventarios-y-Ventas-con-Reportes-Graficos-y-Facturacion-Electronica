@@ -1,42 +1,44 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\",
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9C567C05-0112-4889-B710-B2B30DA51AB6}|DAL(Datos)\\DAL(Datos).csproj|c:\\users\\daniel\\onedrive\\documentos\\proyecto p3\\sistema-de-inventario-y-ventas\\dal(datos)\\icrudbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C567C05-0112-4889-B710-B2B30DA51AB6}|DAL(Datos)\\DAL(Datos).csproj|solutionrelative:dal(datos)\\icrudbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7220802E-819A-4A65-A965-F64CC8229E6B}|proyecto\\Presentacion.csproj|c:\\users\\lenovo\\onedrive\\documentos\\prueba\\sistemas de inventarios y venta\\proyecto\\formventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7220802E-819A-4A65-A965-F64CC8229E6B}|proyecto\\Presentacion.csproj|solutionrelative:proyecto\\formventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C567C05-0112-4889-B710-B2B30DA51AB6}|DAL(Datos)\\DAL(Datos).csproj|c:\\users\\daniel\\onedrive\\documentos\\proyecto p3\\sistema-de-inventario-y-ventas\\dal(datos)\\icrudcargo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7220802E-819A-4A65-A965-F64CC8229E6B}|proyecto\\Presentacion.csproj|C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\proyecto\\formfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7220802E-819A-4A65-A965-F64CC8229E6B}|proyecto\\Presentacion.csproj|solutionrelative:proyecto\\formfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDB3CDD9-1D5E-4346-BEAC-238D8BBB7000}|Entity(Entidad)\\Entity(Entidad).csproj|C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\entity(entidad)\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDB3CDD9-1D5E-4346-BEAC-238D8BBB7000}|Entity(Entidad)\\Entity(Entidad).csproj|solutionrelative:entity(entidad)\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7220802E-819A-4A65-A965-F64CC8229E6B}|proyecto\\Presentacion.csproj|C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\proyecto\\formmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7220802E-819A-4A65-A965-F64CC8229E6B}|proyecto\\Presentacion.csproj|solutionrelative:proyecto\\formmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7220802E-819A-4A65-A965-F64CC8229E6B}|proyecto\\Presentacion.csproj|C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\proyecto\\formlistaclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7220802E-819A-4A65-A965-F64CC8229E6B}|proyecto\\Presentacion.csproj|solutionrelative:proyecto\\formlistaclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7220802E-819A-4A65-A965-F64CC8229E6B}|proyecto\\Presentacion.csproj|C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\proyecto\\formlistaclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7220802E-819A-4A65-A965-F64CC8229E6B}|proyecto\\Presentacion.csproj|solutionrelative:proyecto\\formlistaclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C567C05-0112-4889-B710-B2B30DA51AB6}|DAL(Datos)\\DAL(Datos).csproj|C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\dal(datos)\\icrudcargo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C567C05-0112-4889-B710-B2B30DA51AB6}|DAL(Datos)\\DAL(Datos).csproj|solutionrelative:dal(datos)\\icrudcargo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C567C05-0112-4889-B710-B2B30DA51AB6}|DAL(Datos)\\DAL(Datos).csproj|c:\\users\\daniel\\onedrive\\documentos\\proyecto p3\\sistema-de-inventario-y-ventas\\dal(datos)\\icrudusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9C567C05-0112-4889-B710-B2B30DA51AB6}|DAL(Datos)\\DAL(Datos).csproj|C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\dal(datos)\\icrudusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C567C05-0112-4889-B710-B2B30DA51AB6}|DAL(Datos)\\DAL(Datos).csproj|solutionrelative:dal(datos)\\icrudusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C567C05-0112-4889-B710-B2B30DA51AB6}|DAL(Datos)\\DAL(Datos).csproj|c:\\users\\daniel\\onedrive\\documentos\\proyecto p3\\sistema-de-inventario-y-ventas\\dal(datos)\\detalleventarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C567C05-0112-4889-B710-B2B30DA51AB6}|DAL(Datos)\\DAL(Datos).csproj|solutionrelative:dal(datos)\\detalleventarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\CompraRepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C567C05-0112-4889-B710-B2B30DA51AB6}|DAL(Datos)\\DAL(Datos).csproj|c:\\users\\daniel\\onedrive\\documentos\\proyecto p3\\sistema-de-inventario-y-ventas\\dal(datos)\\permisosrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C567C05-0112-4889-B710-B2B30DA51AB6}|DAL(Datos)\\DAL(Datos).csproj|solutionrelative:dal(datos)\\permisosrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C567C05-0112-4889-B710-B2B30DA51AB6}|DAL(Datos)\\DAL(Datos).csproj|c:\\users\\daniel\\onedrive\\documentos\\proyecto p3\\sistema-de-inventario-y-ventas\\dal(datos)\\proveedorrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C567C05-0112-4889-B710-B2B30DA51AB6}|DAL(Datos)\\DAL(Datos).csproj|solutionrelative:dal(datos)\\proveedorrepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C567C05-0112-4889-B710-B2B30DA51AB6}|DAL(Datos)\\DAL(Datos).csproj|c:\\users\\daniel\\onedrive\\documentos\\proyecto p3\\sistema-de-inventario-y-ventas\\dal(datos)\\comprarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C567C05-0112-4889-B710-B2B30DA51AB6}|DAL(Datos)\\DAL(Datos).csproj|solutionrelative:dal(datos)\\comprarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C567C05-0112-4889-B710-B2B30DA51AB6}|DAL(Datos)\\DAL(Datos).csproj|c:\\users\\daniel\\onedrive\\documentos\\proyecto p3\\sistema-de-inventario-y-ventas\\dal(datos)\\detallecomprarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C567C05-0112-4889-B710-B2B30DA51AB6}|DAL(Datos)\\DAL(Datos).csproj|solutionrelative:dal(datos)\\detallecomprarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C567C05-0112-4889-B710-B2B30DA51AB6}|DAL(Datos)\\DAL(Datos).csproj|c:\\users\\daniel\\onedrive\\documentos\\proyecto p3\\sistema-de-inventario-y-ventas\\dal(datos)\\categoriarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C567C05-0112-4889-B710-B2B30DA51AB6}|DAL(Datos)\\DAL(Datos).csproj|solutionrelative:dal(datos)\\categoriarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\CategoriaRepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,11 +52,11 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Bookmark",
@@ -63,119 +65,124 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "IcrudBase.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\IcrudBase.cs",
-              "RelativeDocumentMoniker": "DAL(Datos)\\IcrudBase.cs",
-              "ToolTip": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\IcrudBase.cs",
-              "RelativeToolTip": "DAL(Datos)\\IcrudBase.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAaAAAA",
+              "Title": "FormVenta.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\proyecto\\FormVenta.cs",
+              "RelativeDocumentMoniker": "proyecto\\FormVenta.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\proyecto\\FormVenta.cs",
+              "RelativeToolTip": "proyecto\\FormVenta.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T22:54:25.964Z",
+              "WhenOpened": "2024-05-25T13:26:57.428Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IcrudCargo.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\IcrudCargo.cs",
-              "RelativeDocumentMoniker": "DAL(Datos)\\IcrudCargo.cs",
-              "ToolTip": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\IcrudCargo.cs",
-              "RelativeToolTip": "DAL(Datos)\\IcrudCargo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA8AAAA",
+              "Title": "FormFactura.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\proyecto\\FormFactura.cs",
+              "RelativeDocumentMoniker": "proyecto\\FormFactura.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\proyecto\\FormFactura.cs",
+              "RelativeToolTip": "proyecto\\FormFactura.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAIwEkAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T22:54:13.542Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IcrudUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\IcrudUsuario.cs",
-              "RelativeDocumentMoniker": "DAL(Datos)\\IcrudUsuario.cs",
-              "ToolTip": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\IcrudUsuario.cs",
-              "RelativeToolTip": "DAL(Datos)\\IcrudUsuario.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T22:54:09.357Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ProveedorRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\ProveedorRepositorio.cs",
-              "RelativeDocumentMoniker": "DAL(Datos)\\ProveedorRepositorio.cs",
-              "ToolTip": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\ProveedorRepositorio.cs",
-              "RelativeToolTip": "DAL(Datos)\\ProveedorRepositorio.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAABcAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T22:45:37.588Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PermisosRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\PermisosRepositorio.cs",
-              "RelativeDocumentMoniker": "DAL(Datos)\\PermisosRepositorio.cs",
-              "ToolTip": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\PermisosRepositorio.cs",
-              "RelativeToolTip": "DAL(Datos)\\PermisosRepositorio.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAAA8AAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T22:43:58.297Z",
+              "WhenOpened": "2024-05-25T01:32:22.907Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DetalleVentaRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\DetalleVentaRepositorio.cs",
-              "RelativeDocumentMoniker": "DAL(Datos)\\DetalleVentaRepositorio.cs",
-              "ToolTip": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\DetalleVentaRepositorio.cs",
-              "RelativeToolTip": "DAL(Datos)\\DetalleVentaRepositorio.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAFAAAA",
+              "Title": "FormMenuPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\proyecto\\FormMenuPrincipal.cs",
+              "RelativeDocumentMoniker": "proyecto\\FormMenuPrincipal.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\proyecto\\FormMenuPrincipal.cs",
+              "RelativeToolTip": "proyecto\\FormMenuPrincipal.cs",
+              "ViewState": "AQIAANcAAAAAAAAAAAAtwPYAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T22:41:41.763Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DetalleCompraRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\DetalleCompraRepositorio.cs",
-              "RelativeDocumentMoniker": "DAL(Datos)\\DetalleCompraRepositorio.cs",
-              "ToolTip": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\DetalleCompraRepositorio.cs",
-              "RelativeToolTip": "DAL(Datos)\\DetalleCompraRepositorio.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T22:39:36.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CompraRepositorio.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\CompraRepositorio.cs",
-              "RelativeDocumentMoniker": "DAL(Datos)\\CompraRepositorio.cs",
-              "ToolTip": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\CompraRepositorio.cs",
-              "RelativeToolTip": "DAL(Datos)\\CompraRepositorio.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAAA4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T22:35:15.104Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-25T02:01:18.739Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "CompraRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\CompraRepositorio.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\CompraRepositorio.cs",
+              "ToolTip": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\CompraRepositorio.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\CompraRepositorio.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T22:35:15.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Factura.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\Entity(Entidad)\\Factura.cs",
+              "RelativeDocumentMoniker": "Entity(Entidad)\\Factura.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\Entity(Entidad)\\Factura.cs",
+              "RelativeToolTip": "Entity(Entidad)\\Factura.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T02:34:38.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "CategoriaRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\CategoriaRepositorio.cs",
-              "RelativeDocumentMoniker": "DAL(Datos)\\CategoriaRepositorio.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\CategoriaRepositorio.cs",
               "ToolTip": "C:\\Users\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\CategoriaRepositorio.cs",
-              "RelativeToolTip": "DAL(Datos)\\CategoriaRepositorio.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Daniel\\OneDrive\\Documentos\\Proyecto p3\\Sistema-de-inventario-y-ventas\\DAL(Datos)\\CategoriaRepositorio.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAAABMAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T22:21:38.881Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T22:21:38.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormListaClientes.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\proyecto\\FormListaClientes.cs",
+              "RelativeDocumentMoniker": "proyecto\\FormListaClientes.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\proyecto\\FormListaClientes.cs",
+              "RelativeToolTip": "proyecto\\FormListaClientes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T01:58:58.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormListaClientes.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\proyecto\\FormListaClientes.cs",
+              "RelativeDocumentMoniker": "proyecto\\FormListaClientes.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\proyecto\\FormListaClientes.cs [Dise\u00F1o]",
+              "RelativeToolTip": "proyecto\\FormListaClientes.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T01:58:56.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IcrudCargo.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\DAL(Datos)\\IcrudCargo.cs",
+              "RelativeDocumentMoniker": "DAL(Datos)\\IcrudCargo.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\DAL(Datos)\\IcrudCargo.cs",
+              "RelativeToolTip": "DAL(Datos)\\IcrudCargo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T22:54:13.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IcrudUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\DAL(Datos)\\IcrudUsuario.cs",
+              "RelativeDocumentMoniker": "DAL(Datos)\\IcrudUsuario.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\DAL(Datos)\\IcrudUsuario.cs",
+              "RelativeToolTip": "DAL(Datos)\\IcrudUsuario.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T22:54:09.357Z"
             }
           ]
         }

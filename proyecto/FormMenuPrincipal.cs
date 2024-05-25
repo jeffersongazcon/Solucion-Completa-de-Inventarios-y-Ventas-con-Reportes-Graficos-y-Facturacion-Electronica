@@ -212,14 +212,6 @@ namespace proyecto
             AbrirFormEnPanel(fm);
         }
 
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            FormFactura fm = new FormFactura();
-            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
-            AbrirFormEnPanel(fm);
-        }
-
         private void btnSalir_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
@@ -235,6 +227,15 @@ namespace proyecto
         private void btnVenta_Click(object sender, EventArgs e)
         {
             FormVenta fm = new FormVenta();
+            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            AbrirFormEnPanel(fm);
+        }
+
+        private void btnReporte_Click_1(object sender, EventArgs e)
+        {
+            
+
+            FormFactura fm = new FormFactura();
             fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             AbrirFormEnPanel(fm);
         }
@@ -256,6 +257,7 @@ namespace proyecto
                 btnReporte.Enabled = false;
             }
         }
+
 
     }
 }

@@ -9,7 +9,6 @@ C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proye
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.Properties.Resources.resources
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\Presentacion.csproj.GenerateResource.cache
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
-C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\Presentacion.csproj.CopyComplete
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.exe
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.pdb
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.Login.resources
@@ -83,3 +82,4 @@ C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inven
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\obj\Debug\proyecto.FormMenuPrincipal.resources
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\proyecto\obj\Debug\proyecto.FormVenta.resources
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.FormFactura.resources
+C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\Presenta.BC77CD05.Up2Date

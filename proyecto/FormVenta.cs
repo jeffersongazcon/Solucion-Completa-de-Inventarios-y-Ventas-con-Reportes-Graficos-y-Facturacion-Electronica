@@ -49,8 +49,10 @@ namespace proyecto
                     ProductoID = Convert.ToInt32(row.Cells["ProductoID"].Value),
                     Nombre = row.Cells["Nombre"].Value.ToString(),
                     PrecioVenta = Convert.ToDecimal(row.Cells["PrecioVenta"].Value),
-                    DescripcionProducto = row.Cells["DescripcionProducto"].Value.ToString()
+                    DescripcionProducto = row.Cells["DescripcionProducto"].Value.ToString(),
+                    PrecioCompra = Convert.ToDecimal(row.Cells["PrecioCompra"].Value)
                 };
+
                 int cantidadAVender = Convert.ToInt32(txtCantidad.Text);
                 int productoID = Convert.ToInt32(row.Cells["ProductoID"].Value);
                 int Actual = productoDAL.GetCantidadActual(productoID);
@@ -209,7 +211,8 @@ namespace proyecto
                 Descripcion = producto.DescripcionProducto,
                 Precio = Convert.ToInt32(producto.PrecioVenta), // Convertir de decimal a int
                 Cantidad = cantidadVendida,
-                Total = Convert.ToInt32(cantidadVendida * producto.PrecioVenta) // Convertir de decimal a int
+                Total = Convert.ToInt32(cantidadVendida * producto.PrecioVenta), // Convertir de decimal a int
+                PrecioCompra = Convert.ToInt32(producto.PrecioCompra),
             };
 
             return facturaDetalle;
