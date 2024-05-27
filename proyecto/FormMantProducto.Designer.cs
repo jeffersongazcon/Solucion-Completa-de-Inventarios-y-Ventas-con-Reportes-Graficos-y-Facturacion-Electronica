@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMantProducto));
             this.lblPrecioCompra = new System.Windows.Forms.Label();
             this.txtPrecioCompra = new System.Windows.Forms.TextBox();
             this.lblCantidad = new System.Windows.Forms.Label();
@@ -45,7 +46,6 @@
             this.BarraTitulo = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.BtnCerrar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblPrecioVenta = new System.Windows.Forms.Label();
             this.txtPrecioVenta = new System.Windows.Forms.TextBox();
             this.lblEstado = new System.Windows.Forms.Label();
@@ -54,6 +54,7 @@
             this.txtFechaRegistro = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtid = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -260,17 +261,6 @@
             this.BtnCerrar.UseVisualStyleBackColor = true;
             this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::proyecto.Properties.Resources.icono_cliente;
-            this.pictureBox1.Location = new System.Drawing.Point(593, 187);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(184, 188);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 33;
-            this.pictureBox1.TabStop = false;
-            // 
             // lblPrecioVenta
             // 
             this.lblPrecioVenta.AutoSize = true;
@@ -353,6 +343,17 @@
             this.txtid.Size = new System.Drawing.Size(324, 26);
             this.txtid.TabIndex = 45;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(483, 109);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(318, 340);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 33;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormMantProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -370,7 +371,6 @@
             this.Controls.Add(this.txtPrecioCompra);
             this.Controls.Add(this.lblCantidad);
             this.Controls.Add(this.txtCantidad);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ProductoID);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
@@ -382,6 +382,7 @@
             this.Controls.Add(this.txtDescripcionDeProducto);
             this.Controls.Add(this.txtCodigoDeBarra);
             this.Controls.Add(this.BarraTitulo);
+            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormMantProducto";
             this.Text = "FormMantProducto";
@@ -399,7 +400,6 @@
         public System.Windows.Forms.TextBox txtPrecioCompra;
         private System.Windows.Forms.Label lblCantidad;
         public System.Windows.Forms.TextBox txtCantidad;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label ProductoID;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
@@ -421,5 +421,6 @@
         public System.Windows.Forms.TextBox txtFechaRegistro;
         public System.Windows.Forms.TextBox txtNombre;
         public System.Windows.Forms.TextBox txtid;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

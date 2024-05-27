@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMantCliente));
             this.BarraTitulo = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.BtnCerrar = new System.Windows.Forms.Button();
@@ -233,11 +234,11 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::proyecto.Properties.Resources.icono_cliente;
-            this.pictureBox1.Location = new System.Drawing.Point(544, 111);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(437, 40);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(184, 188);
+            this.pictureBox1.Size = new System.Drawing.Size(343, 357);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
@@ -293,7 +294,6 @@
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblCargo);
             this.Controls.Add(this.txtCargo);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.UserID);
             this.Controls.Add(this.txtid);
             this.Controls.Add(this.btnCancelar);
@@ -307,6 +307,7 @@
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtLoginName);
             this.Controls.Add(this.BarraTitulo);
+            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormMantCliente";

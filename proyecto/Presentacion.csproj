@@ -52,6 +52,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalendarioPersonalizado.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Confirmacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -313,6 +316,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\login.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendarDark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendarWhite.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

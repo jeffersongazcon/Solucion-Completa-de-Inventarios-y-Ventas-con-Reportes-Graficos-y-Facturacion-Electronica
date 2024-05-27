@@ -67,8 +67,8 @@ namespace proyecto
                 gananciaTotal += (precioVenta - precioCompra) * cantidad;
             }
 
-            lblCantidadInvertida.Text = $"${cantidadInvertida}";
-            lblGananciaTotal.Text = $"${gananciaTotal}";
+            lblCantidadInvertida.Text = $"${cantidadInvertida:N0}";
+            lblGananciaTotal.Text = $"${gananciaTotal:N0}";
         }
 
         private void BtnCerrarVenta_Click(object sender, EventArgs e)

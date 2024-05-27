@@ -254,7 +254,13 @@ namespace proyecto
             if (Usuario.Cargo == IcrudCargo.Cliente)
             {
                 btnListaClientes.Enabled = false;
+                btnProductos.Enabled = false;
                 btnReporte.Enabled = false;
+            }
+            if(Usuario.Cargo == IcrudCargo.Recepcionista)
+            {
+                btnReporte.Enabled=false;
+                btnListaClientes.Enabled=false;
             }
         }
 
