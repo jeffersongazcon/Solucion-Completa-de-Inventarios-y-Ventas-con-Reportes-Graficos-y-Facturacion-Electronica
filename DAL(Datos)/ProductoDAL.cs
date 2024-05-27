@@ -9,7 +9,6 @@ using Entity_Entidad_;
 
 public class ProductoDAL : ConexionBaseDeUsuario
 {
-
     public DataTable GetAllProductos()
     {
         using (var conn = GetSqlConnection())
@@ -31,18 +30,14 @@ public class ProductoDAL : ConexionBaseDeUsuario
         using (var conn = GetSqlConnection())
         {
             conn.Open();
-
             var queryMaxID = "SELECT ISNULL(MAX(ProductoID), 0) AS MaxID FROM Products";
             int maxID = 0;
-
             using (var command = new SqlCommand(queryMaxID, conn))
             {
                 maxID = (int)command.ExecuteScalar();
             }
 
-
             var reseedQuery = $"DBCC CHECKIDENT ('Products', RESEED, {maxID})";
-
             using (var command = new SqlCommand(reseedQuery, conn))
             {
                 command.ExecuteNonQuery();
@@ -68,12 +63,10 @@ public class ProductoDAL : ConexionBaseDeUsuario
                 command.Parameters.AddWithValue("@PrecioVenta", producto.PrecioVenta);
                 command.Parameters.AddWithValue("@Estado", producto.Estado);
                 command.Parameters.AddWithValue("@FechaRegistro", producto.FechaRegistro);
-
                 command.ExecuteNonQuery();
             }
         }
     }
-
 
     public void UpdateProducto(Producto producto)
     {
@@ -92,11 +85,11 @@ public class ProductoDAL : ConexionBaseDeUsuario
                 command.Parameters.AddWithValue("@PrecioCompra", producto.PrecioCompra);
                 command.Parameters.AddWithValue("@PrecioVenta", producto.PrecioVenta);
                 command.Parameters.AddWithValue("@Estado", producto.Estado);
-
                 command.ExecuteNonQuery();
             }
         }
     }
+
     public void Venta(int productoID, int cantidadAVender)
     {
         using (var conn = GetSqlConnection())
@@ -171,6 +164,59 @@ public class ProductoDAL : ConexionBaseDeUsuario
             }
         }
     }
+
+    // Función para obtener productos por categoría
+    public DataTable GetProductosByCategoria(string categoria)
+    {
+        using (var conn = GetSqlConnection())
+        {
+            conn.Open();
+            var query = "SELECT * FROM Products WHERE Categoria = @Categoria";
+            using (var command = new SqlCommand(query, conn))
+            {
+                command.Parameters.AddWithValue("@Categoria", categoria);
+                var adapter = new SqlDataAdapter(command);
+                var dt = new DataTable();
+                adapter.Fill(dt);
+                return dt;
+            }
+        }
+    }
+
+    // Función para obtener nombres de productos por categoría
+    public DataTable GetNombresByCategoria(string categoria)
+    {
+        using (var conn = GetSqlConnection())
+        {
+            conn.Open();
+            var query = "SELECT DISTINCT Nombre FROM Products WHERE Categoria = @Categoria";
+            using (var command = new SqlCommand(query, conn))
+            {
+                command.Parameters.AddWithValue("@Categoria", categoria);
+                var adapter = new SqlDataAdapter(command);
+                var dt = new DataTable();
+                adapter.Fill(dt);
+                return dt;
+            }
+        }
+    }
+
+    // Función para obtener productos por nombre y categoría
+    public DataTable GetProductosByNombreYCategoria(string nombre, string categoria)
+    {
+        using (var conn = GetSqlConnection())
+        {
+            conn.Open();
+            var query = "SELECT * FROM Products WHERE Nombre = @Nombre AND Categoria = @Categoria";
+            using (var command = new SqlCommand(query, conn))
+            {
+                command.Parameters.AddWithValue("@Nombre", nombre);
+                command.Parameters.AddWithValue("@Categoria", categoria);
+                var adapter = new SqlDataAdapter(command);
+                var dt = new DataTable();
+                adapter.Fill(dt);
+                return dt;
+            }
+        }
+    }
 }
-
-
