@@ -385,6 +385,7 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormMantProducto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMantProducto";
             this.BarraTitulo.ResumeLayout(false);
             this.BarraTitulo.PerformLayout();
