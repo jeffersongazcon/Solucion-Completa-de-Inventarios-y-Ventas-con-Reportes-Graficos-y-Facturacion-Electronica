@@ -26,16 +26,16 @@
             this.lblCantidadInvertida = new System.Windows.Forms.Label();
             this.lblGanancia = new System.Windows.Forms.Label();
             this.lblInvercion = new System.Windows.Forms.Label();
-            this.labelProductos = new System.Windows.Forms.Label();
+            this.labelFactura = new System.Windows.Forms.Label();
             this.PanelCantidad = new System.Windows.Forms.Panel();
             this.pnlFiltrado = new System.Windows.Forms.Panel();
+            this.dtpFechaFinal = new proyecto.CalendarioPersonalizado();
+            this.dtpFechaInicio = new proyecto.CalendarioPersonalizado();
             this.lblFechaFinal = new System.Windows.Forms.Label();
             this.lblFechaDeInicio = new System.Windows.Forms.Label();
             this.btnGenerateReport = new System.Windows.Forms.Button();
             this.BtnCerrarVenta = new System.Windows.Forms.Button();
             this.dgvReporte = new System.Windows.Forms.DataGridView();
-            this.dtpFechaInicio = new proyecto.CalendarioPersonalizado();
-            this.dtpFechaFinal = new proyecto.CalendarioPersonalizado();
             this.panelVenta.SuspendLayout();
             this.pnlInvercion.SuspendLayout();
             this.PanelCantidad.SuspendLayout();
@@ -47,7 +47,7 @@
             // 
             this.panelVenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
             this.panelVenta.Controls.Add(this.pnlInvercion);
-            this.panelVenta.Controls.Add(this.labelProductos);
+            this.panelVenta.Controls.Add(this.labelFactura);
             this.panelVenta.Controls.Add(this.PanelCantidad);
             this.panelVenta.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelVenta.Location = new System.Drawing.Point(0, 0);
@@ -112,17 +112,17 @@
             this.lblInvercion.TabIndex = 0;
             this.lblInvercion.Text = "Cantidad Invertida:";
             // 
-            // labelProductos
+            // labelFactura
             // 
-            this.labelProductos.AutoSize = true;
-            this.labelProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelProductos.ForeColor = System.Drawing.Color.White;
-            this.labelProductos.Location = new System.Drawing.Point(65, 15);
-            this.labelProductos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelProductos.Name = "labelProductos";
-            this.labelProductos.Size = new System.Drawing.Size(173, 25);
-            this.labelProductos.TabIndex = 31;
-            this.labelProductos.Text = "Lista de Productos";
+            this.labelFactura.AutoSize = true;
+            this.labelFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFactura.ForeColor = System.Drawing.Color.White;
+            this.labelFactura.Location = new System.Drawing.Point(65, 15);
+            this.labelFactura.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelFactura.Name = "labelFactura";
+            this.labelFactura.Size = new System.Drawing.Size(78, 25);
+            this.labelFactura.TabIndex = 31;
+            this.labelFactura.Text = "Factura";
             // 
             // PanelCantidad
             // 
@@ -147,6 +147,32 @@
             this.pnlFiltrado.Name = "pnlFiltrado";
             this.pnlFiltrado.Size = new System.Drawing.Size(288, 562);
             this.pnlFiltrado.TabIndex = 38;
+            // 
+            // dtpFechaFinal
+            // 
+            this.dtpFechaFinal.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.dtpFechaFinal.BorderSize = 0;
+            this.dtpFechaFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.dtpFechaFinal.Location = new System.Drawing.Point(3, 203);
+            this.dtpFechaFinal.MinimumSize = new System.Drawing.Size(4, 35);
+            this.dtpFechaFinal.Name = "dtpFechaFinal";
+            this.dtpFechaFinal.Size = new System.Drawing.Size(282, 35);
+            this.dtpFechaFinal.SkinColor = System.Drawing.Color.YellowGreen;
+            this.dtpFechaFinal.TabIndex = 39;
+            this.dtpFechaFinal.TextColor = System.Drawing.Color.White;
+            // 
+            // dtpFechaInicio
+            // 
+            this.dtpFechaInicio.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.dtpFechaInicio.BorderSize = 0;
+            this.dtpFechaInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.dtpFechaInicio.Location = new System.Drawing.Point(3, 134);
+            this.dtpFechaInicio.MinimumSize = new System.Drawing.Size(4, 35);
+            this.dtpFechaInicio.Name = "dtpFechaInicio";
+            this.dtpFechaInicio.Size = new System.Drawing.Size(282, 35);
+            this.dtpFechaInicio.SkinColor = System.Drawing.Color.YellowGreen;
+            this.dtpFechaInicio.TabIndex = 39;
+            this.dtpFechaInicio.TextColor = System.Drawing.Color.White;
             // 
             // lblFechaFinal
             // 
@@ -243,32 +269,6 @@
             this.dgvReporte.Size = new System.Drawing.Size(798, 279);
             this.dgvReporte.TabIndex = 32;
             // 
-            // dtpFechaInicio
-            // 
-            this.dtpFechaInicio.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.dtpFechaInicio.BorderSize = 0;
-            this.dtpFechaInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.dtpFechaInicio.Location = new System.Drawing.Point(3, 134);
-            this.dtpFechaInicio.MinimumSize = new System.Drawing.Size(0, 35);
-            this.dtpFechaInicio.Name = "dtpFechaInicio";
-            this.dtpFechaInicio.Size = new System.Drawing.Size(282, 35);
-            this.dtpFechaInicio.SkinColor = System.Drawing.Color.YellowGreen;
-            this.dtpFechaInicio.TabIndex = 39;
-            this.dtpFechaInicio.TextColor = System.Drawing.Color.White;
-            // 
-            // dtpFechaFinal
-            // 
-            this.dtpFechaFinal.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.dtpFechaFinal.BorderSize = 0;
-            this.dtpFechaFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.dtpFechaFinal.Location = new System.Drawing.Point(3, 203);
-            this.dtpFechaFinal.MinimumSize = new System.Drawing.Size(0, 35);
-            this.dtpFechaFinal.Name = "dtpFechaFinal";
-            this.dtpFechaFinal.Size = new System.Drawing.Size(282, 35);
-            this.dtpFechaFinal.SkinColor = System.Drawing.Color.YellowGreen;
-            this.dtpFechaFinal.TabIndex = 39;
-            this.dtpFechaFinal.TextColor = System.Drawing.Color.White;
-            // 
             // FormFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -293,7 +293,7 @@
 
         private System.Windows.Forms.Panel panelVenta;
         private System.Windows.Forms.DataGridView dgvReporte;
-        private System.Windows.Forms.Label labelProductos;
+        private System.Windows.Forms.Label labelFactura;
         private System.Windows.Forms.Panel PanelCantidad;
         private System.Windows.Forms.Panel pnlInvercion;
         private System.Windows.Forms.Label lblGananciaTotal;
