@@ -37,6 +37,11 @@ namespace proyecto
 
         private void btnVender_Click(object sender, EventArgs e)
         {
+            if (carrito.Count == 0)
+            {
+                MessageBox.Show("No se ha seleccionado ningún producto.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             DisminuirProductoVendido();
         }
 
@@ -44,31 +49,28 @@ namespace proyecto
         {
             foreach (var producto in carrito)
             {
-                int cantidadAComprar = Convert.ToInt32(txtCantidad.Text);
                 int cantidadAVender = producto.Cantidad;
                 int productoID = producto.ProductoID;
                 int Actual = productoDAL.GetCantidadActual(productoID);
-                if (cantidadAComprar > Actual)
+
+                if (cantidadAVender > Actual)
                 {
                     MessageBox.Show($"La cantidad a vender: {cantidadAVender} supera a la cantidad actual {Actual}", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    break;
+                    return;
                 }
+
                 productosVendidos.Add(producto);
                 productoDAL.Venta(productoID, cantidadAVender);
                 Factura facturaDetalle = CrearFacturaDetalle(producto, cantidadAVender);
                 factura.AddFactura(facturaDetalle);
             }
 
-            if (!facturaEnviada)
-            {
-                EnvioFacturaCorreo();
-                facturaEnviada = true; // Marca la factura como enviada
-            }
-
+            EnvioFacturaCorreo();
             carrito.Clear();
             dgvCarrito.DataSource = null;
             dgvCarrito.DataSource = carrito;
         }
+
         private void EnvioFacturaCorreo()
         {
             string factura = GenerarFactura(productosVendidos);

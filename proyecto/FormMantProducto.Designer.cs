@@ -375,7 +375,6 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.lblCategoria);
-            this.Controls.Add(this.lblDescripcionDeProducto);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblCodigoDeBarra);
             this.Controls.Add(this.txtCategoria);
@@ -383,6 +382,7 @@
             this.Controls.Add(this.txtCodigoDeBarra);
             this.Controls.Add(this.BarraTitulo);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.lblDescripcionDeProducto);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormMantProducto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
