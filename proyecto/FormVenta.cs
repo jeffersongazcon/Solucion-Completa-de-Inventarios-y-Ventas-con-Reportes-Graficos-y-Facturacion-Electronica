@@ -30,6 +30,7 @@ namespace proyecto
             cbNombre.SelectedIndexChanged += new EventHandler(cbNombre_SelectedIndexChanged);
             btnAgregar.Click += new EventHandler(btnAgregar_Click);
             btnQuitar.Click += new EventHandler(btnQuitar_Click);
+            btnVender.Click -= new EventHandler(btnVender_Click);
             btnVender.Click += new EventHandler(btnVender_Click);
             AñadirProductos();
             CargarCategorias();
@@ -47,6 +48,7 @@ namespace proyecto
 
         private void DisminuirProductoVendido()
         {
+            bool hayError = false;
             foreach (var producto in carrito)
             {
                 int cantidadAVender = producto.Cantidad;
@@ -65,11 +67,28 @@ namespace proyecto
                 factura.AddFactura(facturaDetalle);
             }
 
-            EnvioFacturaCorreo();
-            carrito.Clear();
+            if (!hayError)
+            {
+                EnvioFacturaCorreo();
+                carrito.Clear();
+                ActualizarCarrito();
+            }
+        }
+
+        private void ActualizarCarrito()
+        {
+            // Esta función se asegura de que el DataGridView se actualice correctamente
             dgvCarrito.DataSource = null;
             dgvCarrito.DataSource = carrito;
+
+            // Ocultar columnas innecesarias
+            dgvCarrito.Columns["CodigoDeBarras"].Visible = false;
+            dgvCarrito.Columns["ProductoID"].Visible = false;
+            dgvCarrito.Columns["PrecioCompra"].Visible = false;
+            dgvCarrito.Columns["Estado"].Visible = false;
+            dgvCarrito.Columns["FechaRegistro"].Visible = false;
         }
+
 
         private void EnvioFacturaCorreo()
         {
@@ -268,5 +287,6 @@ namespace proyecto
 
             return facturaDetalle;
         }
+
     }
 }
