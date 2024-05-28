@@ -34,6 +34,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormVenta));
             this.panelVenta = new System.Windows.Forms.Panel();
             this.lblProductos = new System.Windows.Forms.Label();
             this.lblCarrito = new System.Windows.Forms.Label();
@@ -52,15 +53,18 @@
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.lblCantidad = new System.Windows.Forms.Label();
             this.btnVender = new System.Windows.Forms.Button();
+            this.pbEsperando = new System.Windows.Forms.PictureBox();
             this.panelVenta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCarrito)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVenta)).BeginInit();
             this.PanelCantidad.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEsperando)).BeginInit();
             this.SuspendLayout();
             // 
             // panelVenta
             // 
             this.panelVenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.panelVenta.Controls.Add(this.pbEsperando);
             this.panelVenta.Controls.Add(this.lblProductos);
             this.panelVenta.Controls.Add(this.lblCarrito);
             this.panelVenta.Controls.Add(this.labelProductos);
@@ -122,6 +126,7 @@
             this.BtnCerrarVenta.Size = new System.Drawing.Size(57, 53);
             this.BtnCerrarVenta.TabIndex = 33;
             this.BtnCerrarVenta.UseVisualStyleBackColor = true;
+            this.BtnCerrarVenta.Click += new System.EventHandler(this.BtnCerrarVenta_Click);
             // 
             // panel1
             // 
@@ -202,7 +207,7 @@
             this.dgvVenta.DefaultCellStyle = dataGridViewCellStyle5;
             this.dgvVenta.EnableHeadersVisualStyles = false;
             this.dgvVenta.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
-            this.dgvVenta.Location = new System.Drawing.Point(0, 98);
+            this.dgvVenta.Location = new System.Drawing.Point(0, 103);
             this.dgvVenta.Margin = new System.Windows.Forms.Padding(4);
             this.dgvVenta.Name = "dgvVenta";
             this.dgvVenta.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -354,6 +359,17 @@
             this.btnVender.UseVisualStyleBackColor = false;
             this.btnVender.Click += new System.EventHandler(this.btnVender_Click);
             // 
+            // pbEsperando
+            // 
+            this.pbEsperando.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
+            this.pbEsperando.Image = ((System.Drawing.Image)(resources.GetObject("pbEsperando.Image")));
+            this.pbEsperando.Location = new System.Drawing.Point(0, 398);
+            this.pbEsperando.Name = "pbEsperando";
+            this.pbEsperando.Size = new System.Drawing.Size(987, 164);
+            this.pbEsperando.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbEsperando.TabIndex = 53;
+            this.pbEsperando.TabStop = false;
+            // 
             // FormVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -368,6 +384,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvVenta)).EndInit();
             this.PanelCantidad.ResumeLayout(false);
             this.PanelCantidad.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEsperando)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -392,5 +409,6 @@
         private System.Windows.Forms.DataGridView dgvCarrito;
         private System.Windows.Forms.Label lblCarrito;
         private System.Windows.Forms.Label lblProductos;
+        private System.Windows.Forms.PictureBox pbEsperando;
     }
 }

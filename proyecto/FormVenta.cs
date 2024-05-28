@@ -34,6 +34,7 @@ namespace proyecto
             btnVender.Click += new EventHandler(btnVender_Click);
             AñadirProductos();
             CargarCategorias();
+            ActualizarImagen();
         }
 
         private void btnVender_Click(object sender, EventArgs e)
@@ -44,6 +45,7 @@ namespace proyecto
                 return;
             }
             DisminuirProductoVendido();
+            ActualizarImagen();
         }
 
         private void DisminuirProductoVendido()
@@ -87,8 +89,13 @@ namespace proyecto
             dgvCarrito.Columns["PrecioCompra"].Visible = false;
             dgvCarrito.Columns["Estado"].Visible = false;
             dgvCarrito.Columns["FechaRegistro"].Visible = false;
+            
         }
 
+        private void ActualizarImagen()
+        {
+            pbEsperando.Visible = carrito.Count == 0;
+        }
 
         private void EnvioFacturaCorreo()
         {
@@ -141,10 +148,10 @@ namespace proyecto
                 SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
 
                 smtpClient.UseDefaultCredentials = false;
-                smtpClient.Credentials = new NetworkCredential("gazconjefferson@gmail.com", "yrvo uehn ihrk nmve");
+                smtpClient.Credentials = new NetworkCredential("inventariodelduende@gmail.com", "g r o v r o v g r a z h o v m t");
                 smtpClient.EnableSsl = true;
 
-                mail.From = new MailAddress("gazconjefferson@gmail.com");
+                mail.From = new MailAddress("inventariodelduende@gmail.com");
                 mail.To.Add(email);
                 mail.Subject = "Factura de su compra";
                 mail.IsBodyHtml = true;
@@ -234,6 +241,11 @@ namespace proyecto
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtCantidad.Text))
+            {
+                ValidacionDeCantidad();
+                return;
+            }
             foreach (DataGridViewRow row in dgvVenta.SelectedRows)
             {
                 Producto producto = new Producto
@@ -248,6 +260,7 @@ namespace proyecto
                 };
                 carrito.Add(producto);
             }
+            ActualizarImagen();
 
             dgvCarrito.DataSource = null;
             dgvCarrito.DataSource = carrito;
@@ -268,7 +281,7 @@ namespace proyecto
                     carrito.Remove(producto);
                 }
             }
-
+            ActualizarImagen();
             dgvCarrito.DataSource = null;
             dgvCarrito.DataSource = carrito;
         }
@@ -288,5 +301,15 @@ namespace proyecto
             return facturaDetalle;
         }
 
+        private void BtnCerrarVenta_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void ValidacionDeCantidad()
+        {
+            MessageBox.Show("Por favor, ingrese una CANTIDAD del producto que quiero comprar", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            return;
+        }
     }
 }
