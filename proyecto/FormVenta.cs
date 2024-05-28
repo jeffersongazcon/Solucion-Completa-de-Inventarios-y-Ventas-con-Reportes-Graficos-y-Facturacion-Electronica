@@ -224,8 +224,9 @@ namespace proyecto
                     PrecioVenta = Convert.ToDecimal(row.Cells["PrecioVenta"].Value),
                     DescripcionProducto = row.Cells["DescripcionProducto"].Value.ToString(),
                     PrecioCompra = Convert.ToDecimal(row.Cells["PrecioCompra"].Value),
-                    Cantidad = Convert.ToInt32(txtCantidad.Text),
-            };
+                    Categoria = row.Cells["Categoria"].Value.ToString(),
+                    Cantidad = Convert.ToInt32(txtCantidad.Text)
+                };
                 carrito.Add(producto);
             }
 
