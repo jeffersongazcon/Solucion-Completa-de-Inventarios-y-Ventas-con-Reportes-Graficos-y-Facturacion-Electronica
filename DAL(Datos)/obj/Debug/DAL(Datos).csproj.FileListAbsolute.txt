@@ -31,3 +31,6 @@ C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inven
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\DAL(Datos)\bin\Debug\WinFormAnimation.dll
 C:\Users\Jlope\source\repos\Sistema-de-inventario-y-ventas-main\Sistema-de-inventario-y-ventas-main\DAL(Datos)\bin\Debug\CircularProgressBar.xml
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\DAL(Datos)\obj\Debug\DAL(Datos).csproj.Up2Date
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\DAL(Datos)\bin\Debug\CircularProgressBar.dll
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\DAL(Datos)\bin\Debug\WinFormAnimation.dll
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\DAL(Datos)\bin\Debug\CircularProgressBar.xml

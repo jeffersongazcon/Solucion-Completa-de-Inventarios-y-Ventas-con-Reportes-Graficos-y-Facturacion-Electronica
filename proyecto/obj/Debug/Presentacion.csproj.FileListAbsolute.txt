@@ -36,7 +36,6 @@ C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proye
 C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\bin\Debug\proyecto.exe.config
 C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\bin\Debug\proyecto.exe
 C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\bin\Debug\proyecto.pdb
-C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\bin\Debug\aa-ER\proyecto.resources.dll
 C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\bin\Debug\BLL(Logica).dll
 C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\bin\Debug\Entity(Entidad).dll
 C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\bin\Debug\DAL(Datos).dll
@@ -44,17 +43,11 @@ C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\p
 C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\bin\Debug\Entity(Entidad).pdb
 C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\bin\Debug\DAL(Datos).pdb
 C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\Presentacion.csproj.AssemblyReference.cache
-C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.bienvenidaDeUsuario.resources
 C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.Confirmacion.resources
-C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.controlDeProductos.resources
 C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.Login.resources
-C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.PantallaDeInicio.resources
-C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.PantallaDelBotonClientes.resources
 C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.Properties.Resources.resources
-C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.PantallaDeInicio.aa-ER.resources
 C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\Presentacion.csproj.GenerateResource.cache
 C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
-C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\aa-ER\proyecto.resources.dll
 C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\Presenta.BC77CD05.Up2Date
 C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.exe
 C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.pdb
@@ -143,3 +136,15 @@ C:\Users\Jlope\source\repos\Lopez\Sistemas de inventarios y venta\proyecto\obj\D
 C:\Users\Jlope\source\repos\Lopez\Sistemas de inventarios y venta\proyecto\obj\Debug\Presentacion.csproj.CopyComplete
 C:\Users\Jlope\source\repos\Lopez\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.exe
 C:\Users\Jlope\source\repos\Lopez\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.pdb
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\bin\Debug\CircularProgressBar.dll
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\bin\Debug\WinFormAnimation.dll
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\bin\Debug\CircularProgressBar.xml
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.FormDeBienvenida.resources
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.FormFactura.resources
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.FormListaClientes.resources
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.FormListaProductos.resources
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.FormLogo.resources
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.FormMantCliente.resources
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.FormMantProducto.resources
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.FormMenuPrincipal.resources
+C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.FormVenta.resources
