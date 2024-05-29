@@ -310,6 +310,8 @@ namespace proyecto
         {
             MessageBox.Show("Por favor, ingrese una CANTIDAD del producto que quiero comprar", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             return;
+            
         }
+        
     }
 }

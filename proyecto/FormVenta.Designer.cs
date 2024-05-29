@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormVenta));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormVenta));
             this.panelVenta = new System.Windows.Forms.Panel();
+            this.pbEsperando = new System.Windows.Forms.PictureBox();
             this.lblProductos = new System.Windows.Forms.Label();
             this.lblCarrito = new System.Windows.Forms.Label();
             this.labelProductos = new System.Windows.Forms.Label();
@@ -53,12 +54,12 @@
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.lblCantidad = new System.Windows.Forms.Label();
             this.btnVender = new System.Windows.Forms.Button();
-            this.pbEsperando = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelVenta.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEsperando)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCarrito)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVenta)).BeginInit();
             this.PanelCantidad.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbEsperando)).BeginInit();
             this.SuspendLayout();
             // 
             // panelVenta
@@ -79,11 +80,25 @@
             this.panelVenta.Size = new System.Drawing.Size(1160, 562);
             this.panelVenta.TabIndex = 1;
             // 
+            // pbEsperando
+            // 
+            this.pbEsperando.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbEsperando.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
+            this.pbEsperando.Image = ((System.Drawing.Image)(resources.GetObject("pbEsperando.Image")));
+            this.pbEsperando.Location = new System.Drawing.Point(0, 398);
+            this.pbEsperando.Name = "pbEsperando";
+            this.pbEsperando.Size = new System.Drawing.Size(987, 164);
+            this.pbEsperando.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbEsperando.TabIndex = 53;
+            this.pbEsperando.TabStop = false;
+            // 
             // lblProductos
             // 
             this.lblProductos.AutoSize = true;
             this.lblProductos.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProductos.ForeColor = System.Drawing.Color.White;
+            this.lblProductos.ForeColor = System.Drawing.Color.YellowGreen;
             this.lblProductos.Location = new System.Drawing.Point(0, 72);
             this.lblProductos.Name = "lblProductos";
             this.lblProductos.Size = new System.Drawing.Size(134, 27);
@@ -93,9 +108,8 @@
             // lblCarrito
             // 
             this.lblCarrito.AutoSize = true;
-            this.lblCarrito.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lblCarrito.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCarrito.ForeColor = System.Drawing.Color.White;
+            this.lblCarrito.ForeColor = System.Drawing.Color.YellowGreen;
             this.lblCarrito.Location = new System.Drawing.Point(0, 371);
             this.lblCarrito.Name = "lblCarrito";
             this.lblCarrito.Size = new System.Drawing.Size(98, 27);
@@ -138,6 +152,9 @@
             // 
             // dgvCarrito
             // 
+            this.dgvCarrito.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvCarrito.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCarrito.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
             this.dgvCarrito.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -160,7 +177,6 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvCarrito.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvCarrito.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvCarrito.EnableHeadersVisualStyles = false;
             this.dgvCarrito.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
             this.dgvCarrito.Location = new System.Drawing.Point(0, 398);
@@ -225,6 +241,7 @@
             // 
             // PanelCantidad
             // 
+            this.PanelCantidad.Controls.Add(this.label1);
             this.PanelCantidad.Controls.Add(this.lblCategoria);
             this.PanelCantidad.Controls.Add(this.lblNombre);
             this.PanelCantidad.Controls.Add(this.cbCategoria);
@@ -244,7 +261,7 @@
             // 
             this.lblCategoria.AutoSize = true;
             this.lblCategoria.ForeColor = System.Drawing.Color.White;
-            this.lblCategoria.Location = new System.Drawing.Point(15, 111);
+            this.lblCategoria.Location = new System.Drawing.Point(15, 144);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(66, 16);
             this.lblCategoria.TabIndex = 48;
@@ -263,7 +280,7 @@
             // cbCategoria
             // 
             this.cbCategoria.FormattingEnabled = true;
-            this.cbCategoria.Location = new System.Drawing.Point(17, 130);
+            this.cbCategoria.Location = new System.Drawing.Point(17, 163);
             this.cbCategoria.Name = "cbCategoria";
             this.cbCategoria.Size = new System.Drawing.Size(121, 24);
             this.cbCategoria.TabIndex = 45;
@@ -354,21 +371,21 @@
             this.btnVender.Name = "btnVender";
             this.btnVender.Size = new System.Drawing.Size(133, 37);
             this.btnVender.TabIndex = 36;
-            this.btnVender.Text = "Vender";
+            this.btnVender.Text = "Comprar";
             this.btnVender.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnVender.UseVisualStyleBackColor = false;
             this.btnVender.Click += new System.EventHandler(this.btnVender_Click);
             // 
-            // pbEsperando
+            // label1
             // 
-            this.pbEsperando.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
-            this.pbEsperando.Image = ((System.Drawing.Image)(resources.GetObject("pbEsperando.Image")));
-            this.pbEsperando.Location = new System.Drawing.Point(0, 398);
-            this.pbEsperando.Name = "pbEsperando";
-            this.pbEsperando.Size = new System.Drawing.Size(987, 164);
-            this.pbEsperando.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbEsperando.TabIndex = 53;
-            this.pbEsperando.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.YellowGreen;
+            this.label1.Location = new System.Drawing.Point(7, 103);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(94, 27);
+            this.label1.TabIndex = 51;
+            this.label1.Text = "Filtrado";
             // 
             // FormVenta
             // 
@@ -380,11 +397,11 @@
             this.Text = "FormVenta";
             this.panelVenta.ResumeLayout(false);
             this.panelVenta.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEsperando)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCarrito)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVenta)).EndInit();
             this.PanelCantidad.ResumeLayout(false);
             this.PanelCantidad.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbEsperando)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -410,5 +427,6 @@
         private System.Windows.Forms.Label lblCarrito;
         private System.Windows.Forms.Label lblProductos;
         private System.Windows.Forms.PictureBox pbEsperando;
+        private System.Windows.Forms.Label label1;
     }
 }
