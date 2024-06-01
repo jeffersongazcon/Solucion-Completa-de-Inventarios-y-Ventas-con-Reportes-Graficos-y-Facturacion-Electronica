@@ -84,7 +84,7 @@ namespace proyecto
 
             factura1.GetGrafico(out cantidadInvertida, out ganancia, out cantidadDeClientes, out numeroDeCategorias, out cantidadDeProductos);
 
-            // Mostrar las estadísticas generales en la interfaz
+            
             lblCantidadInvertida.Text = $"{cantidadInvertida:C}";
             labelGanancia.Text = $"{ganancia:C}";
             labelCantidadDeClientes.Text = $"{cantidadDeClientes}";
@@ -97,7 +97,7 @@ namespace proyecto
             DataTable dt = FacturaDAL.GetAllFactura();
             dgvReporte.DataSource = dt;
 
-            // Asegúrate de que el DataGridView muestre las columnas PrecioCompra y Precio
+            
             if (!dgvReporte.Columns.Contains("PrecioCompra"))
             {
                 dgvReporte.Columns.Add("PrecioCompra", "Precio de Compra");

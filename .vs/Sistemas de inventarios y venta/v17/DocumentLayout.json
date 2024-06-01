@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7220802E-819A-4A65-A965-F64CC8229E6B}|proyecto\\Presentacion.csproj|C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\proyecto\\formreportegrafico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7220802E-819A-4A65-A965-F64CC8229E6B}|proyecto\\Presentacion.csproj|c:\\users\\lenovo\\onedrive\\documentos\\prueba\\sistemas de inventarios y venta\\proyecto\\formreportegrafico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7220802E-819A-4A65-A965-F64CC8229E6B}|proyecto\\Presentacion.csproj|solutionrelative:proyecto\\formreportegrafico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7220802E-819A-4A65-A965-F64CC8229E6B}|proyecto\\Presentacion.csproj|c:\\users\\lenovo\\onedrive\\documentos\\prueba\\sistemas de inventarios y venta\\proyecto\\formreportegrafico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7220802E-819A-4A65-A965-F64CC8229E6B}|proyecto\\Presentacion.csproj|C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\proyecto\\formreportegrafico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7220802E-819A-4A65-A965-F64CC8229E6B}|proyecto\\Presentacion.csproj|solutionrelative:proyecto\\formreportegrafico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -179,7 +179,7 @@
               "RelativeDocumentMoniker": "proyecto\\FormReporteGrafico.cs",
               "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\proyecto\\FormReporteGrafico.cs",
               "RelativeToolTip": "proyecto\\FormReporteGrafico.cs",
-              "ViewState": "AQIAAIcAAAAAAAAAAAAcwJ8AAAAaAAAA",
+              "ViewState": "AQIAAHwAAAAAAAAAAADwv1YAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-31T19:19:39.636Z",
               "EditorCaption": ""
@@ -194,8 +194,7 @@
               "RelativeToolTip": "proyecto\\FormFactura.cs",
               "ViewState": "AQIAACcAAAAAAAAAAAAYwFUAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T01:32:22.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-25T01:32:22.907Z"
             },
             {
               "$type": "Document",
@@ -217,8 +216,7 @@
               "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Documentos\\prueba\\Sistemas de inventarios y venta\\proyecto\\FormFactura.cs [Dise\u00F1o]",
               "RelativeToolTip": "proyecto\\FormFactura.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T19:06:57.757Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-05-31T19:06:57.757Z"
             },
             {
               "$type": "Document",
@@ -384,8 +382,7 @@
               "RelativeToolTip": "proyecto\\FormFactura.Designer.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAcwDUBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T14:20:35.458Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-25T14:20:35.458Z"
             },
             {
               "$type": "Document",
