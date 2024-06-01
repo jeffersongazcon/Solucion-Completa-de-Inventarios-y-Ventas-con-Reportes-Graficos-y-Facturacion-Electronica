@@ -1,15 +1,18 @@
-﻿using DAL_Datos_;
-using System;
-using Entity_Entidad_;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net.Mail;
 using System.Net;
+using System.IO;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using DAL_Datos_;
+using Entity_Entidad_;
+using Font = iTextSharp.text.Font;
 
 namespace proyecto
 {
@@ -32,6 +35,7 @@ namespace proyecto
             btnQuitar.Click += new EventHandler(btnQuitar_Click);
             btnVender.Click -= new EventHandler(btnVender_Click);
             btnVender.Click += new EventHandler(btnVender_Click);
+            btnGenerarFactura.Click += new EventHandler(btnGenerarFactura_Click);
             AñadirProductos();
             CargarCategorias();
             ActualizarImagen();
@@ -79,7 +83,6 @@ namespace proyecto
 
         private void ActualizarCarrito()
         {
-            // Esta función se asegura de que el DataGridView se actualice correctamente
             dgvCarrito.DataSource = null;
             if (!dgvCarrito.Columns.Contains("NombreCliente"))
             {
@@ -87,19 +90,16 @@ namespace proyecto
             }
             foreach (DataGridViewRow row in dgvCarrito.Rows)
             {
-                row.Cells["NombreCliente"].Value = Usuario.FirsName + "  " + Usuario.LastName; // Asigna el nombre del cliente
+                row.Cells["NombreCliente"].Value = Usuario.FirsName + "  " + Usuario.LastName;
             }
 
             dgvCarrito.DataSource = carrito;
 
-            // Ocultar columnas innecesarias
             dgvCarrito.Columns["CodigoDeBarras"].Visible = false;
             dgvCarrito.Columns["ProductoID"].Visible = false;
             dgvCarrito.Columns["PrecioCompra"].Visible = false;
             dgvCarrito.Columns["Estado"].Visible = false;
             dgvCarrito.Columns["FechaRegistro"].Visible = false;
- 
-            
         }
 
         private void ActualizarImagen()
@@ -267,9 +267,8 @@ namespace proyecto
                     PrecioCompra = Convert.ToDecimal(row.Cells["PrecioCompra"].Value),
                     Categoria = row.Cells["Categoria"].Value.ToString(),
                     Cantidad = Convert.ToInt32(txtCantidad.Text),
-                    
                 };
-                
+
                 carrito.Add(producto);
             }
             ActualizarImagen();
@@ -304,9 +303,9 @@ namespace proyecto
             {
                 Producto = producto.Nombre,
                 Descripcion = producto.DescripcionProducto,
-                Precio = Convert.ToInt32(producto.PrecioVenta), // Convertir de decimal a int
+                Precio = Convert.ToInt32(producto.PrecioVenta), 
                 Cantidad = cantidadVendida,
-                Total = Convert.ToInt32(cantidadVendida * producto.PrecioVenta), // Convertir de decimal a int
+                Total = Convert.ToInt32(cantidadVendida * producto.PrecioVenta), 
                 PrecioCompra = Convert.ToInt32(producto.PrecioCompra),
                 NombreCliente = Usuario.FirsName + "  " + Usuario.LastName,
             };
@@ -323,8 +322,78 @@ namespace proyecto
         {
             MessageBox.Show("Por favor, ingrese una CANTIDAD del producto que quiero comprar", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             return;
+
+        }
+
+        private void btnGenerarFactura_Click(object sender, EventArgs e)
+        {
+            GenerarFacturaPDF(productosVendidos, "Factura.pdf");
+            return;
+        }
+
+        private void GenerarFacturaPDF(List<Producto> productos, string fileName)
+        {
+            // por aqui se pone la ruta de la carpeta Documentos
+            string folderPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string fullPath = Path.Combine(folderPath, fileName);
+
+            Document document = new Document(PageSize.A4, 25, 25, 30, 30);
+            PdfWriter writer = PdfWriter.GetInstance(document, new FileStream(fullPath, FileMode.Create));
+            document.Open();
+
+            Font titleFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 18, iTextSharp.text.Font.BOLD, BaseColor.GREEN);
+            Font headerFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12, iTextSharp.text.Font.BOLD, BaseColor.WHITE);
+            Font cellFont = FontFactory.GetFont(FontFactory.HELVETICA, 12, iTextSharp.text.Font.NORMAL, BaseColor.BLACK);
+
+
+            // Título 
+            Paragraph title = new Paragraph("Factura de Venta", titleFont)
+            {
+                Alignment = Element.ALIGN_CENTER,
+                SpacingAfter = 20
+            };
+            document.Add(title);
+
+            // se crea la tabla aqi!
+            PdfPTable table = new PdfPTable(4)
+            {
+                WidthPercentage = 100
+            };
+            table.SetWidths(new float[] { 2, 5, 2, 2 });
+
+            
+            PdfPCell[] headers = {
+                new PdfPCell(new Phrase("Producto", headerFont)) { BackgroundColor = BaseColor.GREEN, HorizontalAlignment = Element.ALIGN_CENTER, Padding = 5 },
+                new PdfPCell(new Phrase("Descripción", headerFont)) { BackgroundColor = BaseColor.GREEN, HorizontalAlignment = Element.ALIGN_CENTER, Padding = 5 },
+                new PdfPCell(new Phrase("Precio", headerFont)) { BackgroundColor = BaseColor.GREEN, HorizontalAlignment = Element.ALIGN_CENTER, Padding = 5 },
+                new PdfPCell(new Phrase("Cantidad", headerFont)) { BackgroundColor = BaseColor.GREEN, HorizontalAlignment = Element.ALIGN_CENTER, Padding = 5 }
+            };
+
+            foreach (var header in headers)
+            {
+                table.AddCell(header);
+            }
+
+           
+            foreach (var producto in productos)
+            {
+                table.AddCell(new PdfPCell(new Phrase(producto.Nombre, cellFont)) { Padding = 5 });
+                table.AddCell(new PdfPCell(new Phrase(producto.DescripcionProducto, cellFont)) { Padding = 5 });
+                table.AddCell(new PdfPCell(new Phrase(producto.PrecioVenta.ToString("C"), cellFont)) { Padding = 5 });
+                table.AddCell(new PdfPCell(new Phrase(producto.Cantidad.ToString(), cellFont)) { Padding = 5 });
+            }
+
+            // Total
+            decimal total = productos.Sum(p => p.PrecioVenta * p.Cantidad);
+            PdfPCell totalCell = new PdfPCell(new Phrase("Total", cellFont)) { Colspan = 3, HorizontalAlignment = Element.ALIGN_RIGHT, Padding = 5 };
+            table.AddCell(totalCell);
+            table.AddCell(new PdfPCell(new Phrase(total.ToString("C"), cellFont)) { Padding = 5 });
+
+            document.Add(table);
+            document.Close();
+
+            MessageBox.Show("Factura generada y guardada en la carpeta Documentos.");
             
         }
-        
     }
 }

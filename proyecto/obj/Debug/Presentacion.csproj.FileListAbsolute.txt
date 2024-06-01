@@ -149,3 +149,6 @@ C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\p
 C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.FormMenuPrincipal.resources
 C:\Users\Daniel\OneDrive\Documentos\Proyecto p3\Sistema-de-inventario-y-ventas\proyecto\obj\Debug\proyecto.FormVenta.resources
 C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\obj\Debug\proyecto.FormReporteGrafico.resources
+C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\bin\Debug\itextsharp.dll
+C:\Users\Lenovo\OneDrive\Documentos\prueba\Sistemas de inventarios y venta\proyecto\bin\Debug\itextsharp.xml

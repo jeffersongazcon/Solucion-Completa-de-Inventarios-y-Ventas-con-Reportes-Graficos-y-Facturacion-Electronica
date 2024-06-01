@@ -45,6 +45,7 @@
             this.dgvCarrito = new System.Windows.Forms.DataGridView();
             this.dgvVenta = new System.Windows.Forms.DataGridView();
             this.PanelCantidad = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblCategoria = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.cbCategoria = new System.Windows.Forms.ComboBox();
@@ -54,7 +55,7 @@
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.lblCantidad = new System.Windows.Forms.Label();
             this.btnVender = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnGenerarFactura = new System.Windows.Forms.Button();
             this.panelVenta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbEsperando)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCarrito)).BeginInit();
@@ -245,6 +246,7 @@
             this.PanelCantidad.Controls.Add(this.lblCategoria);
             this.PanelCantidad.Controls.Add(this.lblNombre);
             this.PanelCantidad.Controls.Add(this.cbCategoria);
+            this.PanelCantidad.Controls.Add(this.btnGenerarFactura);
             this.PanelCantidad.Controls.Add(this.btnAgregar);
             this.PanelCantidad.Controls.Add(this.btnQuitar);
             this.PanelCantidad.Controls.Add(this.cbNombre);
@@ -256,6 +258,17 @@
             this.PanelCantidad.Name = "PanelCantidad";
             this.PanelCantidad.Size = new System.Drawing.Size(173, 562);
             this.PanelCantidad.TabIndex = 43;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.YellowGreen;
+            this.label1.Location = new System.Drawing.Point(7, 103);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(94, 27);
+            this.label1.TabIndex = 51;
+            this.label1.Text = "Filtrado";
             // 
             // lblCategoria
             // 
@@ -318,7 +331,7 @@
             this.btnQuitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuitar.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnQuitar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQuitar.Location = new System.Drawing.Point(17, 498);
+            this.btnQuitar.Location = new System.Drawing.Point(17, 511);
             this.btnQuitar.Margin = new System.Windows.Forms.Padding(4);
             this.btnQuitar.Name = "btnQuitar";
             this.btnQuitar.Size = new System.Drawing.Size(133, 37);
@@ -376,16 +389,27 @@
             this.btnVender.UseVisualStyleBackColor = false;
             this.btnVender.Click += new System.EventHandler(this.btnVender_Click);
             // 
-            // label1
+            // btnGenerarFactura
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.YellowGreen;
-            this.label1.Location = new System.Drawing.Point(7, 103);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 27);
-            this.label1.TabIndex = 51;
-            this.label1.Text = "Filtrado";
+            this.btnGenerarFactura.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGenerarFactura.BackColor = System.Drawing.Color.YellowGreen;
+            this.btnGenerarFactura.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnGenerarFactura.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.btnGenerarFactura.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btnGenerarFactura.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
+            this.btnGenerarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerarFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerarFactura.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnGenerarFactura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenerarFactura.Location = new System.Drawing.Point(18, 466);
+            this.btnGenerarFactura.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGenerarFactura.Name = "btnGenerarFactura";
+            this.btnGenerarFactura.Size = new System.Drawing.Size(133, 37);
+            this.btnGenerarFactura.TabIndex = 47;
+            this.btnGenerarFactura.Text = "Generar Factura";
+            this.btnGenerarFactura.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGenerarFactura.UseVisualStyleBackColor = false;
+            this.btnGenerarFactura.Click += new System.EventHandler(this.btnGenerarFactura_Click);
             // 
             // FormVenta
             // 
@@ -428,5 +452,6 @@
         private System.Windows.Forms.Label lblProductos;
         private System.Windows.Forms.PictureBox pbEsperando;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnGenerarFactura;
     }
 }
