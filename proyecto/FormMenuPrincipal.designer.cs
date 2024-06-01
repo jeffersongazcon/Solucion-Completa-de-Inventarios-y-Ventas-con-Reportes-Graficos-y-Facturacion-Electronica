@@ -49,6 +49,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnListaClientes = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnReporteGrafico = new System.Windows.Forms.Button();
             this.btnReporte = new System.Windows.Forms.Button();
             this.PanelBarraTitulo = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -199,6 +200,7 @@
             this.panelMenu.Controls.Add(this.pictureBox2);
             this.panelMenu.Controls.Add(this.btnListaClientes);
             this.panelMenu.Controls.Add(this.pictureBox1);
+            this.panelMenu.Controls.Add(this.btnReporteGrafico);
             this.panelMenu.Controls.Add(this.btnReporte);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 53);
@@ -338,6 +340,28 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // btnReporteGrafico
+            // 
+            this.btnReporteGrafico.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReporteGrafico.FlatAppearance.BorderSize = 0;
+            this.btnReporteGrafico.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btnReporteGrafico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
+            this.btnReporteGrafico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReporteGrafico.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReporteGrafico.ForeColor = System.Drawing.Color.Silver;
+            this.btnReporteGrafico.Image = ((System.Drawing.Image)(resources.GetObject("btnReporteGrafico.Image")));
+            this.btnReporteGrafico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReporteGrafico.Location = new System.Drawing.Point(4, 98);
+            this.btnReporteGrafico.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReporteGrafico.Name = "btnReporteGrafico";
+            this.btnReporteGrafico.Size = new System.Drawing.Size(307, 49);
+            this.btnReporteGrafico.TabIndex = 0;
+            this.btnReporteGrafico.Text = "ReporteGrafico";
+            this.btnReporteGrafico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReporteGrafico.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnReporteGrafico.UseVisualStyleBackColor = true;
+            this.btnReporteGrafico.Click += new System.EventHandler(this.btnReporteGrafico_Click);
+            // 
             // btnReporte
             // 
             this.btnReporte.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -358,7 +382,6 @@
             this.btnReporte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReporte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReporte.UseVisualStyleBackColor = true;
-            this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click_1);
             // 
             // PanelBarraTitulo
             // 
@@ -490,6 +513,7 @@
             this.Name = "FormMenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormMenuPrincipal_Load);
             this.panelContenedorPrincipal.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -541,6 +565,7 @@
         private System.Windows.Forms.Timer tmExpandirMenu;
         private System.Windows.Forms.Timer tmContraerMenu;
         private System.Windows.Forms.Timer tmFechaHora;
+        private System.Windows.Forms.Button btnReporteGrafico;
     }
 }
 

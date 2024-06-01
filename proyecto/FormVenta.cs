@@ -81,6 +81,15 @@ namespace proyecto
         {
             // Esta función se asegura de que el DataGridView se actualice correctamente
             dgvCarrito.DataSource = null;
+            if (!dgvCarrito.Columns.Contains("NombreCliente"))
+            {
+                dgvCarrito.Columns.Add("NombreCliente", "Nombre Cliente");
+            }
+            foreach (DataGridViewRow row in dgvCarrito.Rows)
+            {
+                row.Cells["NombreCliente"].Value = Usuario.FirsName + "  " + Usuario.LastName; // Asigna el nombre del cliente
+            }
+
             dgvCarrito.DataSource = carrito;
 
             // Ocultar columnas innecesarias
@@ -89,6 +98,7 @@ namespace proyecto
             dgvCarrito.Columns["PrecioCompra"].Visible = false;
             dgvCarrito.Columns["Estado"].Visible = false;
             dgvCarrito.Columns["FechaRegistro"].Visible = false;
+ 
             
         }
 
@@ -256,8 +266,10 @@ namespace proyecto
                     DescripcionProducto = row.Cells["DescripcionProducto"].Value.ToString(),
                     PrecioCompra = Convert.ToDecimal(row.Cells["PrecioCompra"].Value),
                     Categoria = row.Cells["Categoria"].Value.ToString(),
-                    Cantidad = Convert.ToInt32(txtCantidad.Text)
+                    Cantidad = Convert.ToInt32(txtCantidad.Text),
+                    
                 };
+                
                 carrito.Add(producto);
             }
             ActualizarImagen();
@@ -296,6 +308,7 @@ namespace proyecto
                 Cantidad = cantidadVendida,
                 Total = Convert.ToInt32(cantidadVendida * producto.PrecioVenta), // Convertir de decimal a int
                 PrecioCompra = Convert.ToInt32(producto.PrecioCompra),
+                NombreCliente = Usuario.FirsName + "  " + Usuario.LastName,
             };
 
             return facturaDetalle;

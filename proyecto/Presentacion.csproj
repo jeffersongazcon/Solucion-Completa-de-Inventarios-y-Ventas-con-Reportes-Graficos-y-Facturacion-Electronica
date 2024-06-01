@@ -38,6 +38,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -109,6 +110,12 @@
     <Compile Include="FormMenuPrincipal.designer.cs">
       <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormReporteGrafico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReporteGrafico.Designer.cs">
+      <DependentUpon>FormReporteGrafico.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormVenta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuPrincipal.resx">
       <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReporteGrafico.resx">
+      <DependentUpon>FormReporteGrafico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormVenta.resx">
       <DependentUpon>FormVenta.cs</DependentUpon>

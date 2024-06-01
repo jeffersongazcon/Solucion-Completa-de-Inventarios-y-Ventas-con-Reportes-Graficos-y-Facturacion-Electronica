@@ -231,13 +231,14 @@ namespace proyecto
             AbrirFormEnPanel(fm);
         }
 
-        private void btnReporte_Click_1(object sender, EventArgs e)
-        {
-            
 
-            FormFactura fm = new FormFactura();
+
+        private void btnReporteGrafico_Click(object sender, EventArgs e)
+        {
+            FormReporteGrafico fm = new FormReporteGrafico();
             fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             AbrirFormEnPanel(fm);
+
         }
 
         //METODO PARA HORA Y FECHA ACTUAL ----------------------------------------------------------

@@ -8,6 +8,7 @@ namespace Entity_Entidad_
 {
     public class Factura
     {
+        public string NombreCliente { get; set; }
         public string Producto { get; set; }
         public string Descripcion { get; set; }
         public int Precio { get; set; }
