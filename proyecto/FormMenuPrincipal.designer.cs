@@ -43,6 +43,7 @@
             this.btnSalir = new System.Windows.Forms.PictureBox();
             this.btnMenu = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.btnEditarPerfil = new System.Windows.Forms.Button();
             this.btnVenta = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnProductos = new System.Windows.Forms.Button();
@@ -61,6 +62,7 @@
             this.tmExpandirMenu = new System.Windows.Forms.Timer(this.components);
             this.tmContraerMenu = new System.Windows.Forms.Timer(this.components);
             this.tmFechaHora = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panelContenedorPrincipal.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -73,6 +75,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PanelBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panelContenedorPrincipal
@@ -191,9 +194,11 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.panelMenu.Controls.Add(this.pictureBox4);
             this.panelMenu.Controls.Add(this.btnSalir);
             this.panelMenu.Controls.Add(this.btnMenu);
             this.panelMenu.Controls.Add(this.pictureBox6);
+            this.panelMenu.Controls.Add(this.btnEditarPerfil);
             this.panelMenu.Controls.Add(this.btnVenta);
             this.panelMenu.Controls.Add(this.pictureBox3);
             this.panelMenu.Controls.Add(this.btnProductos);
@@ -246,6 +251,27 @@
             this.pictureBox6.Size = new System.Drawing.Size(3, 49);
             this.pictureBox6.TabIndex = 9;
             this.pictureBox6.TabStop = false;
+            // 
+            // btnEditarPerfil
+            // 
+            this.btnEditarPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditarPerfil.FlatAppearance.BorderSize = 0;
+            this.btnEditarPerfil.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btnEditarPerfil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
+            this.btnEditarPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditarPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarPerfil.ForeColor = System.Drawing.Color.Silver;
+            this.btnEditarPerfil.Image = ((System.Drawing.Image)(resources.GetObject("btnEditarPerfil.Image")));
+            this.btnEditarPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditarPerfil.Location = new System.Drawing.Point(0, 326);
+            this.btnEditarPerfil.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEditarPerfil.Name = "btnEditarPerfil";
+            this.btnEditarPerfil.Size = new System.Drawing.Size(307, 49);
+            this.btnEditarPerfil.TabIndex = 8;
+            this.btnEditarPerfil.Text = "    EditarPerfil";
+            this.btnEditarPerfil.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEditarPerfil.UseVisualStyleBackColor = true;
+            this.btnEditarPerfil.Click += new System.EventHandler(this.btnEditarPerfil_Click);
             // 
             // btnVenta
             // 
@@ -356,7 +382,7 @@
             this.btnReporteGrafico.Name = "btnReporteGrafico";
             this.btnReporteGrafico.Size = new System.Drawing.Size(307, 49);
             this.btnReporteGrafico.TabIndex = 0;
-            this.btnReporteGrafico.Text = "ReporteGrafico";
+            this.btnReporteGrafico.Text = "    ReporteGrafico";
             this.btnReporteGrafico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReporteGrafico.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReporteGrafico.UseVisualStyleBackColor = true;
@@ -499,6 +525,16 @@
             this.tmFechaHora.Enabled = true;
             this.tmFechaHora.Tick += new System.EventHandler(this.tmFechaHora_Tick);
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.LightGreen;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 326);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(3, 49);
+            this.pictureBox4.TabIndex = 14;
+            this.pictureBox4.TabStop = false;
+            // 
             // FormMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -528,6 +564,7 @@
             this.PanelBarraTitulo.ResumeLayout(false);
             this.PanelBarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -565,6 +602,8 @@
         private System.Windows.Forms.Timer tmContraerMenu;
         private System.Windows.Forms.Timer tmFechaHora;
         private System.Windows.Forms.Button btnReporteGrafico;
+        private System.Windows.Forms.Button btnEditarPerfil;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
 

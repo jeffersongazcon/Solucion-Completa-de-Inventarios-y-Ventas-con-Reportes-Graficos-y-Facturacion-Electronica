@@ -241,7 +241,14 @@ namespace proyecto
 
         }
 
-        //METODO PARA HORA Y FECHA ACTUAL ----------------------------------------------------------
+        private void btnEditarPerfil_Click(object sender, EventArgs e)
+        {
+            FormMantCliente frm = new FormMantCliente(Usuario.IdUser);
+            frm.OnSaved += (s, ev) => CargarInfomacionDeUsuario(); 
+            frm.Show();
+        }
+
+
         private void tmFechaHora_Tick(object sender, EventArgs e)
         {
             lbFecha.Text = DateTime.Now.ToLongDateString();
